@@ -1,0 +1,22 @@
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: white;
+}
+
+header {
+    background-color: blue;
+}
+
+.social {
+    align-content: center;
+}
