@@ -44,16 +44,9 @@ header section {
     font-family: "georgia", serif;
 }
 
-/* Desktop alignment */
 .column {
     float: left;
     width: 50%;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
 }
 
 #face {
@@ -63,4 +56,48 @@ header section {
     margin-right: auto;
     width: 60%;
     padding: 20px;
+}
+
+.column p {
+    font-family: "Open Sans", sans-serif;
+    text-align: justify;
+    padding-right: 50px;
+}
+
+/* Mobile CSS */
+@media screen and (max-width: 600px) {
+
+    header {
+        text-align: center;
+        padding: 0px;
+    }
+
+    #name {
+      color: white;
+      font-size: 200%;
+      font-family: "georgia", serif;
+      display: inline-block;
+      width: 100%;
+      padding-top: 20px;
+    }
+
+    header section {
+      align-content: center;
+      display: inline-block;
+      width: 100%;
+      position: relative;
+    }
+
+    .fa:hover {
+        /* Don't do anything */
+    }
+
+    .column {
+      width: 100%;
+    }
+
+    .column p{
+        padding: 20px;
+    }
+
 }
