@@ -38,26 +38,23 @@ header section {
     align-content: center;
 }
 
-.mainBody .mainLeft {
-    display: flex;
-    align-items:center;
-    width: 50%;
-    float: left;
-}
-
-.mainBody .mainRight {
-    display: flex;
-    align-items:center;
-    width: 50%;
-    float: right;
-}
-
 #name {
     color: white;
     font-size: 500%;
     font-family: "georgia", serif;
 }
 
+/* Desktop alignment */
+.column {
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
 #face {
     border-radius: 50%;
