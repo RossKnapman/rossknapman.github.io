@@ -13,7 +13,7 @@
       <pubDate>Sun, 05 Dec 2021 16:49:56 +0100</pubDate>
       
       <guid>https://www.rossknapman.com/posts/nvimvimtexzathura/</guid>
-      <description>There are many reasons to write LaTeX in Vim instead of the more &amp;ldquo;traditional&amp;rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of UltiSnips or you just want to make the most of Vim&amp;rsquo;s many features. Setting up inverse search allows you to jump to a point in your .tex file by Ctrl-clicking the corresponding place in your .pdf file, which can be especially useful for long documents.</description>
+      <description>There are many reasons to write LaTeX in Vim instead of the more &amp;ldquo;traditional&amp;rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of UltiSnips, or you just want to make the most of Vim&amp;rsquo;s many features. VimTeX is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and Zathura is a minimalist, highly customisable document viewer with Vim keybindings by default.</description>
     </item>
     
   </channel>
