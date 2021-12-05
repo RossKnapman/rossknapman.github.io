@@ -1,24 +1,39 @@
 body {
     background-color: #fbfbfb;
+    padding-bottom: 60px;
 }
 
 .wrapper {
     display: flex;
     align-items: stretch;
-}
-
-a h1 {
-    color: black;
+    overflow: auto;
 }
 
 #site-title {
+    font-weight: 300;
+    font-size: 4em;
     display: inline-block;
-    margin-left: 20px;
-    vertical-align: middle;
+    color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
 }
 
-.navbar .text-right a {
-    padding: 10px;
+#header-container {
+    text-align: center;
+}
+
+.social-media-buttons a {
+    padding-left: 0.5em;
+}
+
+@media (max-width: 767px) {
+    #site-title {
+        font-size: 2.5em;
+    } 
+    /* Don't display social media buttons at top for phones */
+    .social-media-buttons-header {
+        display: none;
+    }
 }
 
 .header-button:hover {
@@ -28,54 +43,84 @@ a h1 {
 
 #content {
     margin: 5px;
+    display: inline-block;
+    margin-bottom: 60px;
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 200px;
+    max-width: 200px;
     min-height: 100vh;
     transition: all 0.3s;
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* top layer */
-    z-index: 9999;
 }
 
-#sidebar.active {
-    margin-left: -250px;
-}
-
-#overlay {
+#open-sidebar {
     display: none;
-    position: fixed;
-    /* full screen */
-    width: 100vw;
-    height: 100vh;
-    /* transparent black */
-    background: rgba(0, 0, 0, 0.7);
-    /* middle layer, i.e. appears below the sidebar */
-    z-index: -1;
-    opacity: 1;
-    /* animate the transition */
-    transition: all 1s ease-in-out;
-}
-/* display .overlay when it has the .active class */
-#overlay.active {
-    display: block;
-    opacity: 1;
-    z-index: 1000;
 }
 
-#close-sidebar {
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    /* top right corner of the sidebar */
-    top: 10px;
-    right: 10px;
+#close-sidebar{
+    display: none;
 }
 
 #list {
     display: inline;
+}
+
+/* Sidebar stuff for phones */
+@media (max-width: 767px) {
+    #sidebar {
+        position: fixed;
+        z-index: 9999;
+    }
+    #open-sidebar {
+        display: inline;
+    }
+    #close-sidebar {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        /* top right corner of the sidebar */
+        top: 10px;
+        right: 10px;
+    }
+    #sidebar.active {
+        margin-left: -200px;
+    }
+    #overlay {
+        display: none;
+        position: fixed;
+        /* full screen */
+        width: 100vw;
+        height: 100vh;
+        /* transparent black */
+        background: rgba(0, 0, 0, 0.7);
+        /* middle layer, i.e. appears below the sidebar */
+        z-index: -1;
+        opacity: 1;
+        /* animate the transition */
+        transition: all 1s ease-in-out;
+    }
+    /* display .overlay when it has the .active class */
+    #overlay.active {
+        display: block;
+        opacity: 1;
+        z-index: 1000;
+    }
+}
+
+/* Only display social media in sidebar on mobile */
+@media (min-width: 768px) {
+    .social-media-buttons-sidebar {
+        display: none;
+    }
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    background-color: #fbfbfb;
+    align-items: center;
 }
