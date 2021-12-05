@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Ross Knapman</title>
-    <link>https://www.rossknapman.com/posts/</link>
-    <description>Recent content in Posts on Ross Knapman</description>
+    <title>zathura on Ross Knapman</title>
+    <link>https://www.rossknapman.com/tags/zathura/</link>
+    <description>Recent content in zathura on Ross Knapman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 05 Dec 2021 16:49:56 +0100</lastBuildDate><atom:link href="https://www.rossknapman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Dec 2021 16:49:56 +0100</lastBuildDate><atom:link href="https://www.rossknapman.com/tags/zathura/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up Inverse Search with Neovim, VimTeX and Zathura</title>
       <link>https://www.rossknapman.com/posts/nvimvimtexzathura/</link>
@@ -14,16 +14,6 @@
       
       <guid>https://www.rossknapman.com/posts/nvimvimtexzathura/</guid>
       <description>There are many reasons to write LaTeX in Vim instead of the more &amp;ldquo;traditional&amp;rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of UltiSnips or you just want to make the most of Vim&amp;rsquo;s many features. Setting up inverse search allows you to jump to a point in your .tex file by Ctrl-clicking the corresponding place in your .pdf file, which can be especially useful for long documents.</description>
-    </item>
-    
-    <item>
-      <title>Coffee Cup to Doughnut Animation</title>
-      <link>https://www.rossknapman.com/posts/mugdoughnut/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://www.rossknapman.com/posts/mugdoughnut/</guid>
-      <description>I made this animation using Blender when writing my project proposal for my Studienstiftung application.
-  </description>
     </item>
     
   </channel>
