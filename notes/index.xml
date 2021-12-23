@@ -1,31 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ross Knapman</title>
-    <link>https://www.rossknapman.com/</link>
-    <description>Recent content on Ross Knapman</description>
+    <title>Notes on Ross Knapman</title>
+    <link>https://www.rossknapman.com/notes/</link>
+    <description>Recent content in Notes on Ross Knapman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Sun, 05 Dec 2021 16:49:56 +0100</lastBuildDate><atom:link href="https://www.rossknapman.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Setting up Inverse Search with Neovim, VimTeX and Zathura</title>
-      <link>https://www.rossknapman.com/posts/nvimvimtexzathura/</link>
-      <pubDate>Sun, 05 Dec 2021 16:49:56 +0100</pubDate>
-      
-      <guid>https://www.rossknapman.com/posts/nvimvimtexzathura/</guid>
-      <description>There are many reasons to write LaTeX in Vim instead of the more &amp;ldquo;traditional&amp;rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of UltiSnips, or you just want to make the most of Vim&amp;rsquo;s many features. VimTeX is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and Zathura is a minimalist, highly customisable document viewer with Vim keybindings by default.</description>
-    </item>
-    
-    <item>
-      <title>Coffee Cup to Doughnut Animation</title>
-      <link>https://www.rossknapman.com/posts/mugdoughnut/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://www.rossknapman.com/posts/mugdoughnut/</guid>
-      <description>I made this animation using Blender when writing my project proposal for my Studienstiftung application.
-  </description>
-    </item>
-    
+    <language>en-gb</language><atom:link href="https://www.rossknapman.com/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blender</title>
       <link>https://www.rossknapman.com/notes/blender/</link>
@@ -183,17 +163,6 @@
       <description> Join Pdfs Vertically  pdfjam Page1.pdf Page2.pdf --nup 2x1 --landscape --outfile Page1+2.pdf
  Then remove the margins (CAREFUL, MIGHT FAIL IF IMAGE HAS A LOT OF WHITE): pdf-crop-margins -v -p 0 -a -6 input.pdf
  (Having installed this tool using pip install pdfCropMargins --upgrade)
-  </description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://www.rossknapman.com/publications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.rossknapman.com/publications/</guid>
-      <description>  R. Knapman, D. R. Rodrigues, J. Masell, and K. Everschor-Sitte, &amp;ldquo;Current-induced H-shaped-skyrmion creation and their dynamics in the helical phase&amp;rdquo;, Journal of Physics D: Applied Physics, 54(40), 404003 (2021). arXiv: 2105.06859.
-  D. R. Rodrigues, J. Nothhelfer, M. Mohseni, R. Knapman, P. Pirro, and K. Everschor-Sitte, &amp;ldquo;Nonlinear Dynamics of Topological Ferromagnetic Textures for Frequency Multiplication&amp;rdquo;, Phys. Rev. Appl., 10, 14020 (2021). arXiv: 2012.11481.
   </description>
     </item>
     

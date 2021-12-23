@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     
     
-    <title>Ross Knapman | Setting up Inverse Search with Neovim, VimTeX and Zathura</title>
+    <title>Ross Knapman | Website</title>
 </head><body>
         <div class="wrapper">
 <nav id="sidebar" class="navbar active d-lg-block bg-white">
@@ -80,39 +80,65 @@
 <a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
 <a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
 </nav>
-<h1>Setting up Inverse Search with Neovim, VimTeX and Zathura</h1>
+<h2 class="display-6">Website</h2>
 
-
-<i data-feather="calendar"></i>
-<time datetime="2021-12-05">Dec 5, 2021</time>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/vim">vim</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/latex">latex</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/zathura">zathura</a>
-
-
-<br><br>
-<p>There are many reasons to write LaTeX in Vim instead of the more &ldquo;traditional&rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of <a href="https://github.com/sirver/UltiSnips">UltiSnips</a>, or you just want to make the most of Vim&rsquo;s many features. <a href="https://github.com/lervag/vimtex">VimTeX</a> is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and <a href="https://pwmt.org/projects/zathura/">Zathura</a> is a minimalist, highly customisable document viewer with Vim keybindings by default.</p>
-<p>Setting up inverse search allows you to jump to a point in your <code>.tex</code> file by Ctrl-clicking the corresponding place in your <code>.pdf</code> file, which can be especially useful for long documents.</p>
-<p>First, install <a href="https://github.com/mhinz/neovim-remote">neovim-remote</a> using <code>pip3 install neovim-remote</code>.</p>
-<p>You next need to set <code>NVIM_LISTEN_ADDRESS</code> to <code>/tmp/nvimsocket</code> by adding <code>export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket</code> to your <code>~/.bashrc</code>, <code>~/.zshrc</code>, or whatever the config file is for your specific shell. This allows, after having started a Neovim instance, the running of commands from other terminal windows, e.g. running <code>nvr --remote file1</code> would open a file <code>file1</code> in the Neovim instance. (I think Zathura takes care of setting <code>NVIM_LISTEN_ADDRESS</code> for you, but there is no harm in doing this anyway, plus it may be necessary for other PDF viewers, should you want to switch.)</p>
-<p>Now, ensure synctex is enabled. There are various ways to do this, but the way I do this is by adding <code>\synctex=1</code> to the preamble of the <code>.tex</code> document.</p>
-<p>Add the following to your <code>~/.config/nvim/init.vim</code>:</p>
-<pre><code>let g:vimtex_view_method = 'zathura'
-let g:latex_view_general_viewer = 'zathura'
-let g:vimtex_compiler_progname = 'nvr'
-</code></pre><p>Add the following to your <code>~/.config/zathura/zathurarc</code>:</p>
-<pre><code>set synctex true
-set synctex-editor-command &quot;nvr --remote-silent +%{line} %{input}&quot;
-</code></pre><p>After this, you should be able to Ctrl-Click on a part of the file in Zathura, and Neovim will go to that point in the <code>.tex</code> file.</p>
-<p><strong>Note that this will only work after a change has been made to the file, i.e. it won&rsquo;t work if you just open the file and try to reverse search; you need to make a change and save it first.</strong></p>
+<div id="outline-container-headline-1" class="outline-4">
+<h4 id="headline-1">
+Public Repo as Submodule
+</h4>
+<div id="outline-text-headline-1" class="outline-text-4">
+<p>For each submodule commit, the project updates its reference to the submodule to maintain its connection to the correct commit. Therefore, commit both the main project and the public repo, then run <code>git push -u origin main --recurse-submodules=on-demand</code>. See e.g. <a href="https://www.adamormsby.com/posts/000/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/">https://www.adamormsby.com/posts/000/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/</a></p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-4">
+<h4 id="headline-2">
+Jekyll
+</h4>
+<div id="outline-text-headline-2" class="outline-text-4">
+<div id="outline-container-headline-3" class="outline-5">
+<h5 id="headline-3">
+Does Not Run on Big Sur
+</h5>
+<div id="outline-text-headline-3" class="outline-text-5">
+<p>A combination of these resources seemed to fix it:</p>
+<ul>
+<li>
+<p><a href="https://ernestojeh.com/fix-jekyll-on-macos-big-sur">https://ernestojeh.com/fix-jekyll-on-macos-big-sur</a></p>
+</li>
+<li>
+<p>slycke&#39;s answer at <a href="https://github.com/jekyll/jekyll/issues/8576">https://github.com/jekyll/jekyll/issues/8576</a> (I suspect <code>bundle add webrick</code> may have been the reason it started working, as it allows you to use Ruby 3.0.0)</p>
+</li>
+<li>
+<p>Various resources that suggested using Xcode 11.5 instead of the latest version</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-5">
+<h5 id="headline-4">
+Undefined symbols for architecture x86_64: &#34;_BIO_f_zlib&#34; when installing Ruby environment
+</h5>
+<div id="outline-text-headline-4" class="outline-text-5">
+<p>Run <code>CC=/usr/bin/gcc rbenv install 3.0.0</code> as Homebrew&#39;s GCC version does not work with it (<a href="https://github.com/rbenv/rbenv/issues/610#issuecomment-55773864)">https://github.com/rbenv/rbenv/issues/610#issuecomment-55773864)</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-4">
+<h4 id="headline-5">
+Hugo
+</h4>
+<div id="outline-text-headline-5" class="outline-text-4">
+<div id="outline-container-headline-6" class="outline-5">
+<h5 id="headline-6">
+Testing on Other Devices in Network
+</h5>
+<div id="outline-text-headline-6" class="outline-text-5">
+<p><code>hugo server --baseUrl=&#34;IP address of computer&#34; --bind=&#34;IP address of computer&#34;</code>, then, on e.g. phone, go to <code>computer.IP.address:1313</code></p>
+</div>
+</div>
+</div>
+</div>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    
+    
+    <title>Ross Knapman | Python</title>
+</head><body>
+        <div class="wrapper">
+<nav id="sidebar" class="navbar active d-lg-block bg-white">
+    <div id="close-sidebar">
+        <button type="button" class="header-button" data-feather="chevrons-left"></button>
+    </div>
+    <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+            
+            
+                <a href="../../" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    
+                    
+                    <i data-feather="home"></i> 
+                    
+                    
+                    Home
+                </a>
+            
+                <a href="../../posts/" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    
+                    
+                    <i data-feather="pen-tool"></i> 
+                    
+                    
+                    Blog
+                </a>
+            
+                <a href="../../tags/" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    
+                    
+                    <i data-feather="tag"></i> 
+                    
+                    
+                    Tags
+                </a>
+            
+                <a href="../../publications" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    
+                    
+                    <i data-feather="book"></i> 
+                    
+                    
+                    Publications
+                </a>
+            
+                <a href="../../notes/" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    
+                    
+                    <i data-feather="info"></i> 
+                    
+                    
+                    Notes
+                </a>
+            
+        </div>
+        <div class="social-media-buttons social-media-buttons-sidebar pt-5 text-center"><a href="../../download/CV.pdf"><i data-feather="file-text" class="header-button"></i></a>
+<a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
+<a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
+    </div>
+</nav><div id="content" class="container-fluid"><nav class="navbar navbar-light">
+    <div>
+    <div id="open-sidebar">
+        <button type="button" class="header-button" data-feather="menu"></button>
+    </div>
+    <div class="pl-4">
+        <a href="https://www.rossknapman.com"><h1 id="site-title">Ross Knapman</h1></a>
+    </div>
+    </div>
+    <div class="social-media-buttons social-media-buttons-header"><a href="../../download/CV.pdf"><i data-feather="file-text" class="header-button"></i></a>
+<a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
+<a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
+</nav>
+<h2 class="display-6">Python</h2>
+
+<div id="outline-container-headline-1" class="outline-4">
+<h4 id="headline-1">
+NumPy Problems
+</h4>
+<div id="outline-text-headline-1" class="outline-text-4">
+<div id="outline-container-headline-2" class="outline-5">
+<h5 id="headline-2">
+Axis Size Not $2^N$
+</h5>
+<div id="outline-text-headline-2" class="outline-text-5">
+<p>Problem: A thin film is represented by an array of vectors ‚a‘ with dimensions <code>(2000 x 500 x 1)</code>, but it is not processed properly because it should really be <code>(2048 x 512 x 1) (2^11 = 2048; 2^9 = 512)</code>.
+Solution: <code>aNew = np.pad(a, [(24, 24), (6, 6)])</code> will surround the data with zeros to make it up to the correct shape</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-5">
+<h5 id="headline-3">
+Discretisedfield gives an error to do with iterative unpacking and something not being a multiple of 4
+</h5>
+<div id="outline-text-headline-3" class="outline-text-5">
+<p>Most likely due to empty <code>.ovf</code> files. Check for any files (probably at the end of the simulation) that do not contain any binary data.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-4">
+<h4 id="headline-4">
+Matplotlib with X11 Forwarding
+</h4>
+<div id="outline-text-headline-4" class="outline-text-4">
+<p>Need to, at the top of the file, have:</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> matplotlib
+matplotlib<span style="color:#f92672">.</span>use(<span style="color:#e6db74">&#39;tkagg&#39;</span>)</code></pre></div>
+</div>
+<p>
+If this still gives an error, may need to replace <code>matplotlib.use(&#39;agg&#39;)</code> in imported modules (this is the case with discretisedfield)</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-4">
+<h4 id="headline-5">
+Finding Where Python Modules Are Stored
+</h4>
+<div id="outline-text-headline-5" class="outline-text-4">
+<p><code>python -m site</code></p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-4">
+<h4 id="headline-6">
+Getting the Correct Quadrant for Cartesian to Polar Conversions
+</h4>
+<div id="outline-text-headline-6" class="outline-text-4">
+<p><code>np.arctan2(y, x)</code></p>
+<p>
+Similar things exist in other programming languages, e.g. <code>atan2</code> in C++</p>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-4">
+<h4 id="headline-7">
+Jupyter Notebooks
+</h4>
+<div id="outline-text-headline-7" class="outline-text-4">
+<div id="outline-container-headline-8" class="outline-5">
+<h5 id="headline-8">
+Mayavi with Jupyter Notebook
+</h5>
+<div id="outline-text-headline-8" class="outline-text-5">
+<p>At the very start,</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> xvfbwrapper <span style="color:#f92672">import</span> Xvfb
+vdisplay <span style="color:#f92672">=</span> Xvfb(width<span style="color:#f92672">=</span><span style="color:#ae81ff">1920</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">1080</span>)
+vdisplay<span style="color:#f92672">.</span>start()</code></pre></div>
+</div>
+<p>
+Then e.g.</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">from mayavi import mlab
+mlab.init_notebook()
+s = mlab.test_plot3d()
+s</code></pre></div>
+</div>
+<p>
+That last part with just the <code>s</code> is important!</p>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-5">
+<h5 id="headline-9">
+Warning: Cannot change to a different GUI toolkit Error
+</h5>
+<div id="outline-text-headline-9" class="outline-text-5">
+<p><code>%matplotlib ...</code> needs to be before importing matplotlib. Every time you change, need to restart kernel</p>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-5">
+<h5 id="headline-10">
+Interactive Matplotlib
+</h5>
+<div id="outline-text-headline-10" class="outline-text-5">
+<p><code>%matplotlib notebook</code></p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-4">
+<h4 id="headline-11">
+Matplotlib Graphs Missing Axes
+</h4>
+<div id="outline-text-headline-11" class="outline-text-4">
+<p>Likely caused by importing a module (e.g. discretisedfield) that modifies the plots</p>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-4">
+<h4 id="headline-12">
+Decorators
+</h4>
+<div id="outline-text-headline-12" class="outline-text-4">
+<div id="outline-container-headline-13" class="outline-5">
+<h5 id="headline-13">
+Usage of Decorators
+</h5>
+<div id="outline-text-headline-13" class="outline-text-5">
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator</span>(f):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">new_function</span>():
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Extra Functionality&#34;</span>)
+        f()
+    <span style="color:#66d9ef">return</span> new_function
+
+<span style="color:#a6e22e">@decorator</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">initial_function</span>():
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Initial Functionality&#34;</span>)
+
+initial_function()</code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-5">
+<h5 id="headline-14">
+<code>@property</code>
+</h5>
+<div id="outline-text-headline-14" class="outline-text-5">
+<p>Allows accessing of private properties with a getter and setter using <code>object.theProperty</code>.</p>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-5">
+<h5 id="headline-15">
+<code>@classmethod</code> and <code>@staticmethod</code>
+</h5>
+<div id="outline-text-headline-15" class="outline-text-5">
+<p>Used for functions that are connected to the class itself, and not to instances of it. <code>@classmethod</code> receives class itself as first argument; <code>@staticmethod</code> does not. So a static method is just kind of hanging there because it has a related functionality.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-4">
+<h4 id="headline-16">
+Underscores
+</h4>
+<div id="outline-text-headline-16" class="outline-text-4">
+<p>More info at <a href="https://dbader.org/blog/meaning-of-underscores-in-python#:~:text=A">https://dbader.org/blog/meaning-of-underscores-in-python#:~:text=A</a>%20double%20underscore%20prefix%20causes,the%20class%20is%20extended%20later</p>
+<p>
+Single leading <code>_var</code>: A convention, signalling that the entity is to be used internally. However, a function defined with a leading underscore will not be imported with <code>from foo import *</code></p>
+<p>
+Single trailing underscore <code>var_</code>: For defining a variable that is already taken by a keyword, e.g. if you want to pass an argument <code>class</code> to a function, could instead pass <code>class_</code></p>
+<p>
+Double leading underscore <code>__var</code>: Causes Python to internally rename the attribute to avoid naming conflicts (&#34;name mangling&#34;). Double underscore is often pronounced &#34;dunder&#34;. These can be overridden, e.g. by defining a <code>__len__</code> to redefine how the length of an object is calculated.</p>
+<p>
+Double leading and trailing underscores <code>__var__</code>: Reserved for Python. No &#34;name mangling&#34; here with the two leading underscores.</p>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-4">
+<h4 id="headline-17">
+Difference Between <code>__str__</code> and <code>__repr__</code>
+</h4>
+<div id="outline-text-headline-17" class="outline-text-4">
+<p><code>__str__()</code> is called with <code>print()</code> or <code>str()</code>, and is supposed to be more simplistic. <code>__repr__</code> is called with <code>repr()</code>, and should provide enough information to construct the object again.</p>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-4">
+<h4 id="headline-18">
+Listing Attributes of an Object
+</h4>
+<div id="outline-text-headline-18" class="outline-text-4">
+<p><code>dir(object)</code></p>
+</div>
+</div>
+<div id="outline-container-headline-19" class="outline-4">
+<h4 id="headline-19">
+Colour Bar Same Height as Imshow Plot
+</h4>
+<div id="outline-text-headline-19" class="outline-text-4">
+<p>At top of file, call from <code>mpl_toolkits.axes_grid1 import make_axes_locatable</code></p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">divider <span style="color:#f92672">=</span> make_axes_locatable(ax)
+cax <span style="color:#f92672">=</span> divider<span style="color:#f92672">.</span>append_axes(<span style="color:#e6db74">&#34;right&#34;</span>, size<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5%&#34;</span>, pad<span style="color:#f92672">=</span><span style="color:#ae81ff">0.05</span>)
+
+plt<span style="color:#f92672">.</span>colorbar(im, cax<span style="color:#f92672">=</span>cax)</code></pre></div>
+</div>
+<p>
+If the above solution doesn&#39;t work because x and y axes have different dimensions:</p>
+<p>
+At top of file, call <code>from mpl_toolkits.axes_grid1.inset_locator import inset_axe</code></p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">axins <span style="color:#f92672">=</span> inset_axes(ax, width <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5%&#34;</span>, height <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;100%&#34;</span>, loc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;lower left&#39;</span>,
+                   bbox_to_anchor <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1.02</span>, <span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>), bbox_transform <span style="color:#f92672">=</span> ax<span style="color:#f92672">.</span>transAxes,
+                   borderpad <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+
+cb <span style="color:#f92672">=</span> fig<span style="color:#f92672">.</span>colorbar(im, cax <span style="color:#f92672">=</span> axins)</code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-20" class="outline-4">
+<h4 id="headline-20">
+Axis Ticks Don&#39;t Align with Pixels
+</h4>
+<div id="outline-text-headline-20" class="outline-text-4">
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">dx <span style="color:#f92672">=</span> xTickList[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> xTickList[<span style="color:#ae81ff">0</span>]
+dy <span style="color:#f92672">=</span> yTickList[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> yTickList[<span style="color:#ae81ff">0</span>]
+
+im <span style="color:#f92672">=</span> ax<span style="color:#f92672">.</span>imshow(array, extent<span style="color:#f92672">=</span>(np<span style="color:#f92672">.</span>min(xTickList) <span style="color:#f92672">-</span> dx<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>max(xTickList <span style="color:#f92672">+</span> dx<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>min(yTickList) <span style="color:#f92672">-</span> dy<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>max(yTickList) <span style="color:#f92672">+</span> dy<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>))</code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-21" class="outline-4">
+<h4 id="headline-21">
+Professional-Looking LaTeX Rendering in Matplotlib
+</h4>
+<div id="outline-text-headline-21" class="outline-text-4">
+<p><code>matplotlib.rcParams[&#39;text.usetex&#39;] = True</code> at top of file</p>
+</div>
+</div>
+<div id="outline-container-headline-22" class="outline-4">
+<h4 id="headline-22">
+Unit Testing
+</h4>
+<div id="outline-text-headline-22" class="outline-text-4">
+<div id="outline-container-headline-23" class="outline-5">
+<h5 id="headline-23">
+Pytest
+</h5>
+<div id="outline-text-headline-23" class="outline-text-5">
+<p>Generally, run e.g. <code>pytest --exitfirst --verbose --failed-first --cov=. --cov-report html</code></p>
+</div>
+</div>
+<div id="outline-container-headline-24" class="outline-5">
+<h5 id="headline-24">
+Unit Testing in GitHub
+</h5>
+<div id="outline-text-headline-24" class="outline-text-5">
+<p>A useful blog post about this is <a href="https://www.yellowduck.be/posts/running-pytest-as-a-github-action/">here</a>.</p>
+<p>
+Add the required modules to <code>requirements.txt</code> using <code>pip freeze &gt; requirements.txt</code>. It is best to do this whilst working in a virtual environment e.g.</p>
+<p>
+<code>python3.8 -m venv .venv</code>
+<code>source path/to/.venv/bin/activate</code></p>
+<p>
+Note that, after creating the virtual environement and installing the required modules including <code>pytest</code>, you need to run</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">deactivate
+source /path/to/.venv/bin/activate</code></pre></div>
+</div>
+<p>to ensure that the binary of <code>pytest</code> used is that in the virtual environment.</p>
+<p>
+A sample <code>.yaml</code> file to be placed in <code>.github/workflows</code> is</p>
+<div class="src src-yaml">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Tests</span>
+<span style="color:#f92672">on</span>: [<span style="color:#ae81ff">push]</span>
+
+<span style="color:#f92672">jobs</span>:
+  <span style="color:#f92672">build</span>:
+    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Run Python Tests</span>
+    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+
+    <span style="color:#f92672">steps</span>:
+
+    <span style="color:#75715e"># Chekout the source code</span>
+    - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
+
+    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Set up Python 3.8</span>
+      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/setup-python@v2</span>
+      <span style="color:#f92672">with</span>:
+        <span style="color:#f92672">python-version</span>: <span style="color:#ae81ff">3.8</span>
+
+    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Python dependencies</span>
+      <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span><span style="color:#e6db74">        python3 -m pip install --upgrade pip
+</span><span style="color:#e6db74">        pip3 install -r requirements.txt</span>        
+
+    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Test with pytest</span>
+      <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span><span style="color:#e6db74">        pytest --exitfirst --verbose --failed-first \
+</span><span style="color:#e6db74">        --cov=. --cov-report html</span>        </code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="../../js/jquery-3.6.0.min.js"></script>
+<script src="../../js/sidebar.js"></script>
+<script src="../../js/feather.min.js"></script>
+<script>feather.replace()</script></div><footer class="footer">
+    <div class="container text-center">
+        &copy; 2021 Ross Knapman
+        | Website built using <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Bootstrap</a>
+        with my <a href="https://github.com/RossKnapman/HugoTheme">own theme</a>.
+    </div>
+</footer>
+            <div id="overlay"></div>
+        </div>
+    </body>
+</html>

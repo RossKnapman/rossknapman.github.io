@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    
+    
+    <title>Ross Knapman | C&#43;&#43;</title>
+</head><body>
+        <div class="wrapper">
+<nav id="sidebar" class="navbar active d-lg-block bg-white">
+    <div id="close-sidebar">
+        <button type="button" class="header-button" data-feather="chevrons-left"></button>
+    </div>
+    <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+            
+            
+                <a href="../../" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    
+                    
+                    <i data-feather="home"></i> 
+                    
+                    
+                    Home
+                </a>
+            
+                <a href="../../posts/" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    
+                    
+                    <i data-feather="pen-tool"></i> 
+                    
+                    
+                    Blog
+                </a>
+            
+                <a href="../../tags/" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    
+                    
+                    <i data-feather="tag"></i> 
+                    
+                    
+                    Tags
+                </a>
+            
+                <a href="../../publications" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    
+                    
+                    <i data-feather="book"></i> 
+                    
+                    
+                    Publications
+                </a>
+            
+                <a href="../../notes/" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    
+                    
+                    <i data-feather="info"></i> 
+                    
+                    
+                    Notes
+                </a>
+            
+        </div>
+        <div class="social-media-buttons social-media-buttons-sidebar pt-5 text-center"><a href="../../download/CV.pdf"><i data-feather="file-text" class="header-button"></i></a>
+<a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
+<a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
+    </div>
+</nav><div id="content" class="container-fluid"><nav class="navbar navbar-light">
+    <div>
+    <div id="open-sidebar">
+        <button type="button" class="header-button" data-feather="menu"></button>
+    </div>
+    <div class="pl-4">
+        <a href="https://www.rossknapman.com"><h1 id="site-title">Ross Knapman</h1></a>
+    </div>
+    </div>
+    <div class="social-media-buttons social-media-buttons-header"><a href="../../download/CV.pdf"><i data-feather="file-text" class="header-button"></i></a>
+<a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
+<a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
+</nav>
+<h2 class="display-6">C&#43;&#43;</h2>
+
+<div id="outline-container-headline-1" class="outline-4">
+<h4 id="headline-1">
+Constants and Variables
+</h4>
+<div id="outline-text-headline-1" class="outline-text-4">
+<p>Can either define a constant like <code>const double pi = 3.14</code> or as a preprocessor director <code>#define PI 3.14</code>, where the latter replaces all appearances of PI in the source code with 3.14</p>
+<p>
+Declaration of variables: <code>int x = 0;</code> and <code>int x(0);</code> and <code>int x{0};</code> are all equivalent</p>
+<p>
+<code>x = x + 1;</code> and <code>x += 1 and ++x and x++</code> are all equivalent, but
+<code>y = ++x</code> will first add 1 to x, then assign this to y, whilst
+<code>y = x++</code> will first set y = x, then add 1 to x</p>
+<p>
+A condition can be expressed as
+<code>condition ? resultIfTrue : resultIfFalse</code></p>
+<p>
+<code>a = (b=3, b+2)</code> will assign the value 3 to b, then 5 to a</p>
+<p>
+There exist bitwise operators &amp;, |, ^ etc. (AND, OR, XOR)</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-4">
+<h4 id="headline-2">
+Casting
+</h4>
+<div id="outline-text-headline-2" class="outline-text-4">
+<div class="src src-c++">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">int</span> i;
+<span style="color:#66d9ef">float</span> f <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.97</span>;
+i <span style="color:#f92672">=</span> (<span style="color:#66d9ef">int</span>) f;</code></pre></div>
+</div>
+<p>will result in i = 3</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-4">
+<h4 id="headline-3">
+Streams
+</h4>
+<div id="outline-text-headline-3" class="outline-text-4">
+<p>Can end a line with <code>cout &lt;&lt; &#34;SomeString&#34; &lt;&lt; endl;</code>
+<code>cin &gt;&gt; a &gt;&gt; b;</code> is the same as
+<code>cin &gt;&gt; a;</code>
+<code>cin &gt;&gt; b;</code></p>
+<p>
+<code>Can also use getline(cin, varToAssign);</code></p>
+<p>
+<code>#include &lt;sstream&gt;</code> is useful for converting user input to e.g. int</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-4">
+<h4 id="headline-4">
+Flow Control
+</h4>
+<div id="outline-text-headline-4" class="outline-text-4">
+<p><code>do while</code> loop is like <code>while</code>, but the condition is evaluated after rather than before</p>
+<p>
+<code>switch</code> works like with Java</p>
+<div id="outline-container-headline-5" class="outline-5">
+<h5 id="headline-5">
+<code>break</code>, <code>continue</code>, <code>goto</code>
+</h5>
+<div id="outline-text-headline-5" class="outline-text-5">
+<ul>
+<li>
+<p><code>break</code> is obvious</p>
+</li>
+<li>
+<p><code>continue</code> skips the current and carries on with the loop</p>
+</li>
+<li>
+<p><code>goto</code> goes to another point in the code, which can be marked with e.g. <code>mylabel:</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-4">
+<h4 id="headline-6">
+Functions
+</h4>
+<div id="outline-text-headline-6" class="outline-text-4">
+<p>If <code>return 0;</code> is not included in <code>int main()</code>, it is added implicitly by the compiler</p>
+<p>
+Often more efficient (especially with e.g. large arrays) to pass arguments to functions using their pointer like <code>f(int&amp; a, int&amp; b)</code>, otherwise the function gets a copy (and modifications don&#39;t change the original)</p>
+<p>
+Can pass pointers to functions such that the original is not modified by passing them as e.g. <code>const string&amp; a</code></p>
+<p>
+Specifying a function as <code>inline</code> tells the compiler that the operation should be preferred to be carried out inline, rather than through actually defining the function</p>
+<p>
+Default values of functions work as with Python</p>
+<p>
+Different functions can have the same name if the parameters are different</p>
+<p>
+Instead of overloading functions, may be more useful to use a function template</p>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-4">
+<h4 id="headline-7">
+Scope
+</h4>
+<div id="outline-text-headline-7" class="outline-text-4">
+<p>Declare variables inside namespaces, then obtain them by e.g. <code>myNamespace::a</code></p>
+<p>
+Namespaces can be split, like</p>
+<div class="src src-c++">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">namespace</span> foo { <span style="color:#66d9ef">int</span> a; }
+<span style="color:#66d9ef">namespace</span> bar { <span style="color:#66d9ef">int</span> b; }
+<span style="color:#66d9ef">namespace</span> foo { <span style="color:#66d9ef">int</span> c; }</code></pre></div>
+</div>
+<p>
+Put <code>using myNamespace</code>, then can simply access the variables without needing the myNamespace:: prefix</p>
+<p>
+Variables in the global scope or a namespace (static storage) are defined for the duration of the program, whilst local variables are only defined as long as the code is in the block (automatic storage)</p>
+<p>
+In static storage, variables are initialised to zero by default; in automatic, they are undefined by default</p>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-4">
+<h4 id="headline-8">
+Arrays
+</h4>
+<div id="outline-text-headline-8" class="outline-text-4">
+<p>Can either use the language built-in array (e.g. <code>int myArray[3] = { 2, 3, 4 }</code> or the container library <code>array</code> (e.g. <code>array&lt;int,3&gt; myArray { 2, 3, 4 }</code>. The former has some issues such as easily decaying into pointers, the latter requires that the file have <code>#include &lt;array&gt;</code></p>
+<p>
+Can pass an array to a function by e.g. <code>void func(int arr[])</code>, or <code>void func(int arr[][3][4])</code> for multidimensional, then call <code>func(myArray)</code>, this will actually pass the memory address, not the block of memory, to the function</p>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-4">
+<h4 id="headline-9">
+Pointers
+</h4>
+<div id="outline-text-headline-9" class="outline-text-4">
+<p><code>&amp;</code> = &#34;address of&#34;, e.g. <code>foo = &amp;theVar</code> assigns the memory address to foo
+<code>*</code> = &#34;value pointed to by&#34;, e.g. <code>bar = *foo</code> assigns the value pointed to by foo to bar</p>
+<p>
+To declare a pointer, e.g. <code>int * a</code>, this <code>*</code> operator is different to the one above, they just have the same symbol</p>
+<p>
+Arrays can be treated like pointers, e.g.</p>
+<div class="src src-c++">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">int</span> arr [<span style="color:#ae81ff">20</span>];
+<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span> ptr;
+ptr <span style="color:#f92672">=</span> array;</code></pre></div>
+</div>
+<p>This could not happen the other way around, as an array has to always have the same number of memory blocks and type</p>
+<p>
+Pointers can have some strange arithmetic when adding to the memory address, probably not too important, see tutorial link</p>
+<p>
+Pointers can be made read-only by e.g. <code>const int * p = &amp;y</code></p>
+<p>
+Pointers to pointers are allowed, e.g. <code>char **c</code></p>
+<p>
+Void pointers can point to any data type but cannot be dereferenced (getting the value poined to and assigning it to a variable)</p>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-4">
+<h4 id="headline-10">
+Dynamic Memory
+</h4>
+<div id="outline-text-headline-10" class="outline-text-4">
+<p>This is when something is created with <code>new</code>, which means the memory is allocated during execution, rather than compiling</p>
+<p>
+<code>new type ...</code> returns a pointer
+<code>new type [5] ...</code> returns a pointer to the first element in the memory block</p>
+<p>
+Memory freed again by <code>delete ptr</code> (if allocated like first case above) or <code>delete[] ptr</code> (if allocated like second)</p>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-4">
+<h4 id="headline-11">
+Structures and Classes
+</h4>
+<div id="outline-text-headline-11" class="outline-text-4">
+<p>Can directly declare objects after structures, e.g.</p>
+<div class="src src-c++">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">product</span> {
+	<span style="color:#66d9ef">int</span> weight;
+	<span style="color:#66d9ef">double</span> price;
+} apple, banana, melon;</code></pre></div>
+</div>
+<p>
+To get member from memory address, use <code>ptr-&gt;member</code></p>
+<p>
+Classes are like structures, but also with:</p>
+<ul>
+<li>
+<p>Access specifiers, i.e. private (the default), protected, public</p>
+</li>
+<li>
+<p>Functions</p>
+</li>
+</ul>
+<p>Can either define functions of classes within the class, or as e.g.
+<code>void myClass::func() { ... }</code>
+The difference being that the compiler treats those within the class definition as an inline member (no difference in behaviour, only possibly in optimisation)</p>
+<p>
+A default constructor is defined by having no arguments</p>
+<p>
+Can define behaviour of operators for classes through e.g.
+<code>myClass myClass::operator+ (const myClass&amp; param) { ... }</code>
+Useful for e.g. if you define a vector, and want &#34;+&#34; to correspond to componentwise addition</p>
+<p>
+The keyword <code>this</code> exists, use within class definition</p>
+<p>
+Static variables are shared across all instances</p>
+<p>
+Can create class templates in the same way as with functions, with this, can also have template specialisation, i.e. special behaviour for one specific type</p>
+<p>
+As a shortcut, can initialise members with colon then list of initialisations, e.g.</p>
+<div class="src src-c++">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+	Circle (<span style="color:#66d9ef">double</span> r) <span style="color:#f92672">:</span> radius(r) {}</code></pre></div>
+</div>
+<p>
+If no constructor is defined, there is a default constructor, but this goes away as soon as one is defined</p>
+<p>
+The destructor is called when an instance is deleted
+If a class dynamically allocates memory, need to manually free it in the destructor</p>
+<p>
+Can use <code>friend</code> to define non-member functions that can access the private and protected members of a class</p>
+<p>
+Inheritance is through e.g.
+<code>class Rectangle : public Polygon { ... }</code>
+<code>public</code> here means that public members in Polygon are public in Rectangle</p>
+<p>
+Things that are not inherited:</p>
+<ul>
+<li>
+<p>Constructors and destructors, but these are called by derived members</p>
+</li>
+<li>
+<p>The operator <code>=</code></p>
+</li>
+<li>
+<p>Friends</p>
+</li>
+<li>
+<p>Private members</p>
+</li>
+</ul>
+<p>Abstract base classes contain at least one pure virtual function, e.g.
+<code>virtual int area() = 0</code>
+Pure means that it is set <code>=0</code>
+The advantage is virtual functions can be dereferenced when the pointer is to an object of the derived class
+Virtual functions are explained well at <a href="https://stackoverflow.com/questions/2391679/why-do-we-need-virtual-functions-in-c">https://stackoverflow.com/questions/2391679/why-do-we-need-virtual-functions-in-c</a></p>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-4">
+<h4 id="headline-12">
+Preprocessor Derivatives
+</h4>
+<div id="outline-text-headline-12" class="outline-text-4">
+<p><code>#define</code> identifier replacement replaces all appearances of identifier in the code with replacement, which lasts until <code>#undef</code>
+Special cases are e.g.
+<code>#define str(x) #x</code> which will replace e.g. <code>cout &lt;&lt; str(test)</code> with <code>cout &lt;&lt; &#34;test&#34;</code></p>
+<p>
+Reference variables are aliases, and are declared as e.g.
+<code>int i = 17;</code>
+<code>int&amp; r = i;</code></p>
+</div>
+</div>
+
+<script src="../../js/jquery-3.6.0.min.js"></script>
+<script src="../../js/sidebar.js"></script>
+<script src="../../js/feather.min.js"></script>
+<script>feather.replace()</script></div><footer class="footer">
+    <div class="container text-center">
+        &copy; 2021 Ross Knapman
+        | Website built using <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Bootstrap</a>
+        with my <a href="https://github.com/RossKnapman/HugoTheme">own theme</a>.
+    </div>
+</footer>
+            <div id="overlay"></div>
+        </div>
+    </body>
+</html>

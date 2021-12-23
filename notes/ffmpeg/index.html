@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     
     
-    <title>Ross Knapman | Setting up Inverse Search with Neovim, VimTeX and Zathura</title>
+    <title>Ross Knapman | FFmpeg</title>
 </head><body>
         <div class="wrapper">
 <nav id="sidebar" class="navbar active d-lg-block bg-white">
@@ -80,39 +80,58 @@
 <a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
 <a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
 </nav>
-<h1>Setting up Inverse Search with Neovim, VimTeX and Zathura</h1>
+<h2 class="display-6">FFmpeg</h2>
 
-
-<i data-feather="calendar"></i>
-<time datetime="2021-12-05">Dec 5, 2021</time>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/vim">vim</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/latex">latex</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/zathura">zathura</a>
-
-
-<br><br>
-<p>There are many reasons to write LaTeX in Vim instead of the more &ldquo;traditional&rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of <a href="https://github.com/sirver/UltiSnips">UltiSnips</a>, or you just want to make the most of Vim&rsquo;s many features. <a href="https://github.com/lervag/vimtex">VimTeX</a> is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and <a href="https://pwmt.org/projects/zathura/">Zathura</a> is a minimalist, highly customisable document viewer with Vim keybindings by default.</p>
-<p>Setting up inverse search allows you to jump to a point in your <code>.tex</code> file by Ctrl-clicking the corresponding place in your <code>.pdf</code> file, which can be especially useful for long documents.</p>
-<p>First, install <a href="https://github.com/mhinz/neovim-remote">neovim-remote</a> using <code>pip3 install neovim-remote</code>.</p>
-<p>You next need to set <code>NVIM_LISTEN_ADDRESS</code> to <code>/tmp/nvimsocket</code> by adding <code>export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket</code> to your <code>~/.bashrc</code>, <code>~/.zshrc</code>, or whatever the config file is for your specific shell. This allows, after having started a Neovim instance, the running of commands from other terminal windows, e.g. running <code>nvr --remote file1</code> would open a file <code>file1</code> in the Neovim instance. (I think Zathura takes care of setting <code>NVIM_LISTEN_ADDRESS</code> for you, but there is no harm in doing this anyway, plus it may be necessary for other PDF viewers, should you want to switch.)</p>
-<p>Now, ensure synctex is enabled. There are various ways to do this, but the way I do this is by adding <code>\synctex=1</code> to the preamble of the <code>.tex</code> document.</p>
-<p>Add the following to your <code>~/.config/nvim/init.vim</code>:</p>
-<pre><code>let g:vimtex_view_method = 'zathura'
-let g:latex_view_general_viewer = 'zathura'
-let g:vimtex_compiler_progname = 'nvr'
-</code></pre><p>Add the following to your <code>~/.config/zathura/zathurarc</code>:</p>
-<pre><code>set synctex true
-set synctex-editor-command &quot;nvr --remote-silent +%{line} %{input}&quot;
-</code></pre><p>After this, you should be able to Ctrl-Click on a part of the file in Zathura, and Neovim will go to that point in the <code>.tex</code> file.</p>
-<p><strong>Note that this will only work after a change has been made to the file, i.e. it won&rsquo;t work if you just open the file and try to reverse search; you need to make a change and save it first.</strong></p>
+<div id="outline-container-headline-1" class="outline-4">
+<h4 id="headline-1">
+Joining Videos Side-By-Side with FFmpeg
+</h4>
+<div id="outline-text-headline-1" class="outline-text-4">
+<p>This all also works for images</p>
+<p>
+Getting information about the video (resolution, fps etc.):
+<code>ffprobe file.mp4</code></p>
+<p>
+Basic usage (more work needed for sound):
+<code>ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4</code></p>
+<p>
+If the files are of different heights:
+<code>ffmpeg -i In.mp4 -vf scale=-1:&lt;height&gt; Out.mp4</code></p>
+<p>
+If the resulting width is not an even number:
+<code>ffmpeg -i Out.mp4 -vf scale=iw-1:ih Out.mp4</code></p>
+<p>
+OR</p>
+<p>
+change the -1 to -2 in the earlier command</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-4">
+<h4 id="headline-2">
+Converting to QuickTime-Playable Format
+</h4>
+<div id="outline-text-headline-2" class="outline-text-4">
+<p>~ffmpeg -i &lt;InFile&gt; -pix_fmt yuv420p &lt;OutFile&gt;</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-4">
+<h4 id="headline-3">
+Animation from Stills
+</h4>
+<div id="outline-text-headline-3" class="outline-text-4">
+<p><code>ffmpeg -framerate &lt;framerate&gt; -i /path/to/%04d.png -r &lt;framerate&gt; -pix_fmt yuv420p Out.mp4</code>
+Replace -4 with however many leading zeros. Can also use e.g. m%06d.png for e.g. m000123.png from MuMax3.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-4">
+<h4 id="headline-4">
+Speed Up Video
+</h4>
+<div id="outline-text-headline-4" class="outline-text-4">
+<p><code>ffmpeg -i &lt;Input&gt; -filter:v &#34;setpts=&lt;Factor&gt;*PTS&#34; &lt;OutName&gt;</code>
+where a smaller factor results in a higher speedup, i.e. Factor=0.1 results in the video being 0.1* the original length</p>
+</div>
+</div>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>

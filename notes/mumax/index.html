@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     
     
-    <title>Ross Knapman | Setting up Inverse Search with Neovim, VimTeX and Zathura</title>
+    <title>Ross Knapman | MuMax</title>
 </head><body>
         <div class="wrapper">
 <nav id="sidebar" class="navbar active d-lg-block bg-white">
@@ -80,39 +80,48 @@
 <a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
 <a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
 </nav>
-<h1>Setting up Inverse Search with Neovim, VimTeX and Zathura</h1>
+<h2 class="display-6">MuMax</h2>
 
-
-<i data-feather="calendar"></i>
-<time datetime="2021-12-05">Dec 5, 2021</time>
-
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/vim">vim</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/latex">latex</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/zathura">zathura</a>
-
-
-<br><br>
-<p>There are many reasons to write LaTeX in Vim instead of the more &ldquo;traditional&rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of <a href="https://github.com/sirver/UltiSnips">UltiSnips</a>, or you just want to make the most of Vim&rsquo;s many features. <a href="https://github.com/lervag/vimtex">VimTeX</a> is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and <a href="https://pwmt.org/projects/zathura/">Zathura</a> is a minimalist, highly customisable document viewer with Vim keybindings by default.</p>
-<p>Setting up inverse search allows you to jump to a point in your <code>.tex</code> file by Ctrl-clicking the corresponding place in your <code>.pdf</code> file, which can be especially useful for long documents.</p>
-<p>First, install <a href="https://github.com/mhinz/neovim-remote">neovim-remote</a> using <code>pip3 install neovim-remote</code>.</p>
-<p>You next need to set <code>NVIM_LISTEN_ADDRESS</code> to <code>/tmp/nvimsocket</code> by adding <code>export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket</code> to your <code>~/.bashrc</code>, <code>~/.zshrc</code>, or whatever the config file is for your specific shell. This allows, after having started a Neovim instance, the running of commands from other terminal windows, e.g. running <code>nvr --remote file1</code> would open a file <code>file1</code> in the Neovim instance. (I think Zathura takes care of setting <code>NVIM_LISTEN_ADDRESS</code> for you, but there is no harm in doing this anyway, plus it may be necessary for other PDF viewers, should you want to switch.)</p>
-<p>Now, ensure synctex is enabled. There are various ways to do this, but the way I do this is by adding <code>\synctex=1</code> to the preamble of the <code>.tex</code> document.</p>
-<p>Add the following to your <code>~/.config/nvim/init.vim</code>:</p>
-<pre><code>let g:vimtex_view_method = 'zathura'
-let g:latex_view_general_viewer = 'zathura'
-let g:vimtex_compiler_progname = 'nvr'
-</code></pre><p>Add the following to your <code>~/.config/zathura/zathurarc</code>:</p>
-<pre><code>set synctex true
-set synctex-editor-command &quot;nvr --remote-silent +%{line} %{input}&quot;
-</code></pre><p>After this, you should be able to Ctrl-Click on a part of the file in Zathura, and Neovim will go to that point in the <code>.tex</code> file.</p>
-<p><strong>Note that this will only work after a change has been made to the file, i.e. it won&rsquo;t work if you just open the file and try to reverse search; you need to make a change and save it first.</strong></p>
+<div id="outline-container-headline-1" class="outline-4">
+<h4 id="headline-1">
+Overlapping Regions
+</h4>
+<div id="outline-text-headline-1" class="outline-text-4">
+<p>Say we have the default region 0, some region 1, and some region 2 that is within region 1. If we set <code>Ku1 = 1e4</code>, then do <code>Ku1.SetRegion(1, 1e5)</code>, then region 2 will take 1e4. If, on the other hand, we do <code>Ku1.SetRegion(0, 1e4)</code> and <code>`Ku1.SetRegion(1e5)</code>, then region 2 will take 0. To get region 2 to match with region 1, we have to separately call <code>Ku1.SetRegion(1, 1e5)</code> and <code>Ku1.SetRegion(2, 1e5)</code>.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-4">
+<h4 id="headline-2">
+MuMax Movie from Snapshots
+</h4>
+<div id="outline-text-headline-2" class="outline-text-4">
+<p><code>ffmpeg -framerate 25 -i Data/m%06d.png -r 25 -pix_fmt yuv420p mag.mp4</code></p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-4">
+<h4 id="headline-3">
+Adding a New Energy Term
+</h4>
+<div id="outline-text-headline-3" class="outline-text-4">
+<ol>
+<li>
+<p>In the <code>cuda/</code> directory, add the required <code>.cu</code> file</p>
+</li>
+<li>
+<p>Run <code>make</code> to generate the wrapper and <code>.ptx</code> files (may need to specify some options if it does not work for some compute capabilities, see the comments in <code>cuda/Makefile</code>)</p>
+</li>
+<li>
+<p>Add the corresponding <code>.go</code> files, which calls the function defined in the automatically generated wrapper file (if this is not clear, look at existing examples, e.g. with <code>cuda/exchange.go</code>)</p>
+</li>
+<li>
+<p>Add a file in the <code>engine/</code> directory (typically this is not necessary, but <code>engine/exchange.go</code> should be modified accordingly)</p>
+</li>
+<li>
+<p><code>cd</code> to <code>cmd/mumax3</code> and run <code>go install</code>. The binary will be in <code>$GOPATH/bin</code></p>
+</li>
+</ol>
+</div>
+</div>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
