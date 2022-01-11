@@ -190,13 +190,21 @@ Screen Order for Dual Monitor
 <p>See which displays are connected using <code>xrandr</code>. Say you want display DP-2 to be the primary display, which is to the left of DP-0, run <code>xrandr --output DP-2 --primary --auto --left-of DP-0</code>. To save this configuration by running this on startup, put it in <code>/.xprofile</code>.</p>
 </div>
 </div>
+<div id="outline-container-headline-11" class="outline-4">
+<h4 id="headline-11">
+No Display After <code>pacman -Syu</code> with Nvidia Graphics
+</h4>
+<div id="outline-text-headline-11" class="outline-text-4">
+<p>This can happen if you installed the Nvidia driver from the Nvidia website rather than using Pacman, as described <a href="https://wiki.archlinux.org/title/NVIDIA#Installation">here</a>. Uninstall the existing Nvidia drivers using the the commande <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#runfile-uninstallation">here</a>, then reinstall using <code>pacman -S nvidia</code>, and <code>pacman -S nvidia-utils</code>.</p>
+</div>
+</div>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
 <script src="../../js/feather.min.js"></script>
 <script>feather.replace()</script></div><footer class="footer">
     <div class="container text-center">
-        &copy; 2021 Ross Knapman
+        &copy; 2022 Ross Knapman
         | Website built using <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Bootstrap</a>
         with my <a href="https://github.com/RossKnapman/HugoTheme">own theme</a>.
     </div>
