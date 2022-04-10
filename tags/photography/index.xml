@@ -13,9 +13,17 @@
       <pubDate>Sun, 26 Dec 2021 11:28:36 +0000</pubDate>
       
       <guid>https://www.rossknapman.com/posts/photography/</guid>
-      <description>As a teenager, I was quite into photography, especially after my parents got me a Canon EOS 600D for Christmas when I was 15. Although I don&amp;rsquo;t really do so much of this at the moment, here is a collection of photos that I have taken in various places around the world.
- Test
-                              </description>
+      <description>&lt;!-- &lt;style&gt;
+	h4 {
+		padding-top: 10px;
+	}
+	p {
+		width: 50%;
+		padding-top: 10pt;
+		padding-bottom: 20pt
+	}
+&lt;/style&gt; --&gt;
+&lt;p&gt;As a teenager, I was quite into photography, especially after my parents got me a Canon EOS 600D for Christmas when I was 15. Although I don&amp;rsquo;t really do so much of this at the moment, here is a collection of photos that I have taken in various places around the world.&lt;/p&gt;</description>
     </item>
     
   </channel>
