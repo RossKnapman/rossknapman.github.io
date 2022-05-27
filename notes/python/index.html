@@ -113,8 +113,8 @@ Matplotlib with X11 Forwarding
 <div id="outline-text-headline-4" class="outline-text-4">
 <p>Need to, at the top of the file, have:</p>
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> matplotlib
-matplotlib<span style="color:#f92672">.</span>use(<span style="color:#e6db74">&#39;tkagg&#39;</span>)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib
+</span></span><span style="display:flex;"><span>matplotlib<span style="color:#f92672">.</span>use(<span style="color:#e6db74">&#39;tkagg&#39;</span>)</span></span></code></pre></div>
 </div>
 <p>
 If this still gives an error, may need to replace <code>matplotlib.use(&#39;agg&#39;)</code> in imported modules (this is the case with discretisedfield)</p>
@@ -150,17 +150,17 @@ Mayavi with Jupyter Notebook
 <div id="outline-text-headline-8" class="outline-text-5">
 <p>At the very start,</p>
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> xvfbwrapper <span style="color:#f92672">import</span> Xvfb
-vdisplay <span style="color:#f92672">=</span> Xvfb(width<span style="color:#f92672">=</span><span style="color:#ae81ff">1920</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">1080</span>)
-vdisplay<span style="color:#f92672">.</span>start()</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> xvfbwrapper <span style="color:#f92672">import</span> Xvfb
+</span></span><span style="display:flex;"><span>vdisplay <span style="color:#f92672">=</span> Xvfb(width<span style="color:#f92672">=</span><span style="color:#ae81ff">1920</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">1080</span>)
+</span></span><span style="display:flex;"><span>vdisplay<span style="color:#f92672">.</span>start()</span></span></code></pre></div>
 </div>
 <p>
 Then e.g.</p>
 <div class="src src-text">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">from mayavi import mlab
-mlab.init_notebook()
-s = mlab.test_plot3d()
-s</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>from mayavi import mlab
+</span></span><span style="display:flex;"><span>mlab.init_notebook()
+</span></span><span style="display:flex;"><span>s = mlab.test_plot3d()
+</span></span><span style="display:flex;"><span>s</span></span></code></pre></div>
 </div>
 <p>
 That last part with just the <code>s</code> is important!</p>
@@ -203,17 +203,17 @@ Usage of Decorators
 </h5>
 <div id="outline-text-headline-13" class="outline-text-5">
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator</span>(f):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">new_function</span>():
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Extra Functionality&#34;</span>)
-        f()
-    <span style="color:#66d9ef">return</span> new_function
-
-<span style="color:#a6e22e">@decorator</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">initial_function</span>():
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Initial Functionality&#34;</span>)
-
-initial_function()</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decorator</span>(f):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">new_function</span>():
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Extra Functionality&#34;</span>)
+</span></span><span style="display:flex;"><span>        f()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> new_function
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@decorator</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">initial_function</span>():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Initial Functionality&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>initial_function()</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -274,21 +274,21 @@ Colour Bar Same Height as Imshow Plot
 <div id="outline-text-headline-19" class="outline-text-4">
 <p>At top of file, call from <code>mpl_toolkits.axes_grid1 import make_axes_locatable</code></p>
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">divider <span style="color:#f92672">=</span> make_axes_locatable(ax)
-cax <span style="color:#f92672">=</span> divider<span style="color:#f92672">.</span>append_axes(<span style="color:#e6db74">&#34;right&#34;</span>, size<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5%&#34;</span>, pad<span style="color:#f92672">=</span><span style="color:#ae81ff">0.05</span>)
-
-plt<span style="color:#f92672">.</span>colorbar(im, cax<span style="color:#f92672">=</span>cax)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>divider <span style="color:#f92672">=</span> make_axes_locatable(ax)
+</span></span><span style="display:flex;"><span>cax <span style="color:#f92672">=</span> divider<span style="color:#f92672">.</span>append_axes(<span style="color:#e6db74">&#34;right&#34;</span>, size<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5%&#34;</span>, pad<span style="color:#f92672">=</span><span style="color:#ae81ff">0.05</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>colorbar(im, cax<span style="color:#f92672">=</span>cax)</span></span></code></pre></div>
 </div>
 <p>
 If the above solution doesn&#39;t work because x and y axes have different dimensions:</p>
 <p>
 At top of file, call <code>from mpl_toolkits.axes_grid1.inset_locator import inset_axe</code></p>
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">axins <span style="color:#f92672">=</span> inset_axes(ax, width <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5%&#34;</span>, height <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;100%&#34;</span>, loc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;lower left&#39;</span>,
-                   bbox_to_anchor <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1.02</span>, <span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>), bbox_transform <span style="color:#f92672">=</span> ax<span style="color:#f92672">.</span>transAxes,
-                   borderpad <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
-
-cb <span style="color:#f92672">=</span> fig<span style="color:#f92672">.</span>colorbar(im, cax <span style="color:#f92672">=</span> axins)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>axins <span style="color:#f92672">=</span> inset_axes(ax, width <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5%&#34;</span>, height <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;100%&#34;</span>, loc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;lower left&#39;</span>,
+</span></span><span style="display:flex;"><span>                   bbox_to_anchor <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1.02</span>, <span style="color:#ae81ff">0.</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>), bbox_transform <span style="color:#f92672">=</span> ax<span style="color:#f92672">.</span>transAxes,
+</span></span><span style="display:flex;"><span>                   borderpad <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cb <span style="color:#f92672">=</span> fig<span style="color:#f92672">.</span>colorbar(im, cax <span style="color:#f92672">=</span> axins)</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -298,10 +298,10 @@ Axis Ticks Don&#39;t Align with Pixels
 </h4>
 <div id="outline-text-headline-20" class="outline-text-4">
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">dx <span style="color:#f92672">=</span> xTickList[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> xTickList[<span style="color:#ae81ff">0</span>]
-dy <span style="color:#f92672">=</span> yTickList[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> yTickList[<span style="color:#ae81ff">0</span>]
-
-im <span style="color:#f92672">=</span> ax<span style="color:#f92672">.</span>imshow(array, extent<span style="color:#f92672">=</span>(np<span style="color:#f92672">.</span>min(xTickList) <span style="color:#f92672">-</span> dx<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>max(xTickList <span style="color:#f92672">+</span> dx<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>min(yTickList) <span style="color:#f92672">-</span> dy<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>max(yTickList) <span style="color:#f92672">+</span> dy<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>))</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dx <span style="color:#f92672">=</span> xTickList[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> xTickList[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>dy <span style="color:#f92672">=</span> yTickList[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> yTickList[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>im <span style="color:#f92672">=</span> ax<span style="color:#f92672">.</span>imshow(array, extent<span style="color:#f92672">=</span>(np<span style="color:#f92672">.</span>min(xTickList) <span style="color:#f92672">-</span> dx<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>max(xTickList <span style="color:#f92672">+</span> dx<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>min(yTickList) <span style="color:#f92672">-</span> dy<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>max(yTickList) <span style="color:#f92672">+</span> dy<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>))</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -340,40 +340,40 @@ Add the required modules to <code>requirements.txt</code> using <code>pip freeze
 <p>
 Note that, after creating the virtual environement and installing the required modules including <code>pytest</code>, you need to run</p>
 <div class="src src-sh">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">deactivate
-source /path/to/.venv/bin/activate</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>deactivate
+</span></span><span style="display:flex;"><span>source /path/to/.venv/bin/activate</span></span></code></pre></div>
 </div>
 <p>to ensure that the binary of <code>pytest</code> used is that in the virtual environment.</p>
 <p>
 A sample <code>.yaml</code> file to be placed in <code>.github/workflows</code> is</p>
 <div class="src src-yaml">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Tests</span>
-<span style="color:#f92672">on</span>: [<span style="color:#ae81ff">push]</span>
-
-<span style="color:#f92672">jobs</span>:
-  <span style="color:#f92672">build</span>:
-    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Run Python Tests</span>
-    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
-
-    <span style="color:#f92672">steps</span>:
-
-    <span style="color:#75715e"># Chekout the source code</span>
-    - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
-
-    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Set up Python 3.8</span>
-      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/setup-python@v2</span>
-      <span style="color:#f92672">with</span>:
-        <span style="color:#f92672">python-version</span>: <span style="color:#ae81ff">3.8</span>
-
-    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Python dependencies</span>
-      <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span><span style="color:#e6db74">        python3 -m pip install --upgrade pip
-</span><span style="color:#e6db74">        pip3 install -r requirements.txt</span>        
-
-    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Test with pytest</span>
-      <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
-</span><span style="color:#e6db74">        pytest --exitfirst --verbose --failed-first \
-</span><span style="color:#e6db74">        --cov=. --cov-report html</span>        </code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Tests</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>: [<span style="color:#ae81ff">push]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">build</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Run Python Tests</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Chekout the source code</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Set up Python 3.8</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/setup-python@v2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">python-version</span>: <span style="color:#ae81ff">3.8</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Python dependencies</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        python3 -m pip install --upgrade pip
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        pip3 install -r requirements.txt</span>        
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Test with pytest</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        pytest --exitfirst --verbose --failed-first \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        --cov=. --cov-report html</span>        </span></span></code></pre></div>
 </div>
 </div>
 </div>

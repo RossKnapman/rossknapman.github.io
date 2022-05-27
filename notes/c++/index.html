@@ -109,9 +109,9 @@ Casting
 </h4>
 <div id="outline-text-headline-2" class="outline-text-4">
 <div class="src src-c++">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">int</span> i;
-<span style="color:#66d9ef">float</span> f <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.97</span>;
-i <span style="color:#f92672">=</span> (<span style="color:#66d9ef">int</span>) f;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> i;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">float</span> f <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.97</span>;
+</span></span><span style="display:flex;"><span>i <span style="color:#f92672">=</span> (<span style="color:#66d9ef">int</span>) f;</span></span></code></pre></div>
 </div>
 <p>will result in i = 3</p>
 </div>
@@ -145,15 +145,9 @@ Flow Control
 </h5>
 <div id="outline-text-headline-5" class="outline-text-5">
 <ul>
-<li>
-<p><code>break</code> is obvious</p>
-</li>
-<li>
-<p><code>continue</code> skips the current and carries on with the loop</p>
-</li>
-<li>
-<p><code>goto</code> goes to another point in the code, which can be marked with e.g. <code>mylabel:</code></p>
-</li>
+<li><code>break</code> is obvious</li>
+<li><code>continue</code> skips the current and carries on with the loop</li>
+<li><code>goto</code> goes to another point in the code, which can be marked with e.g. <code>mylabel:</code></li>
 </ul>
 </div>
 </div>
@@ -188,9 +182,9 @@ Scope
 <p>
 Namespaces can be split, like</p>
 <div class="src src-c++">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">namespace</span> foo { <span style="color:#66d9ef">int</span> a; }
-<span style="color:#66d9ef">namespace</span> bar { <span style="color:#66d9ef">int</span> b; }
-<span style="color:#66d9ef">namespace</span> foo { <span style="color:#66d9ef">int</span> c; }</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> foo { <span style="color:#66d9ef">int</span> a; }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> bar { <span style="color:#66d9ef">int</span> b; }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> foo { <span style="color:#66d9ef">int</span> c; }</span></span></code></pre></div>
 </div>
 <p>
 Put <code>using myNamespace</code>, then can simply access the variables without needing the myNamespace:: prefix</p>
@@ -222,9 +216,9 @@ To declare a pointer, e.g. <code>int * a</code>, this <code>*</code> operator is
 <p>
 Arrays can be treated like pointers, e.g.</p>
 <div class="src src-c++">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">int</span> arr [<span style="color:#ae81ff">20</span>];
-<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span> ptr;
-ptr <span style="color:#f92672">=</span> array;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> arr [<span style="color:#ae81ff">20</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span> ptr;
+</span></span><span style="display:flex;"><span>ptr <span style="color:#f92672">=</span> array;</span></span></code></pre></div>
 </div>
 <p>This could not happen the other way around, as an array has to always have the same number of memory blocks and type</p>
 <p>
@@ -257,22 +251,18 @@ Structures and Classes
 <div id="outline-text-headline-11" class="outline-text-4">
 <p>Can directly declare objects after structures, e.g.</p>
 <div class="src src-c++">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">product</span> {
-	<span style="color:#66d9ef">int</span> weight;
-	<span style="color:#66d9ef">double</span> price;
-} apple, banana, melon;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">product</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> weight;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> price;
+</span></span><span style="display:flex;"><span>} apple, banana, melon;</span></span></code></pre></div>
 </div>
 <p>
 To get member from memory address, use <code>ptr-&gt;member</code></p>
 <p>
 Classes are like structures, but also with:</p>
 <ul>
-<li>
-<p>Access specifiers, i.e. private (the default), protected, public</p>
-</li>
-<li>
-<p>Functions</p>
-</li>
+<li>Access specifiers, i.e. private (the default), protected, public</li>
+<li>Functions</li>
 </ul>
 <p>Can either define functions of classes within the class, or as e.g.
 <code>void myClass::func() { ... }</code>
@@ -292,8 +282,8 @@ Can create class templates in the same way as with functions, with this, can als
 <p>
 As a shortcut, can initialise members with colon then list of initialisations, e.g.</p>
 <div class="src src-c++">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-	Circle (<span style="color:#66d9ef">double</span> r) <span style="color:#f92672">:</span> radius(r) {}</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	Circle (<span style="color:#66d9ef">double</span> r) <span style="color:#f92672">:</span> radius(r) {}</span></span></code></pre></div>
 </div>
 <p>
 If no constructor is defined, there is a default constructor, but this goes away as soon as one is defined</p>
@@ -309,18 +299,10 @@ Inheritance is through e.g.
 <p>
 Things that are not inherited:</p>
 <ul>
-<li>
-<p>Constructors and destructors, but these are called by derived members</p>
-</li>
-<li>
-<p>The operator <code>=</code></p>
-</li>
-<li>
-<p>Friends</p>
-</li>
-<li>
-<p>Private members</p>
-</li>
+<li>Constructors and destructors, but these are called by derived members</li>
+<li>The operator <code>=</code></li>
+<li>Friends</li>
+<li>Private members</li>
 </ul>
 <p>Abstract base classes contain at least one pure virtual function, e.g.
 <code>virtual int area() = 0</code>

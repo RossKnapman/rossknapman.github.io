@@ -140,15 +140,15 @@ Ensure <code>synctex</code> is enabled, e.g. by putting <code>\synctex=1</code> 
 <p>
 In <code>\~/.config/nvim/init.vim</code>, put</p>
 <div class="src src-text">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">let g:vimtex_view_method = &#39;zathura&#39;
-let g:latex_view_general_viewer = &#39;zathura&#39;
-let g:vimtex_compiler_progname = &#39;nvr&#39;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>let g:vimtex_view_method = &#39;zathura&#39;
+</span></span><span style="display:flex;"><span>let g:latex_view_general_viewer = &#39;zathura&#39;
+</span></span><span style="display:flex;"><span>let g:vimtex_compiler_progname = &#39;nvr&#39;</span></span></code></pre></div>
 </div>
 <p>
 In <code>\~/.config/zathura/zathurarc</code>, put</p>
 <div class="src src-text">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">set synctex true
-set synctex-editor-command &#34;nvr --remote-silent +%{line} %{input}&#34;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>set synctex true
+</span></span><span style="display:flex;"><span>set synctex-editor-command &#34;nvr --remote-silent +%{line} %{input}&#34;</span></span></code></pre></div>
 </div>
 <p>
 Then you should be able to Ctrl-Click on a part of the file in Zathura, and Neovim will go to that point in the <code>.tex</code> file. Note that this will only work after a change has been made to the file, i.e. it won&#39;t work if you just open the file and try to reverse search; you need to make a change and save it first.</p>

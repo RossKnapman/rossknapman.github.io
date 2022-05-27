@@ -135,57 +135,25 @@ The three-point lighting setup described at <a href="https://www.youtube.com/wat
 <p>
 The above video also shows how to make the background not emit light onto the objects in the scene. This is:</p>
 <ul>
-<li>
-<p>Open up shader editor</p>
-</li>
-<li>
-<p>Change from Object to World mode</p>
-</li>
-<li>
-<p>Duplicate the Background node and make it black</p>
-</li>
-<li>
-<p>Add a Shader -&gt; Mix Shader and drag it to the &#34;Noodle&#34; between the Background and World Output nodes</p>
-</li>
-<li>
-<p>Connect the duplicated background node to the Mix Shader&#39;s unfilled port</p>
-</li>
-<li>
-<p>Add an Input -&gt; Light Path node</p>
-</li>
-<li>
-<p>Plug Is Camera Ray into Fac of Mix Shader</p>
-</li>
-<li>
-<p>Switch connections around if necessary</p>
-</li>
+<li>Open up shader editor</li>
+<li>Change from Object to World mode</li>
+<li>Duplicate the Background node and make it black</li>
+<li>Add a Shader -&gt; Mix Shader and drag it to the &#34;Noodle&#34; between the Background and World Output nodes</li>
+<li>Connect the duplicated background node to the Mix Shader&#39;s unfilled port</li>
+<li>Add an Input -&gt; Light Path node</li>
+<li>Plug Is Camera Ray into Fac of Mix Shader</li>
+<li>Switch connections around if necessary</li>
 </ul>
 <p>Probably better way:</p>
 <ul>
-<li>
-<p>In the Render tab, under Film, tick Transparent</p>
-</li>
-<li>
-<p>In the Render tab, under Colour Management, change View Transform to Standard</p>
-</li>
-<li>
-<p>Go to Compositing tab</p>
-</li>
-<li>
-<p>Add Alpha Over node between those already there by default (Render Layers, Composite)</p>
-</li>
-<li>
-<p>Connect Image output to bottom Image input</p>
-</li>
-<li>
-<p>Change Premul to 1</p>
-</li>
-<li>
-<p>Make sure first image is colour white</p>
-</li>
-<li>
-<p>Make the background colour black</p>
-</li>
+<li>In the Render tab, under Film, tick Transparent</li>
+<li>In the Render tab, under Colour Management, change View Transform to Standard</li>
+<li>Go to Compositing tab</li>
+<li>Add Alpha Over node between those already there by default (Render Layers, Composite)</li>
+<li>Connect Image output to bottom Image input</li>
+<li>Change Premul to 1</li>
+<li>Make sure first image is colour white</li>
+<li>Make the background colour black</li>
 </ul>
 <p>To control the camera’s perspective from the camera view, press N, click the „View“ tab that comes up, then tick „Lock Camera to View“.</p>
 <p>
@@ -232,8 +200,8 @@ Using External Modules with Blender&#39;s Python
 <div id="outline-text-headline-3" class="outline-text-5">
 <p>First, you need to find Blender&#39;s Python binary by running</p>
 <div class="src src-python">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> sys
-<span style="color:#f92672">&gt;&gt;&gt;</span> sys<span style="color:#f92672">.</span>exex_prefix</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> sys<span style="color:#f92672">.</span>exex_prefix</span></span></code></pre></div>
 </div>
 <p>Then <code>cd</code> into the folder containing this binary (you will need to further <code>cd</code> to <code>bin</code>). Bootstrap <code>pip</code> using e.g. <code>./python3.7m -m ensurepip</code> (modifying for the correct Python version as necessary). Then run <code>./python3.7m -m pip install &lt;module name&gt;</code>.</p>
 </div>
@@ -246,17 +214,11 @@ Making Things Disappear at a Certain Time
 </h4>
 <div id="outline-text-headline-4" class="outline-text-4">
 <ul>
-<li>
-<p>Put a mix shader between the actual shader and the output, and also add a transparency shader</p>
-</li>
-<li>
-<p>At the time you want to switch, set Fac to 1 hover mouse over Fac, press i to add a keyframe</p>
-</li>
-<li>
-<p>In the frame before, repeat the process, setting Fac to 0</p>
-<p>
-Note that, in Cycles, you can just set Alpha=0 to make it invisble (does not work with Eevee).</p>
-</li>
+<li>Put a mix shader between the actual shader and the output, and also add a transparency shader</li>
+<li>At the time you want to switch, set Fac to 1 hover mouse over Fac, press i to add a keyframe</li>
+<li>In the frame before, repeat the process, setting Fac to 0
+
+Note that, in Cycles, you can just set Alpha=0 to make it invisble (does not work with Eevee).</li>
 </ul>
 </div>
 </div>
@@ -266,39 +228,17 @@ Mug to Doughnut Morph
 </h4>
 <div id="outline-text-headline-5" class="outline-text-4">
 <ul>
-<li>
-<p>Insert a torus and make it quite thick (like a doughnut)</p>
-</li>
-<li>
-<p>Insert another torus and make it thinner</p>
-</li>
-<li>
-<p>Insert a cylinder to make the shape of the cup</p>
-</li>
-<li>
-<p>Go to front view, wireframe mode, edit, and select the top vertices</p>
-</li>
-<li>
-<p>Press E and enter, then S, and something like 0.8 and enter</p>
-</li>
-<li>
-<p>Make loop cuts in the mug so that there are lots of vertices</p>
-</li>
-<li>
-<p>Add a shrinkwrap modifer to get the mug to morph to the doughnut, and save this as a shape key</p>
-</li>
-<li>
-<p>Create another shape key through extruding the extra top surface from before, so that the cup can morph between being filled in and not</p>
-</li>
-<li>
-<p>Animate them the Animation workspace and pressing the buttons to the sides of the shape key value</p>
-</li>
-<li>
-<p>You can correct any irregularities in the final surface by applying the same material to the final model and getting the original doughnut and that morphed from the mug to exactly overlap, but such that one disappears and the other appears in the same frame, as described above</p>
-</li>
-<li>
-<p>If the overlapping meshes leads to black marks, move one of the meshes by a very small amount not noticeable in the final render between frames, until the black marks are gone</p>
-</li>
+<li>Insert a torus and make it quite thick (like a doughnut)</li>
+<li>Insert another torus and make it thinner</li>
+<li>Insert a cylinder to make the shape of the cup</li>
+<li>Go to front view, wireframe mode, edit, and select the top vertices</li>
+<li>Press E and enter, then S, and something like 0.8 and enter</li>
+<li>Make loop cuts in the mug so that there are lots of vertices</li>
+<li>Add a shrinkwrap modifer to get the mug to morph to the doughnut, and save this as a shape key</li>
+<li>Create another shape key through extruding the extra top surface from before, so that the cup can morph between being filled in and not</li>
+<li>Animate them the Animation workspace and pressing the buttons to the sides of the shape key value</li>
+<li>You can correct any irregularities in the final surface by applying the same material to the final model and getting the original doughnut and that morphed from the mug to exactly overlap, but such that one disappears and the other appears in the same frame, as described above</li>
+<li>If the overlapping meshes leads to black marks, move one of the meshes by a very small amount not noticeable in the final render between frames, until the black marks are gone</li>
 </ul>
 </div>
 </div>
@@ -313,21 +253,11 @@ Colouring an Object Based on Height on the Object
 \end{equation}
 You can combine <code>Math</code> nodes in such a way as to create this formula, the output of which you can input to <code>Fac</code>. To the z-position of the object as a <code>Value</code> node, create a <code>Value</code> node,</p>
 <ol>
-<li>
-<p>Right-click on the value, and choose <code>Add Driver</code>.</p>
-</li>
-<li>
-<p>If the <code>Expression</code> is anything other than <code>var</code> (e.g. <code>var + 0.5</code>), change it to just be <code>var</code>.</p>
-</li>
-<li>
-<p>Change the type from that which has the symbol (x) to <code>Single Property</code> (with the DNA symbol).</p>
-</li>
-<li>
-<p>Change <code>Prop</code> to the name of the object.</p>
-</li>
-<li>
-<p>Change <code>Path</code> to <code>location[2]</code>.</p>
-</li>
+<li>Right-click on the value, and choose <code>Add Driver</code>.</li>
+<li>If the <code>Expression</code> is anything other than <code>var</code> (e.g. <code>var + 0.5</code>), change it to just be <code>var</code>.</li>
+<li>Change the type from that which has the symbol (x) to <code>Single Property</code> (with the DNA symbol).</li>
+<li>Change <code>Prop</code> to the name of the object.</li>
+<li>Change <code>Path</code> to <code>location[2]</code>.</li>
 </ol>
 <p>For the z-extent instead, replace <code>location[2]</code> above with <code>dimensions[2]</code>.</p>
 <p>

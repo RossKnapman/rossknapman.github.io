@@ -183,7 +183,7 @@
       <guid>https://www.rossknapman.com/notes/reveal.js/</guid>
       <description>R Markdown  You can write presentations in R Markdown and export them to Reveal.js. Good tutorials for this are here and here, and the documentation with all options is here. To export the slides, you can run echo &amp;#34;require(rmarkdown); render(&amp;#39;FILENAME.md&amp;#39;, output_file=&amp;#39;index.html&amp;#39;)&amp;#34; | R --vanilla.
  To have a double column layout, you can use a stylesheet like
-.container{ display: flex; } .col{ flex: 1; }  then, in the R Markdown file,</description>
+.container{  display: flex; } .col{  flex: 1; }  then, in the R Markdown file,</description>
     </item>
     
     <item>
@@ -238,7 +238,7 @@ git config --add oh-my-zsh.hide-status 1 git config --add oh-my-zsh.hide-dirty 1
       <guid>https://www.rossknapman.com/notes/website/</guid>
       <description>Public Repo as Submodule  For each submodule commit, the project updates its reference to the submodule to maintain its connection to the correct commit. Therefore, commit both the main project and the public repo, then run git push -u origin main --recurse-submodules=on-demand. See e.g. https://www.adamormsby.com/posts/000/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/
   Jekyll  Does Not Run on Big Sur  A combination of these resources seemed to fix it:
-  https://ernestojeh.com/fix-jekyll-on-macos-big-sur</description>
+ https://ernestojeh.com/fix-jekyll-on-macos-big-sur slycke&amp;#39;s answer at https://github.</description>
     </item>
     
     <item>

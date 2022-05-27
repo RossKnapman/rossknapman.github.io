@@ -104,21 +104,11 @@ Adding a New Energy Term
 </h4>
 <div id="outline-text-headline-3" class="outline-text-4">
 <ol>
-<li>
-<p>In the <code>cuda/</code> directory, add the required <code>.cu</code> file</p>
-</li>
-<li>
-<p>Run <code>make</code> to generate the wrapper and <code>.ptx</code> files (may need to specify some options if it does not work for some compute capabilities, see the comments in <code>cuda/Makefile</code>)</p>
-</li>
-<li>
-<p>Add the corresponding <code>.go</code> files, which calls the function defined in the automatically generated wrapper file (if this is not clear, look at existing examples, e.g. with <code>cuda/exchange.go</code>)</p>
-</li>
-<li>
-<p>Add a file in the <code>engine/</code> directory (typically this is not necessary, but <code>engine/exchange.go</code> should be modified accordingly)</p>
-</li>
-<li>
-<p><code>cd</code> to <code>cmd/mumax3</code> and run <code>go install</code>. The binary will be in <code>$GOPATH/bin</code></p>
-</li>
+<li>In the <code>cuda/</code> directory, add the required <code>.cu</code> file</li>
+<li>Run <code>make</code> to generate the wrapper and <code>.ptx</code> files (may need to specify some options if it does not work for some compute capabilities, see the comments in <code>cuda/Makefile</code>)</li>
+<li>Add the corresponding <code>.go</code> files, which calls the function defined in the automatically generated wrapper file (if this is not clear, look at existing examples, e.g. with <code>cuda/exchange.go</code>)</li>
+<li>Add a file in the <code>engine/</code> directory (typically this is not necessary, but <code>engine/exchange.go</code> should be modified accordingly)</li>
+<li><code>cd</code> to <code>cmd/mumax3</code> and run <code>go install</code>. The binary will be in <code>$GOPATH/bin</code></li>
 </ol>
 </div>
 </div>

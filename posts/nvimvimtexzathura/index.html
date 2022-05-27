@@ -105,12 +105,12 @@
 <p>You next need to set <code>NVIM_LISTEN_ADDRESS</code> to <code>/tmp/nvimsocket</code> by adding <code>export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket</code> to your <code>~/.bashrc</code>, <code>~/.zshrc</code>, or whatever the config file is for your specific shell. This allows, after having started a Neovim instance, the running of commands from other terminal windows, e.g. running <code>nvr --remote file1</code> would open a file <code>file1</code> in the Neovim instance. (I think Zathura takes care of setting <code>NVIM_LISTEN_ADDRESS</code> for you, but there is no harm in doing this anyway, plus it may be necessary for other PDF viewers, should you want to switch.)</p>
 <p>Now, ensure synctex is enabled. There are various ways to do this, but the way I do this is by adding <code>\synctex=1</code> to the preamble of the <code>.tex</code> document.</p>
 <p>Add the following to your <code>~/.config/nvim/init.vim</code>:</p>
-<pre><code>let g:vimtex_view_method = 'zathura'
-let g:latex_view_general_viewer = 'zathura'
-let g:vimtex_compiler_progname = 'nvr'
+<pre tabindex="0"><code>let g:vimtex_view_method = &#39;zathura&#39;
+let g:latex_view_general_viewer = &#39;zathura&#39;
+let g:vimtex_compiler_progname = &#39;nvr&#39;
 </code></pre><p>Add the following to your <code>~/.config/zathura/zathurarc</code>:</p>
-<pre><code>set synctex true
-set synctex-editor-command &quot;nvr --remote-silent +%{line} %{input}&quot;
+<pre tabindex="0"><code>set synctex true
+set synctex-editor-command &#34;nvr --remote-silent +%{line} %{input}&#34;
 </code></pre><p>After this, you should be able to Ctrl-Click on a part of the file in Zathura, and Neovim will go to that point in the <code>.tex</code> file.</p>
 <p><strong>Note that this will only work after a change has been made to the file, i.e. it won&rsquo;t work if you just open the file and try to reverse search; you need to make a change and save it first.</strong></p>
 
