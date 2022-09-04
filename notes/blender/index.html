@@ -280,10 +280,29 @@ Make Object Follow Equation of Motion
 <p>Can do this through the GUI using a <a href="https://docs.blender.org/manual/en/latest/animation/drivers/introduction.html">driver</a>. Say you want to have the motion along the x-axis given by sin(frame). Then type into the Location X field: <code>#sin(frame)</code>. More complex motion can by scripted in Python, which is described in the documentation.</p>
 </div>
 </div>
+<div id="outline-container-headline-9" class="outline-4">
+<h4 id="headline-9">
+Coloured Disk
+</h4>
+<div id="outline-text-headline-9" class="outline-text-4">
+<p>E.g. with my figures where I have the skyrmion and the arrows are sitting on a coloured disk.</p>
+<ol>
+<li>Create a circle.</li>
+<li>Go to Edit Mode, make sure all the vertices of the circle are selected, press E to extrude, and S then 0 to extrude to the centre.</li>
+<li>Using the Loop Cut tool, make many loop cuts between the edge and centre of the disk (can specify the number using the pop-up in the lower-right).</li>
+<li>If you scaled the circle you originally created, you need to apply the transform (Ctrl+A and choose &#34;Scale&#34;), in order to update the mesh coordinates.</li>
+<li>Run a script to colour the vertices.</li>
+<li>Open up the disk&#39;s material in the nodes editor and add an Attribute node, set the name to &#34;Col&#34;, and connect &#34;Color&#34; to &#34;Base Color&#34; of the Principled BSDF node.</li>
+</ol>
+</div>
+</div>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
 <script src="../../js/feather.min.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <script>feather.replace()</script></div><footer class="footer">
     <div class="container text-center">
         &copy; 2022 Ross Knapman

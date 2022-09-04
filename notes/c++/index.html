@@ -325,10 +325,28 @@ Reference variables are aliases, and are declared as e.g.
 <code>int&amp; r = i;</code></p>
 </div>
 </div>
+<div id="outline-container-headline-13" class="outline-4">
+<h4 id="headline-13">
+CMake
+</h4>
+<div id="outline-text-headline-13" class="outline-text-4">
+<div id="outline-container-headline-14" class="outline-5">
+<h5 id="headline-14">
+Uses Wrong Compiler
+</h5>
+<div id="outline-text-headline-14" class="outline-text-5">
+<p>Set <code>$CC</code> and <code>$CXX</code> environment variables, or pass as options: <code>cmake -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_C_COMPILER=/usr/bin/gcc ..</code> (assuming you are in the <code>build</code> folder).</p>
+</div>
+</div>
+</div>
+</div>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
 <script src="../../js/feather.min.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <script>feather.replace()</script></div><footer class="footer">
     <div class="container text-center">
         &copy; 2022 Ross Knapman

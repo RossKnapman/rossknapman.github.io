@@ -121,6 +121,8 @@ Animation from Stills
 <div id="outline-text-headline-3" class="outline-text-4">
 <p><code>ffmpeg -framerate &lt;framerate&gt; -i /path/to/%04d.png -r &lt;framerate&gt; -pix_fmt yuv420p Out.mp4</code>
 Replace -4 with however many leading zeros. Can also use e.g. m%06d.png for e.g. m000123.png from MuMax3.</p>
+<p>
+If you want to specify a background colour (e.g. white), add e.g. <code>-filter_complex &#34;[0]split=2[bg][fg];[bg]drawbox=c=white@1:replace=1:t=fill[bg];                                                                                       [bg][fg]overlay=format=auto&#34;</code></p>
 </div>
 </div>
 <div id="outline-container-headline-4" class="outline-4">
@@ -136,6 +138,9 @@ where a smaller factor results in a higher speedup, i.e. Factor=0.1 results in t
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
 <script src="../../js/feather.min.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <script>feather.replace()</script></div><footer class="footer">
     <div class="container text-center">
         &copy; 2022 Ross Knapman

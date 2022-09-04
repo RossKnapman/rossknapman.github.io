@@ -102,10 +102,23 @@ ZSH is Being Slow
 <p>Need single <code>=</code>, and need variables e.g. <code>$directory</code> in quotes</p>
 </div>
 </div>
+<div id="outline-container-headline-3" class="outline-4">
+<h4 id="headline-3">
+I Only Want the Filename and Not the Entire Path
+</h4>
+<div id="outline-text-headline-3" class="outline-text-4">
+<p>If you only want, say <code>video.mp4</code> rather than e.g. <code>/home/myname/long/complicated/path/to/video.mp4</code>, use the <code>basename</code> command.</p>
+<p>
+Similarly, to remove the extension, use the parameter expansion <code>${filename%.*}</code> (note that the only dot in the file name can then only be the .extension).</p>
+</div>
+</div>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
 <script src="../../js/feather.min.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <script>feather.replace()</script></div><footer class="footer">
     <div class="container text-center">
         &copy; 2022 Ross Knapman

@@ -188,10 +188,21 @@ No Display After <code>pacman -Syu</code> with Nvidia Graphics
 <p>This can happen if you installed the Nvidia driver from the Nvidia website rather than using Pacman, as described <a href="https://wiki.archlinux.org/title/NVIDIA#Installation">here</a>. Uninstall the existing Nvidia drivers using the the commande <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#runfile-uninstallation">here</a>, then reinstall using <code>pacman -S nvidia</code>, and <code>pacman -S nvidia-utils</code>.</p>
 </div>
 </div>
+<div id="outline-container-headline-12" class="outline-4">
+<h4 id="headline-12">
+gtk-WARNING **: cannot open display
+</h4>
+<div id="outline-text-headline-12" class="outline-text-4">
+<p>Install an X server. E.g. on macOS, <code>brew install xquartz</code> (then reboot).</p>
+</div>
+</div>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
 <script src="../../js/feather.min.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <script>feather.replace()</script></div><footer class="footer">
     <div class="container text-center">
         &copy; 2022 Ross Knapman

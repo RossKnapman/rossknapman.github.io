@@ -59,11 +59,11 @@
     </item>
     
     <item>
-      <title>Downloading YouTube Videos that are Private</title>
-      <link>https://www.rossknapman.com/notes/downloadingyoutubevideosthatareprivate/</link>
+      <title>Downloading YouTube Videos that are Private (but Accessible to You When Logged In)</title>
+      <link>https://www.rossknapman.com/notes/downloadingyoutubevideosthatareprivatebutaccessibletoyouwhenloggedin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rossknapman.com/notes/downloadingyoutubevideosthatareprivate/</guid>
+      <guid>https://www.rossknapman.com/notes/downloadingyoutubevideosthatareprivatebutaccessibletoyouwhenloggedin/</guid>
       <description>https://daveparrish.net/posts/2018-06-22-How-to-download-private-YouTube-videos-with-youtube-dl.html</description>
     </item>
     
@@ -202,9 +202,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.rossknapman.com/notes/shell/</guid>
-      <description> ZSH is Being Slow  Run
+      <description>ZSH is Being Slow  Run
 git config --add oh-my-zsh.hide-status 1 git config --add oh-my-zsh.hide-dirty 1    if [ ... == … ]; then Not Working with Posix Shell  Need single =, and need variables e.g. $directory in quotes
-  </description>
+  I Only Want the Filename and Not the Entire Path  If you only want, say video.mp4 rather than e.g. /home/myname/long/complicated/path/to/video.mp4, use the basename command.</description>
     </item>
     
     <item>
@@ -213,10 +213,7 @@ git config --add oh-my-zsh.hide-status 1 git config --add oh-my-zsh.hide-dirty 1
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.rossknapman.com/notes/socksproxyforaccessingpapersfromuninetwork/</guid>
-      <description>This is an alternative to using a VPN, which is nice in that it only routes your traffic from a single browser window (and works if the university VPN is down, which happens sometimes).
- ssh -D 8080 ws2
- Then open Firefox, go to Network Settings -&amp;gt; Manual proxy configuration, enter SOCKS Host 127.0.0.1, Port 8080
- ws2 is what I have called twist-ws02 in my SSH config.</description>
+      <description>This is an alternative to using a VPN, which is nice in that it only routes your traffic from a single browser window (and works if the university VPN is down, which happens sometimes). ssh -D 8080 ws2 Then open Firefox, go to Network Settings -&amp;gt; Manual proxy configuration, enter SOCKS Host 127.0.0.1, Port 8080 ws2 is what I have called twist-ws02 in my SSH config. I find that a better solution is to define an alias in .</description>
     </item>
     
     <item>
@@ -228,6 +225,16 @@ git config --add oh-my-zsh.hide-status 1 git config --add oh-my-zsh.hide-dirty 1
       <description>Find and Replace  Search and replace globally: :%s/foo/bar/g
  :s is the command to substitute, % means to apply within the current file, rather than just the current line, g means global, i.e. it replaces all instances, not just the first
  To find and replace regex whilst keeping part of a pattern, e.g. if you want to replace #1 #2 #3 by #1 \, #2 \, #3 \n, then need to run</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Code</title>
+      <link>https://www.rossknapman.com/notes/visualstudiocode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.rossknapman.com/notes/visualstudiocode/</guid>
+      <description> Ctrl + W Not Working with Vim Mode  In Keyboard Shortcuts, disable the Vim shortcut that corresponds to this.
+  </description>
     </item>
     
     <item>

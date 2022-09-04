@@ -82,23 +82,14 @@
 </nav>
 <h2 class="display-6">SOCKS Proxy for Accessing Papers from Uni Network</h2>
 <p>
-This is an alternative to using a VPN, which is nice in that it only routes your traffic from a single browser window (and works if the university VPN is down, which happens sometimes).</p>
-<p>
-<code>ssh -D 8080 ws2</code></p>
-<p>
-Then open Firefox, go to Network Settings -&gt; Manual proxy configuration, enter SOCKS Host 127.0.0.1, Port 8080</p>
-<p>
-<code>ws2</code> is what I have called twist-ws02 in my SSH config.</p>
-<p>
-I find that a better solution is to define an alias in <code>.zshrc</code> (or equivalent for whichever shell you use) like</p>
-<p>
-<code>alias jguprox=&#39;ssh -D 8080 -fN ws2 &amp;&amp; /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \ --user-data-dir=&#34;$HOME/proxy-profile&#34; \ --proxy-server=&#34;socks5://localhost:8080&#34; &amp;&amp; pkill ssh&#39;</code></p>
-<p>
-Then I can simply run <code>jguprox</code> and it opens up a Chrome window.</p>
+This is an alternative to using a VPN, which is nice in that it only routes your traffic from a single browser window (and works if the university VPN is down, which happens sometimes). <code>ssh -D 8080 ws2</code> Then open Firefox, go to Network Settings -&gt; Manual proxy configuration, enter SOCKS Host 127.0.0.1, Port 8080 <code>ws2</code> is what I have called twist-ws02 in my SSH config. I find that a better solution is to define an alias in <code>.zshrc</code> (or equivalent for whichever shell you use) like <code>alias jguprox=&#39;ssh -D 8080 -fN ws2 &amp;&amp; /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \ --user-data-dir=&#34;$HOME/proxy-profile&#34; \ --proxy-server=&#34;socks5://localhost:8080&#34; &amp;&amp; pkill ssh&#39;</code> Then I can simply run <code>jguprox</code> and it opens up a Chrome window.</p>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
 <script src="../../js/feather.min.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <script>feather.replace()</script></div><footer class="footer">
     <div class="container text-center">
         &copy; 2022 Ross Knapman

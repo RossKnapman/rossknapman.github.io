@@ -334,16 +334,17 @@ Unit Testing in GitHub
 <p>A useful blog post about this is <a href="https://www.yellowduck.be/posts/running-pytest-as-a-github-action/">here</a>.</p>
 <p>
 Add the required modules to <code>requirements.txt</code> using <code>pip freeze &gt; requirements.txt</code>. It is best to do this whilst working in a virtual environment e.g.</p>
-<p>
-<code>python3.8 -m venv .venv</code>
-<code>source path/to/.venv/bin/activate</code></p>
+<div class="src src-python">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>python3<span style="color:#ae81ff">.8</span> <span style="color:#f92672">-</span>m venv <span style="color:#f92672">.</span>venv
+</span></span><span style="display:flex;"><span>source path<span style="color:#f92672">/</span>to<span style="color:#f92672">/.</span>venv<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>activate</span></span></code></pre></div>
+</div>
 <p>
 Note that, after creating the virtual environement and installing the required modules including <code>pytest</code>, you need to run</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>deactivate
 </span></span><span style="display:flex;"><span>source /path/to/.venv/bin/activate</span></span></code></pre></div>
 </div>
-<p>to ensure that the binary of <code>pytest</code> used is that in the virtual environment.</p>
+<p>to ensure that the binary of <code>pytest</code> used is that in the virtual environment. May also need to ~pip install pytest-cov for coverage reports.</p>
 <p>
 A sample <code>.yaml</code> file to be placed in <code>.github/workflows</code> is</p>
 <div class="src src-yaml">
@@ -383,6 +384,9 @@ A sample <code>.yaml</code> file to be placed in <code>.github/workflows</code> 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
 <script src="../../js/feather.min.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <script>feather.replace()</script></div><footer class="footer">
     <div class="container text-center">
         &copy; 2022 Ross Knapman

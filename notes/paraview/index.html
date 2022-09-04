@@ -183,10 +183,29 @@ If the last few points are not written to the file, forgot to add <code>f.close(
 If there are holes, it&#39;s because ParaView is random-sampling.</p>
 </div>
 </div>
+<div id="outline-container-headline-9" class="outline-4">
+<h4 id="headline-9">
+Loading Data as Time Series
+</h4>
+<div id="outline-text-headline-9" class="outline-text-4">
+<p>ParaView will often detect when data is supposed to be a time series, and will take care of it automatically. Sometimes, however, the file names are not in such a manner that ParaView can detect this. Therefore, you could write a script to batch-rename the files. For example, the files might be named 0.00.vts, 0.05,vts, …, 1.55.vts. ParaView will be clever enough to group together 0.*.vts and 1.*.vts as a time series, but not them both together. Thefore, a simple shell script may be needed:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>n<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i in <span style="color:#66d9ef">$(</span>seq 0.00, 0.05, 1.55<span style="color:#66d9ef">)</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    mv $i.vts m$n.vts
+</span></span><span style="display:flex;"><span>    n<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span>n+1<span style="color:#66d9ef">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span></span></span></code></pre></div>
+</div>
+<p>Then the files will be e.g. m0.vts, m1.vts, …</p>
+</div>
+</div>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
 <script src="../../js/feather.min.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <script>feather.replace()</script></div><footer class="footer">
     <div class="container text-center">
         &copy; 2022 Ross Knapman

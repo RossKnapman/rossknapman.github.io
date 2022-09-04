@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>language learning on Ross Knapman</title>
+    <link>https://www.rossknapman.com/tags/language-learning/</link>
+    <description>Recent content in language learning on Ross Knapman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 21 Jul 2022 08:06:37 -0700</lastBuildDate><atom:link href="https://www.rossknapman.com/tags/language-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>German Music</title>
+      <link>https://www.rossknapman.com/posts/germanmusic/</link>
+      <pubDate>Thu, 21 Jul 2022 08:06:37 -0700</pubDate>
+      
+      <guid>https://www.rossknapman.com/posts/germanmusic/</guid>
+      <description>A description
+Metal </description>
+    </item>
+    
+  </channel>
+</rss>
