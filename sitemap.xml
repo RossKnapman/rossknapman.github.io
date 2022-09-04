@@ -2,46 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.rossknapman.com/posts/usa2022/</loc>
-    <lastmod>2022-09-04T10:07:38+02:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/posts/</loc>
-    <lastmod>2022-09-04T10:07:38+02:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/</loc>
-    <lastmod>2022-09-04T10:07:38+02:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/tags/</loc>
-    <lastmod>2022-09-04T10:07:38+02:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/tags/travel/</loc>
-    <lastmod>2022-09-04T10:07:38+02:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/tags/german/</loc>
-    <lastmod>2022-07-21T08:06:37-07:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/posts/germanmusic/</loc>
-    <lastmod>2022-07-21T08:06:37-07:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/tags/language-learning/</loc>
-    <lastmod>2022-07-21T08:06:37-07:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/tags/music/</loc>
-    <lastmod>2022-07-21T08:06:37-07:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/posts/orgsimulationsync/</loc>
-    <lastmod>2022-06-02T13:15:46+02:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/tags/org-mode/</loc>
-    <lastmod>2022-06-02T13:15:46+02:00</lastmod>
-  </url><url>
-    <loc>https://www.rossknapman.com/tags/productivity/</loc>
-    <lastmod>2022-06-02T13:15:46+02:00</lastmod>
-  </url><url>
     <loc>https://www.rossknapman.com/tags/photography/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.rossknapman.com/posts/photography/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rossknapman.com/posts/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rossknapman.com/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rossknapman.com/tags/</loc>
+    <lastmod>2022-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rossknapman.com/tags/travel/</loc>
     <lastmod>2022-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.rossknapman.com/tags/latex/</loc>
