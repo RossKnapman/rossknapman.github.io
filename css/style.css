@@ -124,3 +124,24 @@ body {
     background-color: #fbfbfb;
     align-items: center;
 }
+
+img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure p {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+    }
+    figure p {
+        width: 100%;
+    }
+}
