@@ -108,6 +108,7 @@
 
 
 <br><br>
+<p><strong>Note 06.01.2023: With the <a href="https://github.com/lervag/vimtex/releases/tag/v2.8">release of VimTex 2.8</a>, you probably don&rsquo;t need to do this any more. See <code>:help vimtex-synctex-inverse-search</code>.</strong></p>
 <p>There are many reasons to write LaTeX in Vim instead of the more &ldquo;traditional&rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of <a href="https://github.com/sirver/UltiSnips">UltiSnips</a>, or you just want to make the most of Vim&rsquo;s many features. <a href="https://github.com/lervag/vimtex">VimTeX</a> is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and <a href="https://pwmt.org/projects/zathura/">Zathura</a> is a minimalist, highly customisable document viewer with Vim keybindings by default.</p>
 <p>Setting up inverse search allows you to jump to a point in your <code>.tex</code> file by Ctrl-clicking the corresponding place in your <code>.pdf</code> file, which can be especially useful for long documents.</p>
 <p>First, install <a href="https://github.com/mhinz/neovim-remote">neovim-remote</a> using <code>pip3 install neovim-remote</code>.</p>
@@ -131,7 +132,7 @@ set synctex-editor-command &#34;nvr --remote-silent +%{line} %{input}&#34;
 </script>
 <script>feather.replace()</script></div><footer class="footer">
     <div class="container text-center">
-        &copy; 2022 Ross Knapman
+        &copy; 2023 Ross Knapman
         | Website built using <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Bootstrap</a>
         with my <a href="https://github.com/RossKnapman/HugoTheme">own theme</a>.
     </div>
