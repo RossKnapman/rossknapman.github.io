@@ -132,6 +132,8 @@ Animation from Stills
 Replace -4 with however many leading zeros. Can also use e.g. m%06d.png for e.g. m000123.png from MuMax3.</p>
 <p>
 If you want to specify a background colour (e.g. white), add e.g. <code>-filter_complex &#34;[0]split=2[bg][fg];[bg]drawbox=c=white@1:replace=1:t=fill[bg];                                                                                       [bg][fg]overlay=format=auto&#34;</code></p>
+<p>
+If this does not work (e.g. gives segmentation fault), can use ImageMagick to convert the images. E.g. make a directory called &#34;WhiteBG&#34;, then <code>for i in *.png; do echo $i; convert $i -background white -alpha remove WhiteBG/$i; done</code> (where of course the <code>echo $i</code> is just to track the progress).</p>
 </div>
 </div>
 <div id="outline-container-headline-4" class="outline-4">

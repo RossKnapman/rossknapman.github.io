@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     
     
-    <title>Ross Knapman | MuMax</title>
+    <title>Ross Knapman | POV-Ray</title>
 </head><body>
         <div class="wrapper">
 <nav id="sidebar" class="navbar active d-lg-block bg-white">
@@ -89,45 +89,22 @@
 <a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
 <a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
 </nav>
-<h2 class="display-6">MuMax</h2>
+<h2 class="display-6">POV-Ray</h2>
 
 <div id="outline-container-headline-1" class="outline-4">
 <h4 id="headline-1">
-Overlapping Regions
+Debugging
 </h4>
 <div id="outline-text-headline-1" class="outline-text-4">
-<p>Say we have the default region 0, some region 1, and some region 2 that is within region 1. If we set <code>Ku1 = 1e4</code>, then do <code>Ku1.SetRegion(1, 1e5)</code>, then region 2 will take 1e4. If, on the other hand, we do <code>Ku1.SetRegion(0, 1e4)</code> and <code>`Ku1.SetRegion(1e5)</code>, then region 2 will take 0. To get region 2 to match with region 1, we have to separately call <code>Ku1.SetRegion(1, 1e5)</code> and <code>Ku1.SetRegion(2, 1e5)</code>.</p>
+<p>You need to end strings with &#34;\n&#34;, otherwise they won&#39;t be printed. Also, if it does not output to console, output to a file by setting <code>Debug_File=True</code> in the render options <code>.ini</code> file (or equivalent command line argument).</p>
 </div>
 </div>
 <div id="outline-container-headline-2" class="outline-4">
 <h4 id="headline-2">
-MuMax Movie from Snapshots
+sphere_sweep Not Going Through All Points
 </h4>
 <div id="outline-text-headline-2" class="outline-text-4">
-<p><code>ffmpeg -framerate 25 -i Data/m%06d.png -r 25 -pix_fmt yuv420p mag.mp4</code></p>
-</div>
-</div>
-<div id="outline-container-headline-3" class="outline-4">
-<h4 id="headline-3">
-Adding a New Energy Term
-</h4>
-<div id="outline-text-headline-3" class="outline-text-4">
-<ol>
-<li>In the <code>cuda/</code> directory, add the required <code>.cu</code> file</li>
-<li>Run <code>make</code> to generate the wrapper and <code>.ptx</code> files (may need to specify some options if it does not work for some compute capabilities, see the comments in <code>cuda/Makefile</code>)</li>
-<li>Add the corresponding <code>.go</code> files, which calls the function defined in the automatically generated wrapper file (if this is not clear, look at existing examples, e.g. with <code>cuda/exchange.go</code>)</li>
-<li>Add a file in the <code>engine/</code> directory (typically this is not necessary, but <code>engine/exchange.go</code> should be modified accordingly)</li>
-<li>Add the new field to the effective field in <code>engine/effectivefield.go</code> (assuming it wasn&#39;t just a simple modification of e.g. the exchange field).</li>
-<li><code>cd</code> to <code>cmd/mumax3</code> and run <code>go install</code>. The binary will be in <code>$GOPATH/bin</code></li>
-</ol>
-</div>
-</div>
-<div id="outline-container-headline-4" class="outline-4">
-<h4 id="headline-4">
-Energy in Output Table is Zero
-</h4>
-<div id="outline-text-headline-4" class="outline-text-4">
-<p>Probably forgot to set the saturation magnetization Msat.</p>
+<p>Try a different spline type, e.g. linear_spline</p>
 </div>
 </div>
 

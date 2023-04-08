@@ -99,6 +99,20 @@
 <p>In Keyboard Shortcuts, disable the Vim shortcut that corresponds to this.</p>
 </div>
 </div>
+<div id="outline-container-headline-2" class="outline-4">
+<h4 id="headline-2">
+Terminal Using Wrong Python Version
+</h4>
+<div id="outline-text-headline-2" class="outline-text-4">
+<p>For example, the default terminal program uses Anaconda, but the terminal in VS Code uses <code>/usr/bin/python3</code>. Add
+```
+&#34;terminal.integrated.env.osx&#34;: {
+        &#34;PATH&#34;: &#34;&#34;
+    }
+```
+to <code>settings.json</code>. See <a href="https://stackoverflow.com/questions/54582361/vscode-terminal-shows-incorrect-python-version-and-path-launching-terminal-from">here</a>.</p>
+</div>
+</div>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>
