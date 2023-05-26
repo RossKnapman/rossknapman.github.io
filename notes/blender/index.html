@@ -256,11 +256,11 @@ Mug to Doughnut Morph
 Colouring an Object Based on Height on the Object
 </h4>
 <div id="outline-text-headline-6" class="outline-text-4">
-<p>Say you want to colour an object using a <code>ColourRamp</code> node, which takes in the normalised value of the height on the object as the <code>Fac</code> input, which has a value 0 at the bottom of the object and 1 at the top. If you draw out a diagram, you find that the normalised value is
+<p>Say you want to colour an object using a <code>ColourRamp</code> node, which takes in the normalised value of the height on the object as the <code>Fac</code> input, which has a value 0 at the bottom of the object and 1 at the top. If you draw out a diagram, you find that the normalised value is</p>
 \begin{equation}
 \frac{z-\text{position of point}}{\text{Vertical extent of object}} - \frac{x-\text{position of centre of object}}{\text{Vertical extent of object}} + \frac{1}{2}
 \end{equation}
-You can combine <code>Math</code> nodes in such a way as to create this formula, the output of which you can input to <code>Fac</code>. To the z-position of the object as a <code>Value</code> node, create a <code>Value</code> node,</p>
+<p>You can combine <code>Math</code> nodes in such a way as to create this formula, the output of which you can input to <code>Fac</code>. To the z-position of the object as a <code>Value</code> node, create a <code>Value</code> node,</p>
 <ol>
 <li>Right-click on the value, and choose <code>Add Driver</code>.</li>
 <li>If the <code>Expression</code> is anything other than <code>var</code> (e.g. <code>var + 0.5</code>), change it to just be <code>var</code>.</li>
