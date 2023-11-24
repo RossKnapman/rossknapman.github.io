@@ -6,16 +6,15 @@
     <description>Recent content in latex on Ross Knapman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 05 Dec 2021 16:49:56 +0100</lastBuildDate><atom:link href="https://www.rossknapman.com/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Dec 2021 16:49:56 +0100</lastBuildDate>
+    <atom:link href="https://www.rossknapman.com/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up Inverse Search with Neovim, VimTeX and Zathura</title>
       <link>https://www.rossknapman.com/posts/nvimvimtexzathura/</link>
       <pubDate>Sun, 05 Dec 2021 16:49:56 +0100</pubDate>
-      
       <guid>https://www.rossknapman.com/posts/nvimvimtexzathura/</guid>
       <description>Note 06.01.2023: With the release of VimTex 2.8, you probably don&amp;rsquo;t need to do this any more. See :help vimtex-synctex-inverse-search.
 There are many reasons to write LaTeX in Vim instead of the more &amp;ldquo;traditional&amp;rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of UltiSnips, or you just want to make the most of Vim&amp;rsquo;s many features. VimTeX is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and Zathura is a minimalist, highly customisable document viewer with Vim keybindings by default.</description>
     </item>
-    
   </channel>
 </rss>

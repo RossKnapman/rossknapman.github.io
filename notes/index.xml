@@ -5,91 +5,75 @@
     <link>https://www.rossknapman.com/notes/</link>
     <description>Recent content in Notes on Ross Knapman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="https://www.rossknapman.com/notes/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language>
+    <atom:link href="https://www.rossknapman.com/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apache Web Server</title>
       <link>https://www.rossknapman.com/notes/apachewebserver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/apachewebserver/</guid>
       <description>Don&amp;#39;t See Website When Visiting Domain Obviously many things could be wrong here, but a problem that I had which took me ages to find the solution was simply that I hadn&amp;#39;t configured the firewall (e.g. ufw allow 80/tcp, ufw allow 443/tcp).</description>
     </item>
-    
     <item>
       <title>Blender</title>
       <link>https://www.rossknapman.com/notes/blender/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/blender/</guid>
       <description>Basics The tilde key (at least when I was using an external keyboard) gives you a perspective menu.
 Shift+S gives you the cursor menu, allowing you to place the 3D cursor back at the origin, for example (this is where new objects spawn).
 Shift+RMB moves the 3D cursor
 You can create new panes by clicking and dragging the corners to drag out new panes, and merge them together in a similar way.</description>
     </item>
-    
     <item>
       <title>C&#43;&#43;</title>
       <link>https://www.rossknapman.com/notes/c&#43;&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/c&#43;&#43;/</guid>
       <description>Constants and Variables Can either define a constant like const double pi = 3.14 or as a preprocessor director #define PI 3.14, where the latter replaces all appearances of PI in the source code with 3.14
 Declaration of variables: int x = 0; and int x(0); and int x{0}; are all equivalent
 x = x + 1; and x += 1 and ++x and x++ are all equivalent, but y = ++x will first add 1 to x, then assign this to y, whilst y = x++ will first set y = x, then add 1 to x</description>
     </item>
-    
     <item>
       <title>Copying iTerm2 Profile Between Computers</title>
       <link>https://www.rossknapman.com/notes/copyingiterm2profilebetweencomputers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/copyingiterm2profilebetweencomputers/</guid>
       <description>On the first computer, go to Preferences. Tick &amp;#34;Load preferences from a custom folder or URL&amp;#34;. Browse to where the folder should be saved (e.g. in Dropbox) - this should be its own folder (so create a folder called iTerm or something). On the second computer. Load this folder, then restart iTerm. Then the &amp;#34;Load preferences…&amp;#34; box can be unticked.
 For Alt+Left etc., go to Preferences, Profiles, Keys, and load the preset &amp;#34;Natural Text Editing&amp;#34;</description>
     </item>
-    
     <item>
       <title>Cron</title>
       <link>https://www.rossknapman.com/notes/cron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/cron/</guid>
       <description>Cron Job Not Working with Rsync Grant cron full disk access by following the guide at https://blog.bejarano.io/fixing-cron-jobs-in-mojave/</description>
     </item>
-    
     <item>
       <title>Data Recovery</title>
       <link>https://www.rossknapman.com/notes/datarecovery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/datarecovery/</guid>
       <description>If partition table corrupted, can repair the partition table on macOS using https://www.macintosh-data-recovery.com/blog/repair-mac-external-hard-drive/?fbclid=IwAR3Yp4IDoitVQSEvgiuXgm9Edl-N8rnO4s2BjbK8GtzzzaIw9OrUkH_6cZk</description>
     </item>
-    
     <item>
       <title>Downloading YouTube Videos that are Private (but Accessible to You When Logged In)</title>
       <link>https://www.rossknapman.com/notes/downloadingyoutubevideosthatareprivatebutaccessibletoyouwhenloggedin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/downloadingyoutubevideosthatareprivatebutaccessibletoyouwhenloggedin/</guid>
       <description>https://daveparrish.net/posts/2018-06-22-How-to-download-private-YouTube-videos-with-youtube-dl.html</description>
     </item>
-    
     <item>
       <title>Emacs</title>
       <link>https://www.rossknapman.com/notes/emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/emacs/</guid>
       <description>Org Mode Plain Text To show plain text without formatting, use font-lock-mode
 Checking for Link Rot Use org-lint</description>
     </item>
-    
     <item>
       <title>FFmpeg</title>
       <link>https://www.rossknapman.com/notes/ffmpeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/ffmpeg/</guid>
       <description>Joining Videos Side-By-Side with FFmpeg This all also works for images
 Getting information about the video (resolution, fps etc.): ffprobe file.mp4
@@ -99,189 +83,152 @@ If the resulting width is not an even number: ffmpeg -i Out.mp4 -vf scale=iw-1:i
 OR
 change the -1 to -2 in the earlier command</description>
     </item>
-    
     <item>
       <title>GNU/Linux</title>
       <link>https://www.rossknapman.com/notes/gnulinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/gnulinux/</guid>
       <description>Determining IP Address on Ubuntu ip addr show
 Finding out If a Command Is Available to Run on Ubuntu compgen -c | grep &amp;lt;COMMAND&amp;gt;
 Disk Usage In current directory: du -h . --max-depth=1 on Ubuntu or du -hd1. on macOS
 Installing GNU/Linux on an Apple Computer On Mac, no screen when booting installation: highlight the boot option, press e, add radeon.modeset=0 to the menu that pops up, then press enter.</description>
     </item>
-    
     <item>
       <title>GUI Applications with X11 Forwarding</title>
       <link>https://www.rossknapman.com/notes/guiapplicationswithx11forwarding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/guiapplicationswithx11forwarding/</guid>
       <description>If things are not opening, try running echo $DISPLAY on the server. If nothing comes up, a possible fix on macOS is to install XQuartz, run launchctl load -w /Library/LaunchAgents/org.macosforge.xquartz.startx.plist on the Mac, then restart the computer. For debugging, try using ssh -v -X &amp;lt;e.g. WS2&amp;gt;.
 To open the Seafile GUI remotely (annoyingly, the GUI allows adjusting some settings that the CLI does not have), run seafile-applet.</description>
     </item>
-    
     <item>
       <title>Home Network</title>
       <link>https://www.rossknapman.com/notes/homenetwork/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/homenetwork/</guid>
       <description>Running Pi-Hole and NextCloud on Same Raspberry Pi Change Pi-Hole&amp;#39;s default port to something else by editing /etc/lighttpd/lighttpd.conf. Then you can still access the Pi-Hole admin panel at &amp;lt;IP address&amp;gt;:&amp;lt;port&amp;gt;/admin</description>
     </item>
-    
     <item>
       <title>Inkscape</title>
       <link>https://www.rossknapman.com/notes/inkscape/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/inkscape/</guid>
       <description>I can’t find the text align button, to align the text within the text box It shows up when you’re typing the text itself, then goes away, contrary to with older versions.
 Extensions are not shown in the Extensions menu First, make sure you’re looking in the right place. For example, Tex Text was hidden under the Text menu, and when I searched for it, I typed it as one word, so it didn’t show up.</description>
     </item>
-    
     <item>
       <title>Mac Mail</title>
       <link>https://www.rossknapman.com/notes/macmail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/macmail/</guid>
       <description>Setting Up Sending Email Via Command Line https://www.justinsilver.com/technology/osx/send-emails-mac-os-x-postfix-gmail-relay/ Generally search &amp;#34;mac mail postfix&amp;#34;.</description>
     </item>
-    
     <item>
       <title>MuMax</title>
       <link>https://www.rossknapman.com/notes/mumax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/mumax/</guid>
       <description>Overlapping Regions Say we have the default region 0, some region 1, and some region 2 that is within region 1. If we set Ku1 = 1e4, then do Ku1.SetRegion(1, 1e5), then region 2 will take 1e4. If, on the other hand, we do Ku1.SetRegion(0, 1e4) and `Ku1.SetRegion(1e5), then region 2 will take 0. To get region 2 to match with region 1, we have to separately call Ku1.SetRegion(1, 1e5) and Ku1.</description>
     </item>
-    
     <item>
       <title>ParaView</title>
       <link>https://www.rossknapman.com/notes/paraview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/paraview/</guid>
       <description>Converting ovf to vtk for ParaView mumax3-convert -vtk binary m*.ovf
 Producing Animations from pvpython If using ParaView version &amp;lt;5.8, you need to, headless rendering is not supported, so you need to use xvfb-run to create a virtual X environment,
 xvfb-run pvpython [SCRIPTNAME].py
 If several animations are being rendered at the smae time, you can use the -a option to start another dummy X server. If the ParaView version is 5.</description>
     </item>
-    
     <item>
       <title>PDFs</title>
       <link>https://www.rossknapman.com/notes/pdfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/pdfs/</guid>
       <description>Join Pdfs Vertically pdfjam Page1.pdf Page2.pdf --nup 2x1 --landscape --outfile Page1+2.pdf
 Then remove the margins (CAREFUL, MIGHT FAIL IF IMAGE HAS A LOT OF WHITE): pdf-crop-margins -v -p 0 -a -6 input.pdf
 (Having installed this tool using pip install pdfCropMargins --upgrade)</description>
     </item>
-    
     <item>
       <title>POV-Ray</title>
       <link>https://www.rossknapman.com/notes/pov-ray/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/pov-ray/</guid>
       <description>Debugging You need to end strings with &amp;#34;\n&amp;#34;, otherwise they won&amp;#39;t be printed. Also, if it does not output to console, output to a file by setting Debug_File=True in the render options .ini file (or equivalent command line argument).
 sphere_sweep Not Going Through All Points Try a different spline type, e.g. linear_spline</description>
     </item>
-    
     <item>
       <title>Python</title>
       <link>https://www.rossknapman.com/notes/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/python/</guid>
       <description>NumPy Problems Axis Size Not $2^N$ Problem: A thin film is represented by an array of vectors ‚a‘ with dimensions (2000 x 500 x 1), but it is not processed properly because it should really be (2048 x 512 x 1) (2^11 = 2048; 2^9 = 512). Solution: aNew = np.pad(a, [(24, 24), (6, 6)]) will surround the data with zeros to make it up to the correct shape</description>
     </item>
-    
     <item>
       <title>Reveal.js</title>
       <link>https://www.rossknapman.com/notes/reveal.js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/reveal.js/</guid>
       <description>R Markdown You can write presentations in R Markdown and export them to Reveal.js. Good tutorials for this are here and here, and the documentation with all options is here. To export the slides, you can run echo &amp;#34;require(rmarkdown); render(&amp;#39;FILENAME.md&amp;#39;, output_file=&amp;#39;index.html&amp;#39;)&amp;#34; | R --vanilla.
 To have a double column layout, you can use a stylesheet like
 .container{ display: flex; } .col{ flex: 1; } then, in the R Markdown file,</description>
     </item>
-    
     <item>
       <title>SageMath</title>
       <link>https://www.rossknapman.com/notes/sagemath/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/sagemath/</guid>
       <description>Defining Functions of Variables For example, we want to define some generic ɸ(t) without explicitly defining a functional form. Then, do phi = function(&amp;#39;phi&amp;#39;, latex_name=&amp;#39;\\varphi&amp;#39;, nargs=1)(t).</description>
     </item>
-    
     <item>
       <title>Shell</title>
       <link>https://www.rossknapman.com/notes/shell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/shell/</guid>
       <description>ZSH is Being Slow Run
 git config --add oh-my-zsh.hide-status 1 git config --add oh-my-zsh.hide-dirty 1 if [ ... == … ]; then Not Working with Posix Shell Need single =, and need variables e.g. $directory in quotes
 I Only Want the Filename and Not the Entire Path If you only want, say video.mp4 rather than e.g. /home/myname/long/complicated/path/to/video.mp4, use the basename command.
 Similarly, to remove the extension, use the parameter expansion ${filename%.</description>
     </item>
-    
     <item>
       <title>SOCKS Proxy for Accessing Papers from Uni Network</title>
       <link>https://www.rossknapman.com/notes/socksproxyforaccessingpapersfromuninetwork/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/socksproxyforaccessingpapersfromuninetwork/</guid>
       <description>This is an alternative to using a VPN, which is nice in that it only routes your traffic from a single browser window (and works if the university VPN is down, which happens sometimes). ssh -D 8080 ws2 Then open Firefox, go to Network Settings -&amp;gt; Manual proxy configuration, enter SOCKS Host 127.0.0.1, Port 8080 ws2 is what I have called twist-ws02 in my SSH config. I find that a better solution is to define an alias in .</description>
     </item>
-    
     <item>
       <title>Vim</title>
       <link>https://www.rossknapman.com/notes/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/vim/</guid>
       <description>Find and Replace Search and replace globally: :%s/foo/bar/g
 :s is the command to substitute, % means to apply within the current file, rather than just the current line, g means global, i.e. it replaces all instances, not just the first
 To find and replace regex whilst keeping part of a pattern, e.g. if you want to replace #1 #2 #3 by #1 \, #2 \, #3 \n, then need to run</description>
     </item>
-    
     <item>
       <title>Visual Studio Code</title>
       <link>https://www.rossknapman.com/notes/visualstudiocode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/visualstudiocode/</guid>
       <description>Ctrl + W Not Working with Vim Mode In Keyboard Shortcuts, disable the Vim shortcut that corresponds to this.
 Terminal Using Wrong Python Version For example, the default terminal program uses Anaconda, but the terminal in VS Code uses /usr/bin/python3. Add ``` &amp;#34;terminal.integrated.env.osx&amp;#34;: { &amp;#34;PATH&amp;#34;: &amp;#34;&amp;#34; } ``` to settings.json. See here.</description>
     </item>
-    
     <item>
       <title>Website</title>
       <link>https://www.rossknapman.com/notes/website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/website/</guid>
       <description>Public Repo as Submodule For each submodule commit, the project updates its reference to the submodule to maintain its connection to the correct commit. Therefore, commit both the main project and the public repo, then run git push -u origin main --recurse-submodules=on-demand. See e.g. https://www.adamormsby.com/posts/000/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/
 Jekyll Does Not Run on Big Sur A combination of these resources seemed to fix it:
 https://ernestojeh.com/fix-jekyll-on-macos-big-sur slycke&amp;#39;s answer at https://github.com/jekyll/jekyll/issues/8576 (I suspect bundle add webrick may have been the reason it started working, as it allows you to use Ruby 3.</description>
     </item>
-    
     <item>
       <title>Zathura</title>
       <link>https://www.rossknapman.com/notes/zathura/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rossknapman.com/notes/zathura/</guid>
       <description>Toggle Single/Double Page Press D.</description>
     </item>
-    
   </channel>
 </rss>
