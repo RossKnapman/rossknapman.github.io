@@ -13,9 +13,7 @@
       <link>https://www.rossknapman.com/posts/usa2022/</link>
       <pubDate>Sun, 04 Sep 2022 10:07:38 +0200</pubDate>
       <guid>https://www.rossknapman.com/posts/usa2022/</guid>
-      <description>Between June and August 2022, I had the wonderful opportunity to visit Ran Cheng&amp;rsquo;s group at the University of California, Riverside, to work on a (still ongoing, at time of writing) project. This post, however, is about the exciting things I got up to when I was not working!
-The UCR Bell Tower.
-Rather than flying directly to Los Angeles, I decided that I would book my flight to Seattle, a city that I had been wanting to visit for a good decade.</description>
+      <description>Between June and August 2022, I had the wonderful opportunity to visit Ran Cheng&amp;rsquo;s group at the University of California, Riverside, to work on a (still ongoing, at time of writing) project. This post, however, is about the exciting things I got up to when I was not working!&#xA;The UCR Bell Tower.&#xA;Rather than flying directly to Los Angeles, I decided that I would book my flight to Seattle, a city that I had been wanting to visit for a good decade.</description>
     </item>
     <item>
       <title>Photography</title>
@@ -29,8 +27,7 @@ Rather than flying directly to Los Angeles, I decided that I would book my fligh
       <link>https://www.rossknapman.com/posts/nvimvimtexzathura/</link>
       <pubDate>Sun, 05 Dec 2021 16:49:56 +0100</pubDate>
       <guid>https://www.rossknapman.com/posts/nvimvimtexzathura/</guid>
-      <description>Note 06.01.2023: With the release of VimTex 2.8, you probably don&amp;rsquo;t need to do this any more. See :help vimtex-synctex-inverse-search.
-There are many reasons to write LaTeX in Vim instead of the more &amp;ldquo;traditional&amp;rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of UltiSnips, or you just want to make the most of Vim&amp;rsquo;s many features. VimTeX is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and Zathura is a minimalist, highly customisable document viewer with Vim keybindings by default.</description>
+      <description>Note 06.01.2023: With the release of VimTex 2.8, you probably don&amp;rsquo;t need to do this any more. See :help vimtex-synctex-inverse-search.&#xA;There are many reasons to write LaTeX in Vim instead of the more &amp;ldquo;traditional&amp;rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of UltiSnips, or you just want to make the most of Vim&amp;rsquo;s many features. VimTeX is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and Zathura is a minimalist, highly customisable document viewer with Vim keybindings by default.</description>
     </item>
     <item>
       <title>Coffee Cup to Doughnut Animation</title>
@@ -51,27 +48,21 @@ There are many reasons to write LaTeX in Vim instead of the more &amp;ldquo;trad
       <link>https://www.rossknapman.com/notes/blender/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/blender/</guid>
-      <description>Basics The tilde key (at least when I was using an external keyboard) gives you a perspective menu.
-Shift+S gives you the cursor menu, allowing you to place the 3D cursor back at the origin, for example (this is where new objects spawn).
-Shift+RMB moves the 3D cursor
-You can create new panes by clicking and dragging the corners to drag out new panes, and merge them together in a similar way.</description>
+      <description>Basics The tilde key (at least when I was using an external keyboard) gives you a perspective menu.&#xA;Shift+S gives you the cursor menu, allowing you to place the 3D cursor back at the origin, for example (this is where new objects spawn).&#xA;Shift+RMB moves the 3D cursor&#xA;You can create new panes by clicking and dragging the corners to drag out new panes, and merge them together in a similar way.</description>
     </item>
     <item>
       <title>C&#43;&#43;</title>
       <link>https://www.rossknapman.com/notes/c&#43;&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/c&#43;&#43;/</guid>
-      <description>Constants and Variables Can either define a constant like const double pi = 3.14 or as a preprocessor director #define PI 3.14, where the latter replaces all appearances of PI in the source code with 3.14
-Declaration of variables: int x = 0; and int x(0); and int x{0}; are all equivalent
-x = x + 1; and x += 1 and ++x and x++ are all equivalent, but y = ++x will first add 1 to x, then assign this to y, whilst y = x++ will first set y = x, then add 1 to x</description>
+      <description>Constants and Variables Can either define a constant like const double pi = 3.14 or as a preprocessor director #define PI 3.14, where the latter replaces all appearances of PI in the source code with 3.14&#xA;Declaration of variables: int x = 0; and int x(0); and int x{0}; are all equivalent&#xA;x = x + 1; and x += 1 and ++x and x++ are all equivalent, but y = ++x will first add 1 to x, then assign this to y, whilst y = x++ will first set y = x, then add 1 to x</description>
     </item>
     <item>
       <title>Copying iTerm2 Profile Between Computers</title>
       <link>https://www.rossknapman.com/notes/copyingiterm2profilebetweencomputers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/copyingiterm2profilebetweencomputers/</guid>
-      <description>On the first computer, go to Preferences. Tick &amp;#34;Load preferences from a custom folder or URL&amp;#34;. Browse to where the folder should be saved (e.g. in Dropbox) - this should be its own folder (so create a folder called iTerm or something). On the second computer. Load this folder, then restart iTerm. Then the &amp;#34;Load preferences…&amp;#34; box can be unticked.
-For Alt+Left etc., go to Preferences, Profiles, Keys, and load the preset &amp;#34;Natural Text Editing&amp;#34;</description>
+      <description>On the first computer, go to Preferences. Tick &amp;#34;Load preferences from a custom folder or URL&amp;#34;. Browse to where the folder should be saved (e.g. in Dropbox) - this should be its own folder (so create a folder called iTerm or something). On the second computer. Load this folder, then restart iTerm. Then the &amp;#34;Load preferences…&amp;#34; box can be unticked.&#xA;For Alt+Left etc., go to Preferences, Profiles, Keys, and load the preset &amp;#34;Natural Text Editing&amp;#34;</description>
     </item>
     <item>
       <title>Cron</title>
@@ -99,39 +90,28 @@ For Alt+Left etc., go to Preferences, Profiles, Keys, and load the preset &amp;#
       <link>https://www.rossknapman.com/notes/emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/emacs/</guid>
-      <description>Org Mode Plain Text To show plain text without formatting, use font-lock-mode
-Checking for Link Rot Use org-lint</description>
+      <description>Org Mode Plain Text To show plain text without formatting, use font-lock-mode&#xA;Checking for Link Rot Use org-lint</description>
     </item>
     <item>
       <title>FFmpeg</title>
       <link>https://www.rossknapman.com/notes/ffmpeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/ffmpeg/</guid>
-      <description>Joining Videos Side-By-Side with FFmpeg This all also works for images
-Getting information about the video (resolution, fps etc.): ffprobe file.mp4
-Basic usage (more work needed for sound): ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4
-If the files are of different heights: ffmpeg -i In.mp4 -vf scale=-1:&amp;lt;height&amp;gt; Out.mp4
-If the resulting width is not an even number: ffmpeg -i Out.mp4 -vf scale=iw-1:ih Out.mp4
-OR
-change the -1 to -2 in the earlier command</description>
+      <description>Joining Videos Side-By-Side with FFmpeg This all also works for images&#xA;Getting information about the video (resolution, fps etc.): ffprobe file.mp4&#xA;Basic usage (more work needed for sound): ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4&#xA;If the files are of different heights: ffmpeg -i In.mp4 -vf scale=-1:&amp;lt;height&amp;gt; Out.mp4&#xA;If the resulting width is not an even number: ffmpeg -i Out.mp4 -vf scale=iw-1:ih Out.mp4&#xA;OR&#xA;change the -1 to -2 in the earlier command</description>
     </item>
     <item>
       <title>GNU/Linux</title>
       <link>https://www.rossknapman.com/notes/gnulinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/gnulinux/</guid>
-      <description>Determining IP Address on Ubuntu ip addr show
-Finding out If a Command Is Available to Run on Ubuntu compgen -c | grep &amp;lt;COMMAND&amp;gt;
-Disk Usage In current directory: du -h . --max-depth=1 on Ubuntu or du -hd1. on macOS
-Installing GNU/Linux on an Apple Computer On Mac, no screen when booting installation: highlight the boot option, press e, add radeon.modeset=0 to the menu that pops up, then press enter.</description>
+      <description>Determining IP Address on Ubuntu ip addr show&#xA;Finding out If a Command Is Available to Run on Ubuntu compgen -c | grep &amp;lt;COMMAND&amp;gt;&#xA;Disk Usage In current directory: du -h . --max-depth=1 on Ubuntu or du -hd1. on macOS&#xA;Installing GNU/Linux on an Apple Computer On Mac, no screen when booting installation: highlight the boot option, press e, add radeon.modeset=0 to the menu that pops up, then press enter.</description>
     </item>
     <item>
       <title>GUI Applications with X11 Forwarding</title>
       <link>https://www.rossknapman.com/notes/guiapplicationswithx11forwarding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/guiapplicationswithx11forwarding/</guid>
-      <description>If things are not opening, try running echo $DISPLAY on the server. If nothing comes up, a possible fix on macOS is to install XQuartz, run launchctl load -w /Library/LaunchAgents/org.macosforge.xquartz.startx.plist on the Mac, then restart the computer. For debugging, try using ssh -v -X &amp;lt;e.g. WS2&amp;gt;.
-To open the Seafile GUI remotely (annoyingly, the GUI allows adjusting some settings that the CLI does not have), run seafile-applet.</description>
+      <description>If things are not opening, try running echo $DISPLAY on the server. If nothing comes up, a possible fix on macOS is to install XQuartz, run launchctl load -w /Library/LaunchAgents/org.macosforge.xquartz.startx.plist on the Mac, then restart the computer. For debugging, try using ssh -v -X &amp;lt;e.g. WS2&amp;gt;.&#xA;To open the Seafile GUI remotely (annoyingly, the GUI allows adjusting some settings that the CLI does not have), run seafile-applet.</description>
     </item>
     <item>
       <title>Home Network</title>
@@ -145,8 +125,7 @@ To open the Seafile GUI remotely (annoyingly, the GUI allows adjusting some sett
       <link>https://www.rossknapman.com/notes/inkscape/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/inkscape/</guid>
-      <description>I can’t find the text align button, to align the text within the text box It shows up when you’re typing the text itself, then goes away, contrary to with older versions.
-Extensions are not shown in the Extensions menu First, make sure you’re looking in the right place. For example, Tex Text was hidden under the Text menu, and when I searched for it, I typed it as one word, so it didn’t show up.</description>
+      <description>I can’t find the text align button, to align the text within the text box It shows up when you’re typing the text itself, then goes away, contrary to with older versions.&#xA;Extensions are not shown in the Extensions menu First, make sure you’re looking in the right place. For example, Tex Text was hidden under the Text menu, and when I searched for it, I typed it as one word, so it didn’t show up.</description>
     </item>
     <item>
       <title>Mac Mail</title>
@@ -167,36 +146,28 @@ Extensions are not shown in the Extensions menu First, make sure you’re lookin
       <link>https://www.rossknapman.com/notes/paraview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/paraview/</guid>
-      <description>Converting ovf to vtk for ParaView mumax3-convert -vtk binary m*.ovf
-Producing Animations from pvpython If using ParaView version &amp;lt;5.8, you need to, headless rendering is not supported, so you need to use xvfb-run to create a virtual X environment,
-xvfb-run pvpython [SCRIPTNAME].py
-If several animations are being rendered at the smae time, you can use the -a option to start another dummy X server. If the ParaView version is 5.</description>
+      <description>Converting ovf to vtk for ParaView mumax3-convert -vtk binary m*.ovf&#xA;Producing Animations from pvpython If using ParaView version &amp;lt;5.8, you need to, headless rendering is not supported, so you need to use xvfb-run to create a virtual X environment,&#xA;xvfb-run pvpython [SCRIPTNAME].py&#xA;If several animations are being rendered at the smae time, you can use the -a option to start another dummy X server. If the ParaView version is 5.</description>
     </item>
     <item>
       <title>PDFs</title>
       <link>https://www.rossknapman.com/notes/pdfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/pdfs/</guid>
-      <description>Join Pdfs Vertically pdfjam Page1.pdf Page2.pdf --nup 2x1 --landscape --outfile Page1+2.pdf
-Then remove the margins (CAREFUL, MIGHT FAIL IF IMAGE HAS A LOT OF WHITE): pdf-crop-margins -v -p 0 -a -6 input.pdf
-(Having installed this tool using pip install pdfCropMargins --upgrade)</description>
+      <description>Join Pdfs Vertically pdfjam Page1.pdf Page2.pdf --nup 2x1 --landscape --outfile Page1+2.pdf&#xA;Then remove the margins (CAREFUL, MIGHT FAIL IF IMAGE HAS A LOT OF WHITE): pdf-crop-margins -v -p 0 -a -6 input.pdf&#xA;(Having installed this tool using pip install pdfCropMargins --upgrade)</description>
     </item>
     <item>
       <title>POV-Ray</title>
       <link>https://www.rossknapman.com/notes/pov-ray/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/pov-ray/</guid>
-      <description>Debugging You need to end strings with &amp;#34;\n&amp;#34;, otherwise they won&amp;#39;t be printed. Also, if it does not output to console, output to a file by setting Debug_File=True in the render options .ini file (or equivalent command line argument).
-sphere_sweep Not Going Through All Points Try a different spline type, e.g. linear_spline</description>
+      <description>Debugging You need to end strings with &amp;#34;\n&amp;#34;, otherwise they won&amp;#39;t be printed. Also, if it does not output to console, output to a file by setting Debug_File=True in the render options .ini file (or equivalent command line argument).&#xA;sphere_sweep Not Going Through All Points Try a different spline type, e.g. linear_spline</description>
     </item>
     <item>
       <title>Publications</title>
       <link>https://www.rossknapman.com/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/publications/</guid>
-      <description>R. Knapman, T. Tausendpfund, S. A. Díaz, and K. Everschor-Sitte, &amp;ldquo;Spacetime magnetic hopfions: from internal excitations and braiding of skyrmions&amp;rdquo;, arXiv:2305.07589.
-R. Knapman, D. R. Rodrigues, J. Masell, and K. Everschor-Sitte, &amp;ldquo;Current-induced H-shaped-skyrmion creation and their dynamics in the helical phase&amp;rdquo;, Journal of Physics D: Applied Physics, 54(40), 404003 (2021). arXiv: 2105.06859.
-D. R. Rodrigues, J. Nothhelfer, M. Mohseni, R. Knapman, P. Pirro, and K. Everschor-Sitte, &amp;ldquo;Nonlinear Dynamics of Topological Ferromagnetic Textures for Frequency Multiplication&amp;rdquo;, Phys.</description>
+      <description>R. Knapman, T. Tausendpfund, S. A. Díaz, and K. Everschor-Sitte, &amp;ldquo;Spacetime magnetic hopfions: from internal excitations and braiding of skyrmions&amp;rdquo;, arXiv:2305.07589.&#xA;R. Knapman, D. R. Rodrigues, J. Masell, and K. Everschor-Sitte, &amp;ldquo;Current-induced H-shaped-skyrmion creation and their dynamics in the helical phase&amp;rdquo;, Journal of Physics D: Applied Physics, 54(40), 404003 (2021). arXiv: 2105.06859.&#xA;D. R. Rodrigues, J. Nothhelfer, M. Mohseni, R. Knapman, P. Pirro, and K. Everschor-Sitte, &amp;ldquo;Nonlinear Dynamics of Topological Ferromagnetic Textures for Frequency Multiplication&amp;rdquo;, Phys.</description>
     </item>
     <item>
       <title>Python</title>
@@ -210,17 +181,14 @@ D. R. Rodrigues, J. Nothhelfer, M. Mohseni, R. Knapman, P. Pirro, and K. Eversch
       <link>https://www.rossknapman.com/misc/recipes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/misc/recipes/</guid>
-      <description>A collection of my favourite recipes, stored here so that I can access them easily from wherever, and send them to friends. All recipes are vegan, except where I have added a note on what to change to make it vegan, or where it is obvious (e.g. cheese to vegan cheese; butter to vegan butter or spread).
-Coconut Chickpea Curry Kale and Leek Bake Coconut Curry Lentil Soup Vegetarian Peanut Soup Lentil Soup Chana Masala Vegan Paella Bulgur Salad with Cucumbers, Red Peppers, Chickpeas, Lemon &amp;amp; Dill 1-Hour Vegan Shepherd’s Pie Vegan Fall Pasta Salad Spiced Lentil and Butternut Squash Soup Vegan Goulash with Smoked Tofu and Potatoes Mom’s Ultimate Vegetarian Lentil Loaf Texas Caviar Hot German Potato Salad Spiced Aubergine Bake Sweet and Sour Chickpeas Peppers Broccoli Hearty Mushroom Goulash Frankies Vegan Burrito with Spanish Rice Healthy 5-Ingredient Granola Bars Quick N’ Healthy Vegetable Pasta Salad Vegan Spinach and Artichoke Pasta Spicy Tomato Gnocchi With White Beans, Spinach and Vegan Sausage Vegan Garlic Noodles Easy Vegan Spinach and Mushroom Lasagna Curry Chickpea Salad Wraps with Toasted Coconut Honey Mustard Lentil Vegetable Salad (replace honey with agave or maple syrup) Vegan Mac and Cheese Vegan Sweet Potato and Peanut Enchiladas Greek Pasta Salad with Easy Greek Vinaigrette Vegan Caesar Pasta Salad with Chickpeas Vegan Butternut Squash Mac and Cheese Vegan Pumpkin Pasta with Spinach and Mushrooms Gnocchi With Garlic Tomato Sauce (but maybe double the ingredients, as this only makes enough for about 2 meals) Chickpea Frittata With Sage and Rosemary Vegan Tuna Slow Cooker Tofu Butter Chicken (Vegan) Vegan &amp;lsquo;Egg&amp;rsquo; Salad Sandwich Vegan Fajita Pasta with Chickpeas and Peppers Vegetable Cacciatore with Rotini Vegan Macaroni Salad Tofish and Chips Flavourful Pea Pulao with Lemon </description>
+      <description>A collection of my favourite recipes, stored here so that I can access them easily from wherever, and send them to friends. All recipes are vegan, except where I have added a note on what to change to make it vegan, or where it is obvious (e.g. cheese to vegan cheese; butter to vegan butter or spread).&#xA;Coconut Chickpea Curry Kale and Leek Bake Coconut Curry Lentil Soup Vegetarian Peanut Soup Lentil Soup Chana Masala Vegan Paella Bulgur Salad with Cucumbers, Red Peppers, Chickpeas, Lemon &amp;amp; Dill 1-Hour Vegan Shepherd’s Pie Vegan Fall Pasta Salad Spiced Lentil and Butternut Squash Soup Vegan Goulash with Smoked Tofu and Potatoes Mom’s Ultimate Vegetarian Lentil Loaf Texas Caviar Hot German Potato Salad Spiced Aubergine Bake Sweet and Sour Chickpeas Peppers Broccoli Hearty Mushroom Goulash Frankies Vegan Burrito with Spanish Rice Healthy 5-Ingredient Granola Bars Quick N’ Healthy Vegetable Pasta Salad Vegan Spinach and Artichoke Pasta Spicy Tomato Gnocchi With White Beans, Spinach and Vegan Sausage Vegan Garlic Noodles Easy Vegan Spinach and Mushroom Lasagna Curry Chickpea Salad Wraps with Toasted Coconut Honey Mustard Lentil Vegetable Salad (replace honey with agave or maple syrup) Vegan Mac and Cheese Vegan Sweet Potato and Peanut Enchiladas Greek Pasta Salad with Easy Greek Vinaigrette Vegan Caesar Pasta Salad with Chickpeas Vegan Butternut Squash Mac and Cheese Vegan Pumpkin Pasta with Spinach and Mushrooms Gnocchi With Garlic Tomato Sauce (but maybe double the ingredients, as this only makes enough for about 2 meals) Chickpea Frittata With Sage and Rosemary Vegan Tuna Slow Cooker Tofu Butter Chicken (Vegan) Vegan &amp;lsquo;Egg&amp;rsquo; Salad Sandwich Vegan Fajita Pasta with Chickpeas and Peppers Vegetable Cacciatore with Rotini Vegan Macaroni Salad Tofish and Chips Flavourful Pea Pulao with Lemon </description>
     </item>
     <item>
       <title>Reveal.js</title>
       <link>https://www.rossknapman.com/notes/reveal.js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/reveal.js/</guid>
-      <description>R Markdown You can write presentations in R Markdown and export them to Reveal.js. Good tutorials for this are here and here, and the documentation with all options is here. To export the slides, you can run echo &amp;#34;require(rmarkdown); render(&amp;#39;FILENAME.md&amp;#39;, output_file=&amp;#39;index.html&amp;#39;)&amp;#34; | R --vanilla.
-To have a double column layout, you can use a stylesheet like
-.container{ display: flex; } .col{ flex: 1; } then, in the R Markdown file,</description>
+      <description>R Markdown You can write presentations in R Markdown and export them to Reveal.js. Good tutorials for this are here and here, and the documentation with all options is here. To export the slides, you can run echo &amp;#34;require(rmarkdown); render(&amp;#39;FILENAME.md&amp;#39;, output_file=&amp;#39;index.html&amp;#39;)&amp;#34; | R --vanilla.&#xA;To have a double column layout, you can use a stylesheet like&#xA;.container{ display: flex; } .col{ flex: 1; } then, in the R Markdown file,</description>
     </item>
     <item>
       <title>SageMath</title>
@@ -234,10 +202,7 @@ To have a double column layout, you can use a stylesheet like
       <link>https://www.rossknapman.com/notes/shell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/shell/</guid>
-      <description>ZSH is Being Slow Run
-git config --add oh-my-zsh.hide-status 1 git config --add oh-my-zsh.hide-dirty 1 if [ ... == … ]; then Not Working with Posix Shell Need single =, and need variables e.g. $directory in quotes
-I Only Want the Filename and Not the Entire Path If you only want, say video.mp4 rather than e.g. /home/myname/long/complicated/path/to/video.mp4, use the basename command.
-Similarly, to remove the extension, use the parameter expansion ${filename%.</description>
+      <description>ZSH is Being Slow Run&#xA;git config --add oh-my-zsh.hide-status 1 git config --add oh-my-zsh.hide-dirty 1 if [ ... == … ]; then Not Working with Posix Shell Need single =, and need variables e.g. $directory in quotes&#xA;I Only Want the Filename and Not the Entire Path If you only want, say video.mp4 rather than e.g. /home/myname/long/complicated/path/to/video.mp4, use the basename command.&#xA;Similarly, to remove the extension, use the parameter expansion ${filename%.</description>
     </item>
     <item>
       <title>SOCKS Proxy for Accessing Papers from Uni Network</title>
@@ -251,26 +216,21 @@ Similarly, to remove the extension, use the parameter expansion ${filename%.</de
       <link>https://www.rossknapman.com/notes/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/vim/</guid>
-      <description>Find and Replace Search and replace globally: :%s/foo/bar/g
-:s is the command to substitute, % means to apply within the current file, rather than just the current line, g means global, i.e. it replaces all instances, not just the first
-To find and replace regex whilst keeping part of a pattern, e.g. if you want to replace #1 #2 #3 by #1 \, #2 \, #3 \n, then need to run</description>
+      <description>Find and Replace Search and replace globally: :%s/foo/bar/g&#xA;:s is the command to substitute, % means to apply within the current file, rather than just the current line, g means global, i.e. it replaces all instances, not just the first&#xA;To find and replace regex whilst keeping part of a pattern, e.g. if you want to replace #1 #2 #3 by #1 \, #2 \, #3 \n, then need to run</description>
     </item>
     <item>
       <title>Visual Studio Code</title>
       <link>https://www.rossknapman.com/notes/visualstudiocode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/visualstudiocode/</guid>
-      <description>Ctrl + W Not Working with Vim Mode In Keyboard Shortcuts, disable the Vim shortcut that corresponds to this.
-Terminal Using Wrong Python Version For example, the default terminal program uses Anaconda, but the terminal in VS Code uses /usr/bin/python3. Add ``` &amp;#34;terminal.integrated.env.osx&amp;#34;: { &amp;#34;PATH&amp;#34;: &amp;#34;&amp;#34; } ``` to settings.json. See here.</description>
+      <description>Ctrl + W Not Working with Vim Mode In Keyboard Shortcuts, disable the Vim shortcut that corresponds to this.&#xA;Terminal Using Wrong Python Version For example, the default terminal program uses Anaconda, but the terminal in VS Code uses /usr/bin/python3. Add ``` &amp;#34;terminal.integrated.env.osx&amp;#34;: { &amp;#34;PATH&amp;#34;: &amp;#34;&amp;#34; } ``` to settings.json. See here.</description>
     </item>
     <item>
       <title>Website</title>
       <link>https://www.rossknapman.com/notes/website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/website/</guid>
-      <description>Public Repo as Submodule For each submodule commit, the project updates its reference to the submodule to maintain its connection to the correct commit. Therefore, commit both the main project and the public repo, then run git push -u origin main --recurse-submodules=on-demand. See e.g. https://www.adamormsby.com/posts/000/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/
-Jekyll Does Not Run on Big Sur A combination of these resources seemed to fix it:
-https://ernestojeh.com/fix-jekyll-on-macos-big-sur slycke&amp;#39;s answer at https://github.com/jekyll/jekyll/issues/8576 (I suspect bundle add webrick may have been the reason it started working, as it allows you to use Ruby 3.</description>
+      <description>Public Repo as Submodule For each submodule commit, the project updates its reference to the submodule to maintain its connection to the correct commit. Therefore, commit both the main project and the public repo, then run git push -u origin main --recurse-submodules=on-demand. See e.g. https://www.adamormsby.com/posts/000/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/&#xA;Jekyll Does Not Run on Big Sur A combination of these resources seemed to fix it:&#xA;https://ernestojeh.com/fix-jekyll-on-macos-big-sur slycke&amp;#39;s answer at https://github.com/jekyll/jekyll/issues/8576 (I suspect bundle add webrick may have been the reason it started working, as it allows you to use Ruby 3.</description>
     </item>
     <item>
       <title>Zathura</title>
