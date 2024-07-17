@@ -12,7 +12,7 @@
       <link>https://www.rossknapman.com/notes/apachewebserver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/apachewebserver/</guid>
-      <description>Don&amp;#39;t See Website When Visiting Domain Obviously many things could be wrong here, but a problem that I had which took me ages to find the solution was simply that I hadn&amp;#39;t configured the firewall (e.g. ufw allow 80/tcp, ufw allow 443/tcp).</description>
+      <description>Don&amp;#39;t See Website When Visiting Domain Obviously many things could be wrong here, but a problem that I had which took me ages to find the solution was simply that I hadn&amp;#39;t configured the firewall (e.g. ufw allow 80/tcp, ufw allow 443/tcp). Also, need to get an SSL certificate (e.g. using Certbot).</description>
     </item>
     <item>
       <title>Blender</title>
@@ -71,6 +71,13 @@
       <description>Joining Videos Side-By-Side with FFmpeg This all also works for images&#xA;Getting information about the video (resolution, fps etc.): ffprobe file.mp4&#xA;Basic usage (more work needed for sound): ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4&#xA;If the files are of different heights: ffmpeg -i In.mp4 -vf scale=-1:&amp;lt;height&amp;gt; Out.mp4&#xA;If the resulting width is not an even number: ffmpeg -i Out.mp4 -vf scale=iw-1:ih Out.mp4&#xA;OR&#xA;change the -1 to -2 in the earlier command</description>
     </item>
     <item>
+      <title>Firefly III</title>
+      <link>https://www.rossknapman.com/notes/fireflyiii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.rossknapman.com/notes/fireflyiii/</guid>
+      <description>Migrate to New Server (Assuming Docker Installation) Shamelessly stolen from https://github.com/orgs/firefly-iii/discussions/8241, but re-writing here in case that thread gets lost.&#xA;On the old server:&#xA;docker exec -ti &amp;lt;db_container&amp;gt; bash apt update &amp;amp;&amp;amp; apt install mysql-client mysqldump -u firefly --column-statistics=0 -p firefly &amp;gt; /tmp/firefly.sql exit docker cp &amp;lt;db_container&amp;gt;:/tmp/firefly.sql . On the new server:&#xA;docker cp firefly.sql &amp;lt;db_container&amp;gt;:/tmp/firefly.sql docker exec -ti &amp;lt;db_container&amp;gt; bash apt update &amp;amp;&amp;amp; apt install mysql-client rm -rf /var/lib/mysql/firefly mysql -u firefly -p firefly create database firefly use firefly; source /tmp/firefly.</description>
+    </item>
+    <item>
       <title>GNU/Linux</title>
       <link>https://www.rossknapman.com/notes/gnulinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -99,6 +106,13 @@
       <description>I can’t find the text align button, to align the text within the text box It shows up when you’re typing the text itself, then goes away, contrary to with older versions.&#xA;Extensions are not shown in the Extensions menu First, make sure you’re looking in the right place. For example, Tex Text was hidden under the Text menu, and when I searched for it, I typed it as one word, so it didn’t show up.</description>
     </item>
     <item>
+      <title>LaTeX</title>
+      <link>https://www.rossknapman.com/notes/latex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.rossknapman.com/notes/latex/</guid>
+      <description> Varying Quote Style in Multilingual Documents E.g. if you want &amp;#34;This is a quote in English&amp;#34;, ,,Das ist ein Zitat auf Deutsch&amp;#39;&amp;#39;.&#xA;\usepackage[main=english,german]{babel} \usepackage[autostyle]{csquptes} \begin{document} \section{Introduction} This is the introduction in English. \enquote{This is a quote in English}. \selectlanguage{german} \section{Einführung} Dies ist die Einführung in Deutsch. \enquote{Das ist ein Zitat auf Deutsch}. \end{document} </description>
+    </item>
+    <item>
       <title>Mac Mail</title>
       <link>https://www.rossknapman.com/notes/macmail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -111,6 +125,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/mumax/</guid>
       <description>Overlapping Regions Say we have the default region 0, some region 1, and some region 2 that is within region 1. If we set Ku1 = 1e4, then do Ku1.SetRegion(1, 1e5), then region 2 will take 1e4. If, on the other hand, we do Ku1.SetRegion(0, 1e4) and `Ku1.SetRegion(1e5), then region 2 will take 0. To get region 2 to match with region 1, we have to separately call Ku1.SetRegion(1, 1e5) and Ku1.</description>
+    </item>
+    <item>
+      <title>Nextcloud</title>
+      <link>https://www.rossknapman.com/notes/nextcloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.rossknapman.com/notes/nextcloud/</guid>
+      <description>Upload Fails Try increasing the upload limit: https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/big_file_upload_configuration.html&#xA;For Nextcloud uploaded using docker, set the PHP_UPLOAD_LIMIT environment variable.</description>
     </item>
     <item>
       <title>ParaView</title>
@@ -134,11 +155,25 @@
       <description>Debugging You need to end strings with &amp;#34;\n&amp;#34;, otherwise they won&amp;#39;t be printed. Also, if it does not output to console, output to a file by setting Debug_File=True in the render options .ini file (or equivalent command line argument).&#xA;sphere_sweep Not Going Through All Points Try a different spline type, e.g. linear_spline</description>
     </item>
     <item>
+      <title>PowerPoint</title>
+      <link>https://www.rossknapman.com/notes/powerpoint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.rossknapman.com/notes/powerpoint/</guid>
+      <description>Making Pictures Appear with Bullet Points In Animations, choose the animation as &amp;#34;Appear&amp;#34; and under &amp;#34;Effect Options&amp;#34;, choose &amp;#34;By Paragraph&amp;#34;. Then add the pictures, rearrange them as desired in the Animations pane so that each picture is under the respective bullet point, then change Start from &amp;#34;On Click&amp;#34; to &amp;#34;With Previous&amp;#34;.</description>
+    </item>
+    <item>
       <title>Python</title>
       <link>https://www.rossknapman.com/notes/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/python/</guid>
       <description>NumPy Problems Axis Size Not $2^N$ Problem: A thin film is represented by an array of vectors ‚a‘ with dimensions (2000 x 500 x 1), but it is not processed properly because it should really be (2048 x 512 x 1) (2^11 = 2048; 2^9 = 512). Solution: aNew = np.pad(a, [(24, 24), (6, 6)]) will surround the data with zeros to make it up to the correct shape</description>
+    </item>
+    <item>
+      <title>Research Data</title>
+      <link>https://www.rossknapman.com/notes/researchdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.rossknapman.com/notes/researchdata/</guid>
+      <description>GitLab Repo on Zenodo See guide at https://open.win.ox.ac.uk/pages/open-science/community/Open-WIN-Community/docs/gitlab/repo-doi/&#xA;If this page is no longer available for some reason, the steps are:&#xA;In zenodo, log in or create an account. Go to “new upload” and add details about your material. Click the “reserve” button to get the doi which will be issued by zenodo. Copy this doi into your README for your project on GitLab, or other documentation. Include this in a section entitled “How to cite this material”.</description>
     </item>
     <item>
       <title>Reveal.js</title>
@@ -174,6 +209,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.rossknapman.com/notes/vim/</guid>
       <description>Find and Replace Search and replace globally: :%s/foo/bar/g&#xA;:s is the command to substitute, % means to apply within the current file, rather than just the current line, g means global, i.e. it replaces all instances, not just the first&#xA;To find and replace regex whilst keeping part of a pattern, e.g. if you want to replace #1 #2 #3 by #1 \, #2 \, #3 \n, then need to run</description>
+    </item>
+    <item>
+      <title>VirtualBox</title>
+      <link>https://www.rossknapman.com/notes/virtualbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.rossknapman.com/notes/virtualbox/</guid>
+      <description>USB Not Mounting Install VirtualBox Extension Pack, and start VirtualBox using sudo virtualbox.</description>
     </item>
     <item>
       <title>Visual Studio Code</title>

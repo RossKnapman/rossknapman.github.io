@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     
     
-    <title>Ross Knapman | Apache Web Server</title>
+    <title>Ross Knapman | Firefly III</title>
 </head><body>
         <div class="wrapper">
 <nav id="sidebar" class="navbar active d-lg-block bg-white">
@@ -89,14 +89,47 @@
 <a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
 <a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
 </nav>
-<h2 class="display-6">Apache Web Server</h2>
+<h2 class="display-6">Firefly III</h2>
 
 <div id="outline-container-headline-1" class="outline-4">
 <h4 id="headline-1">
-Don&#39;t See Website When Visiting Domain
+Migrate to New Server (Assuming Docker Installation)
 </h4>
 <div id="outline-text-headline-1" class="outline-text-4">
-<p>Obviously many things could be wrong here, but a problem that I had which took me ages to find the solution was simply that I hadn&#39;t configured the firewall (e.g. <code>ufw allow 80/tcp</code>, <code>ufw allow 443/tcp</code>). Also, need to get an SSL certificate (e.g. using Certbot).</p>
+<p>Shamelessly stolen from <a href="https://github.com/orgs/firefly-iii/discussions/8241,">https://github.com/orgs/firefly-iii/discussions/8241,</a> but re-writing here in case that thread gets lost.</p>
+<p>
+On the old server:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker exec -ti &lt;db_container&gt; bash
+</span></span><span style="display:flex;"><span>apt update <span style="color:#f92672">&amp;&amp;</span> apt install mysql-client
+</span></span><span style="display:flex;"><span>mysqldump -u firefly --column-statistics<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> -p firefly &gt; /tmp/firefly.sql
+</span></span><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>docker cp &lt;db_container&gt;:/tmp/firefly.sql .</span></span></code></pre></div>
+</div>
+<p>
+On the new server:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker cp firefly.sql &lt;db_container&gt;:/tmp/firefly.sql
+</span></span><span style="display:flex;"><span>docker exec -ti &lt;db_container&gt; bash
+</span></span><span style="display:flex;"><span>apt update <span style="color:#f92672">&amp;&amp;</span> apt install mysql-client
+</span></span><span style="display:flex;"><span>rm -rf /var/lib/mysql/firefly
+</span></span><span style="display:flex;"><span>mysql -u firefly -p firefly
+</span></span><span style="display:flex;"><span>create database firefly
+</span></span><span style="display:flex;"><span>use firefly;
+</span></span><span style="display:flex;"><span>source /tmp/firefly.sql; -&gt; see EDIT
+</span></span><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>exit</span></span></code></pre></div>
+</div>
+<p>
+If there are problems, it may be due to mismatching versions of Firefly III on the two machines</p>
+<p>
+On their EDIT:
+When you get errors such as: <code>ERROR 1100 (HY000): Table &#39;invited_users&#39; was not locked with LOCK TABLES</code>. Remove those tables from the database</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>SET FOREIGN_KEY_CHECKS = 0;
+</span></span><span style="display:flex;"><span>drop table invited_users`;
+</span></span><span style="display:flex;"><span>source /tmp/firefly.sql</span></span></code></pre></div>
+</div>
 </div>
 </div>
 

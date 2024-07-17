@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     
     
-    <title>Ross Knapman | Apache Web Server</title>
+    <title>Ross Knapman | Nextcloud</title>
 </head><body>
         <div class="wrapper">
 <nav id="sidebar" class="navbar active d-lg-block bg-white">
@@ -89,14 +89,16 @@
 <a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
 <a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
 </nav>
-<h2 class="display-6">Apache Web Server</h2>
+<h2 class="display-6">Nextcloud</h2>
 
 <div id="outline-container-headline-1" class="outline-4">
 <h4 id="headline-1">
-Don&#39;t See Website When Visiting Domain
+Upload Fails
 </h4>
 <div id="outline-text-headline-1" class="outline-text-4">
-<p>Obviously many things could be wrong here, but a problem that I had which took me ages to find the solution was simply that I hadn&#39;t configured the firewall (e.g. <code>ufw allow 80/tcp</code>, <code>ufw allow 443/tcp</code>). Also, need to get an SSL certificate (e.g. using Certbot).</p>
+<p>Try increasing the upload limit: <a href="https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/big_file_upload_configuration.html">https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/big_file_upload_configuration.html</a></p>
+<p>
+For Nextcloud uploaded using docker, set the PHP_UPLOAD_LIMIT environment variable.</p>
 </div>
 </div>
 

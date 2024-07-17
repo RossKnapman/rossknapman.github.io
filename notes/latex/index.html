@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     
     
-    <title>Ross Knapman | Apache Web Server</title>
+    <title>Ross Knapman | LaTeX</title>
 </head><body>
         <div class="wrapper">
 <nav id="sidebar" class="navbar active d-lg-block bg-white">
@@ -89,14 +89,36 @@
 <a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
 <a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
 </nav>
-<h2 class="display-6">Apache Web Server</h2>
+<h2 class="display-6">LaTeX</h2>
 
 <div id="outline-container-headline-1" class="outline-4">
 <h4 id="headline-1">
-Don&#39;t See Website When Visiting Domain
+Varying Quote Style in Multilingual Documents
 </h4>
 <div id="outline-text-headline-1" class="outline-text-4">
-<p>Obviously many things could be wrong here, but a problem that I had which took me ages to find the solution was simply that I hadn&#39;t configured the firewall (e.g. <code>ufw allow 80/tcp</code>, <code>ufw allow 443/tcp</code>). Also, need to get an SSL certificate (e.g. using Certbot).</p>
+<p>E.g. if you want &#34;This is a quote in English&#34;, ,,Das ist ein Zitat auf Deutsch&#39;&#39;.</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>\usepackage[main=english,german]{babel}
+</span></span><span style="display:flex;"><span>\usepackage[autostyle]{csquptes}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\begin{document}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\section{Introduction}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This is the introduction in English.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\enquote{This is a quote in English}.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\selectlanguage{german}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\section{Einführung}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Dies ist die Einführung in Deutsch.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\enquote{Das ist ein Zitat auf Deutsch}.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\end{document}</span></span></code></pre></div>
+</div>
 </div>
 </div>
 

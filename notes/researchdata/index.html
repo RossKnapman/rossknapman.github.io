@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     
     
-    <title>Ross Knapman | Apache Web Server</title>
+    <title>Ross Knapman | Research Data</title>
 </head><body>
         <div class="wrapper">
 <nav id="sidebar" class="navbar active d-lg-block bg-white">
@@ -89,14 +89,25 @@
 <a href="https://www.linkedin.com/in/rossknapman97/"><i data-feather="linkedin" class="header-button"></i></a>
 <a href="https://github.com/RossKnapman/"><i data-feather="github" class="header-button"></i></a></div>
 </nav>
-<h2 class="display-6">Apache Web Server</h2>
+<h2 class="display-6">Research Data</h2>
 
 <div id="outline-container-headline-1" class="outline-4">
 <h4 id="headline-1">
-Don&#39;t See Website When Visiting Domain
+GitLab Repo on Zenodo
 </h4>
 <div id="outline-text-headline-1" class="outline-text-4">
-<p>Obviously many things could be wrong here, but a problem that I had which took me ages to find the solution was simply that I hadn&#39;t configured the firewall (e.g. <code>ufw allow 80/tcp</code>, <code>ufw allow 443/tcp</code>). Also, need to get an SSL certificate (e.g. using Certbot).</p>
+<p>See guide at <a href="https://open.win.ox.ac.uk/pages/open-science/community/Open-WIN-Community/docs/gitlab/repo-doi/">https://open.win.ox.ac.uk/pages/open-science/community/Open-WIN-Community/docs/gitlab/repo-doi/</a></p>
+<p>
+If this page is no longer available for some reason, the steps are:</p>
+<ol>
+<li>In zenodo, log in or create an account. Go to “new upload” and add details about your material. Click the “reserve” button to get the doi which will be issued by zenodo.</li>
+<li>Copy this doi into your README for your project on GitLab, or other documentation. Include this in a section entitled “How to cite this material”.</li>
+<li>Make a “release” of the repository. Add a note to mark this as the initial release.</li>
+<li>Download the repository from GitLab (download icon on the repository home page) as a .zip or other compressed file type.</li>
+<li>Upload the compressed file collection to zenodo.</li>
+<li>Finalise the zenodo entry with all contributors including their ORDIC IDs. Include a link to the GitLab repository.</li>
+<li>Set an embargo period for the material if it is not yet publicly available on GitLab.</li>
+</ol>
 </div>
 </div>
 
