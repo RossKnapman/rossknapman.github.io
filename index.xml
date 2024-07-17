@@ -4,10 +4,17 @@
     <title>Ross Knapman</title>
     <link>https://www.rossknapman.com/</link>
     <description>Recent content on Ross Knapman</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 04 Sep 2022 10:07:38 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.rossknapman.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Got My PhD!</title>
+      <link>https://www.rossknapman.com/posts/phdgraduation/</link>
+      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.rossknapman.com/posts/phdgraduation/</guid>
+      <description>After years of work, my PhD journal has finally come to an end! I defended my thesis &amp;ldquo;Creation and Manipulation of Topological Magnetic Textures in Chiral and Frustrated Magnets&amp;rdquo; at the Johannes Gutenberg-Universität Mainz on 14th May 2024, with the grade 1.0 (&amp;ldquo;very good&amp;rdquo;).&#xA;Read my thesis here.</description>
+    </item>
     <item>
       <title>USA 2022</title>
       <link>https://www.rossknapman.com/posts/usa2022/</link>
