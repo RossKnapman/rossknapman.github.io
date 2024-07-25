@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <meta name="keywords" content="stereographic, projection, hopfion, skyrmion, hopf, antiskyrmion">
+    <meta name="keywords" content="stereographic, projection, hopfion, skyrmion, hopf, antiskyrmion, micromagnetics, chiral, h-shaped skyrmion">
     
     
     <title>Ross Knapman | Some Figures From My PhD</title>
@@ -83,7 +83,7 @@
         <button type="button" class="header-button" data-feather="menu"></button>
     </div>
     <div class="pl-4">
-        <a href="http://localhost:1313/"><h1 id="site-title">Ross Knapman</h1></a>
+        <a href="https://www.rossknapman.com/"><h1 id="site-title">Ross Knapman</h1></a>
     </div>
     </div>
     <div class="social-media-buttons social-media-buttons-header"><a href="../../download/CV.pdf"><i data-feather="file-text" class="header-button"></i></a>
@@ -94,49 +94,55 @@
 
 
 <i data-feather="calendar"></i>
-<time datetime="2024-07-23">Jul 23, 2024</time>
+<time datetime="2024-07-25">Jul 25, 2024</time>
 
 <i data-feather="tag"></i>
 
 
-<a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:1313/tags/art">art</a>
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/art">art</a>
 
 
-<a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:1313/tags/mathematics">mathematics</a>
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://www.rossknapman.com/tags/mathematics">mathematics</a>
 
 
 <br><br>
 <p>Here is a small assortment of figures that I made during my PhD with the <a href="https://www.uni-due.de/physik/twist/">TWIST</a> and <a href="https://www.sinova-group.physik.uni-mainz.de/">INSPIRE</a> groups, mainly for my <a href="http://doi.org/10.25358/openscience-10397">thesis</a>. I started to learn <a href="https://www.blender.org/">Blender</a> shortly after the start of my PhD, but I ended up switching to <a href="https://www.povray.org/">POV-Ray</a>, which is the tool used to create most of the images on this page (the only exception being the H-shaped skyrmion render, for which I used Blender). Although POV-Ray is significantly older and has fewer features than Blender, I have found it to be much more simple to use where more complex mathematics is required to describe an object (with Blender, I always felt like I was having to &ldquo;hack&rdquo; it in order to create what I wanted, even with the Python API).</p>
-<p><figure><img src="../../posts/phdfigures/higherorderhopfions.png"
-    alt="Preimages of hopfions with various Hopf indices \(H\). \(H=1\) for a single twist, \(H=2\) for a double twist, \(H=4\) for two interlinked \(H=1\) hopfions, and \(H=8\) for a cinquefoil knot."><figcaption>
+<figure>
+    <video controls autoplay loop>
+        <source src="skyrmionstereographicprojection.mp4" type="video/mp4">
+    </video>
+    <figcaption><p>The topology of a magnetic skyrmion comes from its homotopy group: the number of times the magnetisation covers a unit sphere is the skyrmion number \(N_{\mathrm{sk}}\). The texture defined over a unit sphere can be stereographically projected onto a two-dimensional plane.</p></figcaption>
+</figure>
+<figure>
+    <video controls autoplay loop>
+        <source src="skyrmionantiskyrmionpairseparation.mp4" type="video/mp4">
+    </video>
+    <figcaption><p>This animation illustrates the principle of topological protection of skyrmions. For a skyrmion to be created by a continuous deformation of the topologically trivial collinear background, an antiskyrmion must be simultaneously created.</p></figcaption>
+</figure>
+<figure><img src="../../posts/phdfigures/higherorderhopfions.png"
+    alt="Hopfion of various orders."><figcaption>
       <p>Preimages of hopfions with various Hopf indices \(H\). \(H=1\) for a single twist, \(H=2\) for a double twist, \(H=4\) for two interlinked \(H=1\) hopfions, and \(H=8\) for a cinquefoil knot.</p>
     </figcaption>
 </figure>
 
 <figure><img src="../../posts/phdfigures/hopfion.png"
-    alt="Magnetic hopfion texture from a tube of skyrmions."><figcaption>
+    alt="Magnetic hopfion constructed from skyrmions."><figcaption>
       <p>Magnetic hopfion texture from a tube of skyrmions.</p>
     </figcaption>
 </figure>
 
 <figure><img src="../../posts/phdfigures/hshapedskyrmion.png"
-    alt="A render of a H-shaped skyrmion. For more information on H-shaped skyrmions, see my publication on them."><figcaption>
+    alt="Render of a H-shaped skyrmion."><figcaption>
       <p>A render of a H-shaped skyrmion. For more information on H-shaped skyrmions, see <a href="https://doi.org/10.1088/1361-6463/AC0E5A">my publication on them</a>.</p>
     </figcaption>
 </figure>
 
-<figure><img src="../../posts/phdfigures/preimageswatermarked.png"
-    alt="Hopf fibration visualised using a stereographic projection, which provides a way to view a 4D sphere in 3D! An explanation of the mathematics behind this is given by Niles Johnson on his website, which accompanies a beautiful video illustrating the Hopf fibration. He also has a lecture on the subject for the real enthusiasts. Samuel J. Li also has an excellent interactive tool to demonstrate the Hopf fibration."><figcaption>
-      <p>Hopf fibration visualised using a stereographic projection, which provides a way to view a 4D sphere in 3D! An explanation of the mathematics behind this is given by Niles Johnson on <a href="https://nilesjohnson.net/hopf-production.html">his website</a>, which accompanies a <a href="https://youtu.be/AKotMPGFJYk?si=eR2kTd9mbQwzfOH1">beautiful video</a> illustrating the Hopf fibration. He also has a <a href="https://youtu.be/QXDQsmL-8Us?si=gGsCrRw2u738Aqqe">lecture on the subject</a> for the real enthusiasts. Samuel J. Li also has an <a href="https://samuelj.li/hopf-fibration/">excellent interactive tool to demonstrate the Hopf fibration</a>.</p>
+<figure><img src="../../posts/phdfigures/PreimagesWatermarked.png"
+    alt="Render the the Hopf fibration."><figcaption>
+      <p>Hopf fibration visualised using a stereographic projection, which provides a way to view a 4D sphere in 3D! An explanation of the mathematics behind this is given by Niles Johnson on <a href="https://nilesjohnson.net/hopf-production.html">his website</a>, which accompanies a <a href="https://youtu.be/AKotMPGFJYk?si=eR2kTd9mbQwzfOH1">beautiful video</a> illustrating the Hopf fibration. He also has a <a href="https://youtu.be/QXDQsmL-8Us?si=gGsCrRw2u738Aqqe">lecture on the subject</a> for real enthusiasts. Samuel J. Li also has an <a href="https://samuelj.li/hopf-fibration/">excellent interactive tool to demonstrate the Hopf fibration</a>.</p>
     </figcaption>
 </figure>
 
-<figure><img src="../../posts/phdfigures/skyrmionantiskyrmionpaircreation.gif">
-</figure>
-
-<figure><img src="../../posts/phdfigures/stereographicprojection.gif">
-</figure>
-</p>
 
 <script src="../../js/jquery-3.6.0.min.js"></script>
 <script src="../../js/sidebar.js"></script>

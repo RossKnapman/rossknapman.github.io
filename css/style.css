@@ -125,14 +125,7 @@ body {
     align-items: center;
 }
 
-figure img {
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-figure p {
+figure img, figure p, figure video {
     width: 60%;
     display: block;
     margin-left: auto;
@@ -140,10 +133,7 @@ figure p {
 }
 
 @media (max-width: 768px) {
-    figure img {
-        width: 100%;
-    }
-    figure p {
+    figure img, figure p, figure video {
         width: 100%;
     }
 }

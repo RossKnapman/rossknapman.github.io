@@ -6,8 +6,15 @@
     <description>Recent content on Ross Knapman</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 23 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.rossknapman.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some Figures From My PhD</title>
+      <link>https://www.rossknapman.com/posts/phdfigures/</link>
+      <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.rossknapman.com/posts/phdfigures/</guid>
+      <description>Here is a small assortment of figures that I made during my PhD with the TWIST and INSPIRE groups, mainly for my thesis. I started to learn Blender shortly after the start of my PhD, but I ended up switching to POV-Ray, which is the tool used to create most of the images on this page (the only exception being the H-shaped skyrmion render, for which I used Blender). Although POV-Ray is significantly older and has fewer features than Blender, I have found it to be much more simple to use where more complex mathematics is required to describe an object (with Blender, I always felt like I was having to &amp;ldquo;hack&amp;rdquo; it in order to create what I wanted, even with the Python API).</description>
+    </item>
     <item>
       <title>AI Can Generate Pretty Good Music Now</title>
       <link>https://www.rossknapman.com/posts/udiophdsong/</link>
