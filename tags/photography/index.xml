@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Photography on Ross Knapman</title>
-    <link>https://www.rossknapman.com/tags/photography/</link>
+    <link>http://localhost:1313/tags/photography/</link>
     <description>Recent content in Photography on Ross Knapman</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 02 Jun 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.rossknapman.com/tags/photography/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/photography/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Photography</title>
-      <link>https://www.rossknapman.com/posts/photography/</link>
+      <link>http://localhost:1313/posts/photography/</link>
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.rossknapman.com/posts/photography/</guid>
+      <guid>http://localhost:1313/posts/photography/</guid>
       <description>&lt;p&gt;As a teenager, I was quite into photography, especially after my parents got me a Canon EOS 600D for Christmas when I was 15. Although I don&amp;rsquo;t really do so much of this at the moment, here is a collection of photos that I have taken in various places around the world.&lt;/p&gt;</description>
     </item>
   </channel>

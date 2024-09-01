@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI on Ross Knapman</title>
-    <link>https://www.rossknapman.com/tags/ai/</link>
+    <link>http://localhost:1313/tags/ai/</link>
     <description>Recent content in AI on Ross Knapman</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 23 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.rossknapman.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Can Generate Pretty Good Music Now</title>
-      <link>https://www.rossknapman.com/posts/udiophdsong/</link>
+      <link>http://localhost:1313/posts/udiophdsong/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rossknapman.com/posts/udiophdsong/</guid>
+      <guid>http://localhost:1313/posts/udiophdsong/</guid>
       <description>It seems like ChatGPT has been around forever now, and despite only having used it for a year or so, many people wonder how they ever lived without it. I recently discovered that a similar service exists for audio, where songs can be generated from a prompt. One example of such a service is Udio. At the time of writing, it is free to use, albeit with a limited (but generous) number of credits.</description>
     </item>
   </channel>

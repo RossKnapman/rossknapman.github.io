@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Travel on Ross Knapman</title>
-    <link>https://www.rossknapman.com/tags/travel/</link>
+    <link>http://localhost:1313/tags/travel/</link>
     <description>Recent content in Travel on Ross Knapman</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Sun, 04 Sep 2022 10:07:38 +0200</lastBuildDate>
-    <atom:link href="https://www.rossknapman.com/tags/travel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/travel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>USA 2022</title>
-      <link>https://www.rossknapman.com/posts/usa2022/</link>
+      <link>http://localhost:1313/posts/usa2022/</link>
       <pubDate>Sun, 04 Sep 2022 10:07:38 +0200</pubDate>
-      <guid>https://www.rossknapman.com/posts/usa2022/</guid>
+      <guid>http://localhost:1313/posts/usa2022/</guid>
       <description>Between June and August 2022, I had the wonderful opportunity to visit Ran Cheng&amp;rsquo;s group at the University of California, Riverside, to work on a (still ongoing, at time of writing) project. This post, however, is about the exciting things I got up to when I was not working!&#xA;The UCR Bell Tower.&#xA;Rather than flying directly to Los Angeles, I decided that I would book my flight to Seattle, a city that I had been wanting to visit for a good decade.</description>
     </item>
     <item>
       <title>Photography</title>
-      <link>https://www.rossknapman.com/posts/photography/</link>
+      <link>http://localhost:1313/posts/photography/</link>
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.rossknapman.com/posts/photography/</guid>
+      <guid>http://localhost:1313/posts/photography/</guid>
       <description>&lt;p&gt;As a teenager, I was quite into photography, especially after my parents got me a Canon EOS 600D for Christmas when I was 15. Although I don&amp;rsquo;t really do so much of this at the moment, here is a collection of photos that I have taken in various places around the world.&lt;/p&gt;</description>
     </item>
   </channel>

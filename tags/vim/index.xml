@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vim on Ross Knapman</title>
-    <link>https://www.rossknapman.com/tags/vim/</link>
+    <link>http://localhost:1313/tags/vim/</link>
     <description>Recent content in Vim on Ross Knapman</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Sun, 05 Dec 2021 16:49:56 +0100</lastBuildDate>
-    <atom:link href="https://www.rossknapman.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up Inverse Search with Neovim, VimTeX and Zathura</title>
-      <link>https://www.rossknapman.com/posts/nvimvimtexzathura/</link>
+      <link>http://localhost:1313/posts/nvimvimtexzathura/</link>
       <pubDate>Sun, 05 Dec 2021 16:49:56 +0100</pubDate>
-      <guid>https://www.rossknapman.com/posts/nvimvimtexzathura/</guid>
+      <guid>http://localhost:1313/posts/nvimvimtexzathura/</guid>
       <description>Note 06.01.2023: With the release of VimTex 2.8, you probably don&amp;rsquo;t need to do this any more. See :help vimtex-synctex-inverse-search.&#xA;There are many reasons to write LaTeX in Vim instead of the more &amp;ldquo;traditional&amp;rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of UltiSnips, or you just want to make the most of Vim&amp;rsquo;s many features. VimTeX is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and Zathura is a minimalist, highly customisable document viewer with Vim keybindings by default.</description>
     </item>
   </channel>

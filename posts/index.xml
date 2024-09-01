@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Ross Knapman</title>
-    <link>https://www.rossknapman.com/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Ross Knapman</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 25 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.rossknapman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Some Figures From My PhD</title>
-      <link>https://www.rossknapman.com/posts/phdfigures/</link>
+      <link>http://localhost:1313/posts/phdfigures/</link>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rossknapman.com/posts/phdfigures/</guid>
+      <guid>http://localhost:1313/posts/phdfigures/</guid>
       <description>Here is a small assortment of figures that I made during my PhD with the TWIST and INSPIRE groups, mainly for my thesis. I started to learn Blender shortly after the start of my PhD, but I ended up switching to POV-Ray, which is the tool used to create most of the images on this page (the only exception being the H-shaped skyrmion render, for which I used Blender). Although POV-Ray is significantly older and has fewer features than Blender, I have found it to be much more simple to use where more complex mathematics is required to describe an object (with Blender, I always felt like I was having to &amp;ldquo;hack&amp;rdquo; it in order to create what I wanted, even with the Python API).</description>
     </item>
     <item>
       <title>AI Can Generate Pretty Good Music Now</title>
-      <link>https://www.rossknapman.com/posts/udiophdsong/</link>
+      <link>http://localhost:1313/posts/udiophdsong/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rossknapman.com/posts/udiophdsong/</guid>
+      <guid>http://localhost:1313/posts/udiophdsong/</guid>
       <description>It seems like ChatGPT has been around forever now, and despite only having used it for a year or so, many people wonder how they ever lived without it. I recently discovered that a similar service exists for audio, where songs can be generated from a prompt. One example of such a service is Udio. At the time of writing, it is free to use, albeit with a limited (but generous) number of credits.</description>
     </item>
     <item>
       <title>I Got My PhD!</title>
-      <link>https://www.rossknapman.com/posts/phdgraduation/</link>
+      <link>http://localhost:1313/posts/phdgraduation/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rossknapman.com/posts/phdgraduation/</guid>
+      <guid>http://localhost:1313/posts/phdgraduation/</guid>
       <description>After years of work, my PhD journal has finally come to an end! I defended my thesis &amp;ldquo;Creation and Manipulation of Topological Magnetic Textures in Chiral and Frustrated Magnets&amp;rdquo; at the Johannes Gutenberg-Universität Mainz on 14th May 2024, with the grade 1.0 (&amp;ldquo;very good&amp;rdquo;).&#xA;Read my thesis here.</description>
     </item>
     <item>
       <title>USA 2022</title>
-      <link>https://www.rossknapman.com/posts/usa2022/</link>
+      <link>http://localhost:1313/posts/usa2022/</link>
       <pubDate>Sun, 04 Sep 2022 10:07:38 +0200</pubDate>
-      <guid>https://www.rossknapman.com/posts/usa2022/</guid>
+      <guid>http://localhost:1313/posts/usa2022/</guid>
       <description>Between June and August 2022, I had the wonderful opportunity to visit Ran Cheng&amp;rsquo;s group at the University of California, Riverside, to work on a (still ongoing, at time of writing) project. This post, however, is about the exciting things I got up to when I was not working!&#xA;The UCR Bell Tower.&#xA;Rather than flying directly to Los Angeles, I decided that I would book my flight to Seattle, a city that I had been wanting to visit for a good decade.</description>
     </item>
     <item>
       <title>Photography</title>
-      <link>https://www.rossknapman.com/posts/photography/</link>
+      <link>http://localhost:1313/posts/photography/</link>
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.rossknapman.com/posts/photography/</guid>
+      <guid>http://localhost:1313/posts/photography/</guid>
       <description>&lt;p&gt;As a teenager, I was quite into photography, especially after my parents got me a Canon EOS 600D for Christmas when I was 15. Although I don&amp;rsquo;t really do so much of this at the moment, here is a collection of photos that I have taken in various places around the world.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Setting up Inverse Search with Neovim, VimTeX and Zathura</title>
-      <link>https://www.rossknapman.com/posts/nvimvimtexzathura/</link>
+      <link>http://localhost:1313/posts/nvimvimtexzathura/</link>
       <pubDate>Sun, 05 Dec 2021 16:49:56 +0100</pubDate>
-      <guid>https://www.rossknapman.com/posts/nvimvimtexzathura/</guid>
+      <guid>http://localhost:1313/posts/nvimvimtexzathura/</guid>
       <description>Note 06.01.2023: With the release of VimTex 2.8, you probably don&amp;rsquo;t need to do this any more. See :help vimtex-synctex-inverse-search.&#xA;There are many reasons to write LaTeX in Vim instead of the more &amp;ldquo;traditional&amp;rdquo; LaTeX editors. Maybe you want to type long equations quickly with the help of UltiSnips, or you just want to make the most of Vim&amp;rsquo;s many features. VimTeX is a plugin for Vim (and Neovim) which allows for the easy authoring of LaTeX files using Vim, with useful features such as autocompilation, and Zathura is a minimalist, highly customisable document viewer with Vim keybindings by default.</description>
     </item>
     <item>
       <title>Coffee Cup to Doughnut Animation</title>
-      <link>https://www.rossknapman.com/posts/mugdoughnut/</link>
+      <link>http://localhost:1313/posts/mugdoughnut/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0100</pubDate>
-      <guid>https://www.rossknapman.com/posts/mugdoughnut/</guid>
+      <guid>http://localhost:1313/posts/mugdoughnut/</guid>
       <description>I made this animation using Blender when writing my project proposal for my Studienstiftung application.</description>
     </item>
   </channel>
