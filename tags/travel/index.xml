@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Travel on Ross Knapman</title>
-    <link>http://localhost:1313/tags/travel/</link>
+    <link>https://www.rossknapman.com/tags/travel/</link>
     <description>Recent content in Travel on Ross Knapman</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Sun, 04 Sep 2022 10:07:38 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/travel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.rossknapman.com/tags/travel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>USA 2022</title>
-      <link>http://localhost:1313/posts/usa2022/</link>
+      <link>https://www.rossknapman.com/posts/usa2022/</link>
       <pubDate>Sun, 04 Sep 2022 10:07:38 +0200</pubDate>
-      <guid>http://localhost:1313/posts/usa2022/</guid>
-      <description>Between June and August 2022, I had the wonderful opportunity to visit Ran Cheng&amp;rsquo;s group at the University of California, Riverside, to work on a (still ongoing, at time of writing) project. This post, however, is about the exciting things I got up to when I was not working!&#xA;The UCR Bell Tower.&#xA;Rather than flying directly to Los Angeles, I decided that I would book my flight to Seattle, a city that I had been wanting to visit for a good decade.</description>
+      <guid>https://www.rossknapman.com/posts/usa2022/</guid>
+      <description>&lt;p&gt;Between June and August 2022, I had the wonderful opportunity to visit Ran Cheng&amp;rsquo;s group at the University of California, Riverside, to work on a (still ongoing, at time of writing) project. This post, however, is about the exciting things I got up to when I was not working!&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;../../posts/usa2022/UCR.jpg&#34;&#xA;    alt=&#34;The UCR Bell Tower.&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;The UCR Bell Tower.&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Rather than flying directly to Los Angeles, I decided that I would book my flight to Seattle, a city that I had been wanting to visit for a good decade. I would then take the Amtrak down to Portland, another city I&amp;rsquo;d been dreaming of going to for a good while, and then further onwards to Los Angeles and Riverside. I flew with Condor, and the flight was a pretty nice experience. On the way, I got a nice view of Mainz, the city I called home for the first year and a half of my PhD.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Photography</title>
-      <link>http://localhost:1313/posts/photography/</link>
+      <link>https://www.rossknapman.com/posts/photography/</link>
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/photography/</guid>
+      <guid>https://www.rossknapman.com/posts/photography/</guid>
       <description>&lt;p&gt;As a teenager, I was quite into photography, especially after my parents got me a Canon EOS 600D for Christmas when I was 15. Although I don&amp;rsquo;t really do so much of this at the moment, here is a collection of photos that I have taken in various places around the world.&lt;/p&gt;</description>
     </item>
   </channel>

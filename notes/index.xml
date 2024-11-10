@@ -2,262 +2,262 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Ross Knapman</title>
-    <link>http://localhost:1313/notes/</link>
+    <link>https://www.rossknapman.com/notes/</link>
     <description>Recent content in Notes on Ross Knapman</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.rossknapman.com/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apache Web Server</title>
-      <link>http://localhost:1313/notes/apachewebserver/</link>
+      <link>https://www.rossknapman.com/notes/apachewebserver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/apachewebserver/</guid>
-      <description>Don&amp;#39;t See Website When Visiting Domain Obviously many things could be wrong here, but a problem that I had which took me ages to find the solution was simply that I hadn&amp;#39;t configured the firewall (e.g. ufw allow 80/tcp, ufw allow 443/tcp). Also, need to get an SSL certificate (e.g. using Certbot).</description>
+      <guid>https://www.rossknapman.com/notes/apachewebserver/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Don&amp;#39;t See Website When Visiting Domain&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Obviously many things could be wrong here, but a problem that I had which took me ages to find the solution was simply that I hadn&amp;#39;t configured the firewall (e.g. &lt;code&gt;ufw allow 80/tcp&lt;/code&gt;, &lt;code&gt;ufw allow 443/tcp&lt;/code&gt;). Also, need to get an SSL certificate (e.g. using Certbot).&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Blender</title>
-      <link>http://localhost:1313/notes/blender/</link>
+      <link>https://www.rossknapman.com/notes/blender/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/blender/</guid>
-      <description>Basics The tilde key (at least when I was using an external keyboard) gives you a perspective menu.&#xA;Shift+S gives you the cursor menu, allowing you to place the 3D cursor back at the origin, for example (this is where new objects spawn).&#xA;Shift+RMB moves the 3D cursor&#xA;You can create new panes by clicking and dragging the corners to drag out new panes, and merge them together in a similar way.</description>
+      <guid>https://www.rossknapman.com/notes/blender/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Basics&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;The tilde key (at least when I was using an external keyboard) gives you a perspective menu.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Shift+S gives you the cursor menu, allowing you to place the 3D cursor back at the origin, for example (this is where new objects spawn).&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Shift+RMB moves the 3D cursor&lt;/p&gt;&#xA;&lt;p&gt;&#xA;You can create new panes by clicking and dragging the corners to drag out new panes, and merge them together in a similar way. There is a dropdown menu in each pane to switch between different modes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>C&#43;&#43;</title>
-      <link>http://localhost:1313/notes/c&#43;&#43;/</link>
+      <link>https://www.rossknapman.com/notes/c&#43;&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/c&#43;&#43;/</guid>
-      <description>Constants and Variables Can either define a constant like const double pi = 3.14 or as a preprocessor director #define PI 3.14, where the latter replaces all appearances of PI in the source code with 3.14&#xA;Declaration of variables: int x = 0; and int x(0); and int x{0}; are all equivalent&#xA;x = x + 1; and x += 1 and ++x and x++ are all equivalent, but y = ++x will first add 1 to x, then assign this to y, whilst y = x++ will first set y = x, then add 1 to x</description>
+      <guid>https://www.rossknapman.com/notes/c&#43;&#43;/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Constants and Variables&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Can either define a constant like &lt;code&gt;const double pi = 3.14&lt;/code&gt; or as a preprocessor director &lt;code&gt;#define PI 3.14&lt;/code&gt;, where the latter replaces all appearances of PI in the source code with 3.14&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Declaration of variables: &lt;code&gt;int x = 0;&lt;/code&gt; and &lt;code&gt;int x(0);&lt;/code&gt; and &lt;code&gt;int x{0};&lt;/code&gt; are all equivalent&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;code&gt;x = x + 1;&lt;/code&gt; and &lt;code&gt;x += 1 and ++x and x++&lt;/code&gt; are all equivalent, but&#xA;&lt;code&gt;y = ++x&lt;/code&gt; will first add 1 to x, then assign this to y, whilst&#xA;&lt;code&gt;y = x++&lt;/code&gt; will first set y = x, then add 1 to x&lt;/p&gt;</description>
     </item>
     <item>
       <title>Copying iTerm2 Profile Between Computers</title>
-      <link>http://localhost:1313/notes/copyingiterm2profilebetweencomputers/</link>
+      <link>https://www.rossknapman.com/notes/copyingiterm2profilebetweencomputers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/copyingiterm2profilebetweencomputers/</guid>
-      <description>On the first computer, go to Preferences. Tick &amp;#34;Load preferences from a custom folder or URL&amp;#34;. Browse to where the folder should be saved (e.g. in Dropbox) - this should be its own folder (so create a folder called iTerm or something). On the second computer. Load this folder, then restart iTerm. Then the &amp;#34;Load preferences…&amp;#34; box can be unticked.&#xA;For Alt+Left etc., go to Preferences, Profiles, Keys, and load the preset &amp;#34;Natural Text Editing&amp;#34;</description>
+      <guid>https://www.rossknapman.com/notes/copyingiterm2profilebetweencomputers/</guid>
+      <description>&lt;p&gt;&#xA;On the first computer, go to Preferences. Tick &amp;#34;Load preferences from a custom folder or URL&amp;#34;. Browse to where the folder should be saved (e.g. in Dropbox) - this should be its own folder (so create a folder called iTerm or something). On the second computer. Load this folder, then restart iTerm. Then the &amp;#34;Load preferences…&amp;#34; box can be unticked.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;For Alt+Left etc., go to Preferences, Profiles, Keys, and load the preset &amp;#34;Natural Text Editing&amp;#34;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cron</title>
-      <link>http://localhost:1313/notes/cron/</link>
+      <link>https://www.rossknapman.com/notes/cron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/cron/</guid>
-      <description>Cron Job Not Working with Rsync Grant cron full disk access by following the guide at https://blog.bejarano.io/fixing-cron-jobs-in-mojave/</description>
+      <guid>https://www.rossknapman.com/notes/cron/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Cron Job Not Working with Rsync&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Grant cron full disk access by following the guide at &lt;a href=&#34;https://blog.bejarano.io/fixing-cron-jobs-in-mojave/&#34;&gt;https://blog.bejarano.io/fixing-cron-jobs-in-mojave/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Data Recovery</title>
-      <link>http://localhost:1313/notes/datarecovery/</link>
+      <link>https://www.rossknapman.com/notes/datarecovery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/datarecovery/</guid>
-      <description>If partition table corrupted, can repair the partition table on macOS using https://www.macintosh-data-recovery.com/blog/repair-mac-external-hard-drive/?fbclid=IwAR3Yp4IDoitVQSEvgiuXgm9Edl-N8rnO4s2BjbK8GtzzzaIw9OrUkH_6cZk</description>
+      <guid>https://www.rossknapman.com/notes/datarecovery/</guid>
+      <description>&lt;p&gt;&#xA;If partition table corrupted, can repair the partition table on macOS using &lt;a href=&#34;https://www.macintosh-data-recovery.com/blog/repair-mac-external-hard-drive/?fbclid=IwAR3Yp4IDoitVQSEvgiuXgm9Edl-N8rnO4s2BjbK8GtzzzaIw9OrUkH_6cZk&#34;&gt;https://www.macintosh-data-recovery.com/blog/repair-mac-external-hard-drive/?fbclid=IwAR3Yp4IDoitVQSEvgiuXgm9Edl-N8rnO4s2BjbK8GtzzzaIw9OrUkH_6cZk&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Downloading YouTube Videos that are Private (But Accessible to You When Logged In)</title>
-      <link>http://localhost:1313/notes/downloadingyoutubevideosthatareprivatebutaccessibletoyouwhenloggedin/</link>
+      <link>https://www.rossknapman.com/notes/downloadingyoutubevideosthatareprivatebutaccessibletoyouwhenloggedin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/downloadingyoutubevideosthatareprivatebutaccessibletoyouwhenloggedin/</guid>
-      <description>https://daveparrish.net/posts/2018-06-22-How-to-download-private-YouTube-videos-with-youtube-dl.html</description>
+      <guid>https://www.rossknapman.com/notes/downloadingyoutubevideosthatareprivatebutaccessibletoyouwhenloggedin/</guid>
+      <description>&lt;p&gt;&#xA;https://daveparrish.net/posts/2018-06-22-How-to-download-private-YouTube-videos-with-youtube-dl.html&lt;/p&gt;</description>
     </item>
     <item>
       <title>Emacs</title>
-      <link>http://localhost:1313/notes/emacs/</link>
+      <link>https://www.rossknapman.com/notes/emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/emacs/</guid>
-      <description>Org Mode Plain Text To show plain text without formatting, use font-lock-mode&#xA;Checking for Link Rot Use org-lint</description>
+      <guid>https://www.rossknapman.com/notes/emacs/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Org Mode&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-5&#34;&gt;&#xA;&lt;h5 id=&#34;headline-2&#34;&gt;&#xA;Plain Text&#xA;&lt;/h5&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-5&#34;&gt;&#xA;&lt;p&gt;To show plain text without formatting, use &lt;code&gt;font-lock-mode&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-5&#34;&gt;&#xA;&lt;h5 id=&#34;headline-3&#34;&gt;&#xA;Checking for Link Rot&#xA;&lt;/h5&gt;&#xA;&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-5&#34;&gt;&#xA;&lt;p&gt;Use &lt;code&gt;org-lint&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>FFmpeg</title>
-      <link>http://localhost:1313/notes/ffmpeg/</link>
+      <link>https://www.rossknapman.com/notes/ffmpeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/ffmpeg/</guid>
-      <description>Joining Videos Side-By-Side with FFmpeg This all also works for images&#xA;Getting information about the video (resolution, fps etc.): ffprobe file.mp4&#xA;Basic usage (more work needed for sound): ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4&#xA;If the files are of different heights: ffmpeg -i In.mp4 -vf scale=-1:&amp;lt;height&amp;gt; Out.mp4&#xA;If the resulting width is not an even number: ffmpeg -i Out.mp4 -vf scale=iw-1:ih Out.mp4&#xA;OR&#xA;change the -1 to -2 in the earlier command</description>
+      <guid>https://www.rossknapman.com/notes/ffmpeg/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Joining Videos Side-By-Side with FFmpeg&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;This all also works for images&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Getting information about the video (resolution, fps etc.):&#xA;&lt;code&gt;ffprobe file.mp4&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Basic usage (more work needed for sound):&#xA;&lt;code&gt;ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;If the files are of different heights:&#xA;&lt;code&gt;ffmpeg -i In.mp4 -vf scale=-1:&amp;lt;height&amp;gt; Out.mp4&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;If the resulting width is not an even number:&#xA;&lt;code&gt;ffmpeg -i Out.mp4 -vf scale=iw-1:ih Out.mp4&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;OR&lt;/p&gt;&#xA;&lt;p&gt;&#xA;change the -1 to -2 in the earlier command&lt;/p&gt;</description>
     </item>
     <item>
       <title>Firefly III</title>
-      <link>http://localhost:1313/notes/fireflyiii/</link>
+      <link>https://www.rossknapman.com/notes/fireflyiii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/fireflyiii/</guid>
-      <description>Migrate to New Server (Assuming Docker Installation) Shamelessly stolen from https://github.com/orgs/firefly-iii/discussions/8241, but re-writing here in case that thread gets lost.&#xA;On the old server:&#xA;docker exec -ti &amp;lt;db_container&amp;gt; bash apt update &amp;amp;&amp;amp; apt install mysql-client mysqldump -u firefly --column-statistics=0 -p firefly &amp;gt; /tmp/firefly.sql exit docker cp &amp;lt;db_container&amp;gt;:/tmp/firefly.sql . On the new server:&#xA;docker cp firefly.sql &amp;lt;db_container&amp;gt;:/tmp/firefly.sql docker exec -ti &amp;lt;db_container&amp;gt; bash apt update &amp;amp;&amp;amp; apt install mysql-client rm -rf /var/lib/mysql/firefly mysql -u firefly -p firefly create database firefly use firefly; source /tmp/firefly.</description>
+      <guid>https://www.rossknapman.com/notes/fireflyiii/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Migrate to New Server (Assuming Docker Installation)&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Shamelessly stolen from &lt;a href=&#34;https://github.com/orgs/firefly-iii/discussions/8241,&#34;&gt;https://github.com/orgs/firefly-iii/discussions/8241,&lt;/a&gt; but re-writing here in case that thread gets lost.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;On the old server:&lt;/p&gt;&#xA;&lt;div class=&#34;src src-sh&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker exec -ti &amp;lt;db_container&amp;gt; bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt install mysql-client&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mysqldump -u firefly --column-statistics&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; -p firefly &amp;gt; /tmp/firefly.sql&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exit&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker cp &amp;lt;db_container&amp;gt;:/tmp/firefly.sql .&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&#xA;On the new server:&lt;/p&gt;&#xA;&lt;div class=&#34;src src-sh&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker cp firefly.sql &amp;lt;db_container&amp;gt;:/tmp/firefly.sql&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker exec -ti &amp;lt;db_container&amp;gt; bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt install mysql-client&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm -rf /var/lib/mysql/firefly&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mysql -u firefly -p firefly&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;create database firefly&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;use firefly;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source /tmp/firefly.sql; -&amp;gt; see EDIT&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exit&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exit&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&#xA;If there are problems, it may be due to mismatching versions of Firefly III on the two machines&lt;/p&gt;</description>
     </item>
     <item>
       <title>GNU/Linux</title>
-      <link>http://localhost:1313/notes/gnulinux/</link>
+      <link>https://www.rossknapman.com/notes/gnulinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/gnulinux/</guid>
-      <description>Determining IP Address on Ubuntu ip addr show&#xA;Finding out If a Command Is Available to Run on Ubuntu compgen -c | grep &amp;lt;COMMAND&amp;gt;&#xA;Disk Usage In current directory: du -h . --max-depth=1 on Ubuntu or du -hd1. on macOS&#xA;Installing GNU/Linux on an Apple Computer On Mac, no screen when booting installation: highlight the boot option, press e, add radeon.modeset=0 to the menu that pops up, then press enter.</description>
+      <guid>https://www.rossknapman.com/notes/gnulinux/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Determining IP Address on Ubuntu&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;&lt;code&gt;ip addr show&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-2&#34;&gt;&#xA;Finding out If a Command Is Available to Run on Ubuntu&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;&lt;code&gt;compgen -c | grep &amp;lt;COMMAND&amp;gt;&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-3&#34;&gt;&#xA;Disk Usage&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;In current directory: &lt;code&gt;du -h . --max-depth=1&lt;/code&gt; on Ubuntu or &lt;code&gt;du -hd1&lt;/code&gt;. on macOS&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-4&#34;&gt;&#xA;Installing GNU/Linux on an Apple Computer&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;On Mac, no screen when booting installation: highlight the boot option, press e, add &lt;code&gt;radeon.modeset=0&lt;/code&gt; to the menu that pops up, then press enter. I spent ages to arrive at that!!&lt;/p&gt;</description>
     </item>
     <item>
       <title>GUI Applications with X11 Forwarding</title>
-      <link>http://localhost:1313/notes/guiapplicationswithx11forwarding/</link>
+      <link>https://www.rossknapman.com/notes/guiapplicationswithx11forwarding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/guiapplicationswithx11forwarding/</guid>
-      <description>If things are not opening, try running echo $DISPLAY on the server. If nothing comes up, a possible fix on macOS is to install XQuartz, run launchctl load -w /Library/LaunchAgents/org.macosforge.xquartz.startx.plist on the Mac, then restart the computer. For debugging, try using ssh -v -X &amp;lt;e.g. WS2&amp;gt;.&#xA;To open the Seafile GUI remotely (annoyingly, the GUI allows adjusting some settings that the CLI does not have), run seafile-applet.</description>
+      <guid>https://www.rossknapman.com/notes/guiapplicationswithx11forwarding/</guid>
+      <description>&lt;p&gt;&#xA;If things are not opening, try running &lt;code&gt;echo $DISPLAY&lt;/code&gt; on the server. If nothing comes up, a possible fix on macOS is to install XQuartz, run &lt;code&gt;launchctl load -w /Library/LaunchAgents/org.macosforge.xquartz.startx.plist&lt;/code&gt; on the Mac, then restart the computer. For debugging, try using &lt;code&gt;ssh -v -X &amp;lt;e.g. WS2&amp;gt;&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;To open the Seafile GUI remotely (annoyingly, the GUI allows adjusting some settings that the CLI does not have), run &lt;code&gt;seafile-applet&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Home Network</title>
-      <link>http://localhost:1313/notes/homenetwork/</link>
+      <link>https://www.rossknapman.com/notes/homenetwork/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/homenetwork/</guid>
-      <description>Running Pi-Hole and NextCloud on Same Raspberry Pi Change Pi-Hole&amp;#39;s default port to something else by editing /etc/lighttpd/lighttpd.conf. Then you can still access the Pi-Hole admin panel at &amp;lt;IP address&amp;gt;:&amp;lt;port&amp;gt;/admin</description>
+      <guid>https://www.rossknapman.com/notes/homenetwork/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Running Pi-Hole and NextCloud on Same Raspberry Pi&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Change Pi-Hole&amp;#39;s default port to something else by editing &lt;code&gt;/etc/lighttpd/lighttpd.conf&lt;/code&gt;. Then you can still access the Pi-Hole admin panel at &amp;lt;IP address&amp;gt;:&amp;lt;port&amp;gt;/admin&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Homepage Dashboard</title>
-      <link>http://localhost:1313/notes/homepagedashboard/</link>
+      <link>https://www.rossknapman.com/notes/homepagedashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/homepagedashboard/</guid>
-      <description>Can&amp;#39;t Access Application With API Key Delete any trailing forward slashes in the URL.</description>
+      <guid>https://www.rossknapman.com/notes/homepagedashboard/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Can&amp;#39;t Access Application With API Key&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Delete any trailing forward slashes in the URL.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Inkscape</title>
-      <link>http://localhost:1313/notes/inkscape/</link>
+      <link>https://www.rossknapman.com/notes/inkscape/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/inkscape/</guid>
-      <description>I can’t find the text align button, to align the text within the text box It shows up when you’re typing the text itself, then goes away, contrary to with older versions.&#xA;Extensions are not shown in the Extensions menu First, make sure you’re looking in the right place. For example, Tex Text was hidden under the Text menu, and when I searched for it, I typed it as one word, so it didn’t show up.</description>
+      <guid>https://www.rossknapman.com/notes/inkscape/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;I can’t find the text align button, to align the text within the text box&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;It shows up when you’re typing the text itself, then goes away, contrary to with older versions.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-2&#34;&gt;&#xA;Extensions are not shown in the Extensions menu&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;First, make sure you’re looking in the right place. For example, Tex Text was hidden under the Text menu, and when I searched for it, I typed it as one word, so it didn’t show up. The information here is also useful: &lt;a href=&#34;https://textext.github.io/textext/usage/faq.html#extension-not-shown-in-the-inkscape-extension-menu&#34;&gt;https://textext.github.io/textext/usage/faq.html#extension-not-shown-in-the-inkscape-extension-menu&lt;/a&gt;&#xA;I had a problem when I tried to set the Python interpreter as described in the link above, that, when I opened up Inkscape again, it had been set back to the system default Python, instead of my miniconda installation. I overcame this by deleted all of the backup preferences.xml files that had been created.&lt;/p&gt;</description>
     </item>
     <item>
       <title>iPad</title>
-      <link>http://localhost:1313/notes/ipad/</link>
+      <link>https://www.rossknapman.com/notes/ipad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/ipad/</guid>
-      <description>Viewing Dashboards (Grafana, Home Assistant, etc) on Old iPad Often the lastest versions of dashboard apps such as Grafana are not compatible with older versions of Safari on old devices (such as my 2012 iPad Mini which I would like to use as a simple dashboard viewer).&#xA;A workaround is to install a Firefox Docker container and use that to view the dashboard, as described here. It&amp;#39;s a bit hacky but not as annoying as trying to jailbreak the old iPad just for this purpose…</description>
+      <guid>https://www.rossknapman.com/notes/ipad/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Viewing Dashboards (Grafana, Home Assistant, etc) on Old iPad&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Often the lastest versions of dashboard apps such as Grafana are not compatible with older versions of Safari on old devices (such as my 2012 iPad Mini which I would like to use as a simple dashboard viewer).&lt;/p&gt;&#xA;&lt;p&gt;&#xA;A workaround is to install a Firefox Docker container and use that to view the dashboard, as described &lt;a href=&#34;https://community.home-assistant.io/t/options-for-lovelace-on-older-ipad-ios-9-3-5/125497/4&#34;&gt;here&lt;/a&gt;. It&amp;#39;s a bit hacky but not as annoying as trying to jailbreak the old iPad just for this purpose…&lt;/p&gt;</description>
     </item>
     <item>
       <title>LaTeX</title>
-      <link>http://localhost:1313/notes/latex/</link>
+      <link>https://www.rossknapman.com/notes/latex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/latex/</guid>
-      <description> Varying Quote Style in Multilingual Documents E.g. if you want &amp;#34;This is a quote in English&amp;#34;, ,,Das ist ein Zitat auf Deutsch&amp;#39;&amp;#39;.&#xA;\usepackage[main=english,german]{babel} \usepackage[autostyle]{csquptes} \begin{document} \section{Introduction} This is the introduction in English. \enquote{This is a quote in English}. \selectlanguage{german} \section{Einführung} Dies ist die Einführung in Deutsch. \enquote{Das ist ein Zitat auf Deutsch}. \end{document} </description>
+      <guid>https://www.rossknapman.com/notes/latex/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Varying Quote Style in Multilingual Documents&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;E.g. if you want &amp;#34;This is a quote in English&amp;#34;, ,,Das ist ein Zitat auf Deutsch&amp;#39;&amp;#39;.&lt;/p&gt;&#xA;&lt;div class=&#34;src src-text&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\usepackage[main=english,german]{babel}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\usepackage[autostyle]{csquptes}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\begin{document}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\section{Introduction}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;This is the introduction in English.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\enquote{This is a quote in English}.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\selectlanguage{german}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\section{Einführung}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dies ist die Einführung in Deutsch.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\enquote{Das ist ein Zitat auf Deutsch}.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\end{document}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Mac Mail</title>
-      <link>http://localhost:1313/notes/macmail/</link>
+      <link>https://www.rossknapman.com/notes/macmail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/macmail/</guid>
-      <description>Setting Up Sending Email Via Command Line https://www.justinsilver.com/technology/osx/send-emails-mac-os-x-postfix-gmail-relay/ Generally search &amp;#34;mac mail postfix&amp;#34;.</description>
+      <guid>https://www.rossknapman.com/notes/macmail/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Setting Up Sending Email Via Command Line&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.justinsilver.com/technology/osx/send-emails-mac-os-x-postfix-gmail-relay/&#34;&gt;https://www.justinsilver.com/technology/osx/send-emails-mac-os-x-postfix-gmail-relay/&lt;/a&gt;&#xA;Generally search &amp;#34;mac mail postfix&amp;#34;.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>MuMax</title>
-      <link>http://localhost:1313/notes/mumax/</link>
+      <link>https://www.rossknapman.com/notes/mumax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/mumax/</guid>
-      <description>Overlapping Regions Say we have the default region 0, some region 1, and some region 2 that is within region 1. If we set Ku1 = 1e4, then do Ku1.SetRegion(1, 1e5), then region 2 will take 1e4. If, on the other hand, we do Ku1.SetRegion(0, 1e4) and `Ku1.SetRegion(1e5), then region 2 will take 0. To get region 2 to match with region 1, we have to separately call Ku1.SetRegion(1, 1e5) and Ku1.</description>
+      <guid>https://www.rossknapman.com/notes/mumax/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Overlapping Regions&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Say we have the default region 0, some region 1, and some region 2 that is within region 1. If we set &lt;code&gt;Ku1 = 1e4&lt;/code&gt;, then do &lt;code&gt;Ku1.SetRegion(1, 1e5)&lt;/code&gt;, then region 2 will take 1e4. If, on the other hand, we do &lt;code&gt;Ku1.SetRegion(0, 1e4)&lt;/code&gt; and &lt;code&gt;`Ku1.SetRegion(1e5)&lt;/code&gt;, then region 2 will take 0. To get region 2 to match with region 1, we have to separately call &lt;code&gt;Ku1.SetRegion(1, 1e5)&lt;/code&gt; and &lt;code&gt;Ku1.SetRegion(2, 1e5)&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nextcloud</title>
-      <link>http://localhost:1313/notes/nextcloud/</link>
+      <link>https://www.rossknapman.com/notes/nextcloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/nextcloud/</guid>
-      <description>Upload Fails Try increasing the upload limit: https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/big_file_upload_configuration.html&#xA;For Nextcloud uploaded using docker, set the PHP_UPLOAD_LIMIT environment variable.</description>
+      <guid>https://www.rossknapman.com/notes/nextcloud/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Upload Fails&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Try increasing the upload limit: &lt;a href=&#34;https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/big_file_upload_configuration.html&#34;&gt;https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/big_file_upload_configuration.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;For Nextcloud uploaded using docker, set the PHP_UPLOAD_LIMIT environment variable.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>ParaView</title>
-      <link>http://localhost:1313/notes/paraview/</link>
+      <link>https://www.rossknapman.com/notes/paraview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/paraview/</guid>
-      <description>Converting ovf to vtk for ParaView mumax3-convert -vtk binary m*.ovf&#xA;Producing Animations from pvpython If using ParaView version &amp;lt;5.8, you need to, headless rendering is not supported, so you need to use xvfb-run to create a virtual X environment,&#xA;xvfb-run pvpython [SCRIPTNAME].py&#xA;If several animations are being rendered at the smae time, you can use the -a option to start another dummy X server. If the ParaView version is 5.</description>
+      <guid>https://www.rossknapman.com/notes/paraview/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Converting ovf to vtk for ParaView&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;&lt;code&gt;mumax3-convert -vtk binary m*.ovf&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-2&#34;&gt;&#xA;Producing Animations from pvpython&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;If using ParaView version &amp;lt;5.8, you need to, headless rendering is not supported, so you need to use &lt;code&gt;xvfb-run&lt;/code&gt; to create a virtual X environment,&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;code&gt;xvfb-run pvpython [SCRIPTNAME].py&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;If several animations are being rendered at the smae time, you can use the &lt;code&gt;-a&lt;/code&gt; option to start another dummy X server. If the ParaView version is 5.8 or later, headless rendering is supported.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PDFs</title>
-      <link>http://localhost:1313/notes/pdfs/</link>
+      <link>https://www.rossknapman.com/notes/pdfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/pdfs/</guid>
-      <description>Join Pdfs Vertically pdfjam Page1.pdf Page2.pdf --nup 2x1 --landscape --outfile Page1+2.pdf&#xA;Then remove the margins (CAREFUL, MIGHT FAIL IF IMAGE HAS A LOT OF WHITE): pdf-crop-margins -v -p 0 -a -6 input.pdf&#xA;(Having installed this tool using pip install pdfCropMargins --upgrade)</description>
+      <guid>https://www.rossknapman.com/notes/pdfs/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Join Pdfs Vertically&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;&lt;code&gt;pdfjam Page1.pdf Page2.pdf --nup 2x1 --landscape --outfile Page1+2.pdf&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Then remove the margins (CAREFUL, MIGHT FAIL IF IMAGE HAS A LOT OF WHITE):&#xA;&lt;code&gt;pdf-crop-margins -v -p 0 -a -6 input.pdf&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;(Having installed this tool using &lt;code&gt;pip install pdfCropMargins --upgrade&lt;/code&gt;)&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>POV-Ray</title>
-      <link>http://localhost:1313/notes/pov-ray/</link>
+      <link>https://www.rossknapman.com/notes/pov-ray/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/pov-ray/</guid>
-      <description>Debugging You need to end strings with &amp;#34;\n&amp;#34;, otherwise they won&amp;#39;t be printed. Also, if it does not output to console, output to a file by setting Debug_File=True in the render options .ini file (or equivalent command line argument).&#xA;sphere_sweep Not Going Through All Points Try a different spline type, e.g. linear_spline</description>
+      <guid>https://www.rossknapman.com/notes/pov-ray/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Debugging&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;You need to end strings with &amp;#34;\n&amp;#34;, otherwise they won&amp;#39;t be printed. Also, if it does not output to console, output to a file by setting &lt;code&gt;Debug_File=True&lt;/code&gt; in the render options &lt;code&gt;.ini&lt;/code&gt; file (or equivalent command line argument).&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-2&#34;&gt;&#xA;sphere_sweep Not Going Through All Points&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Try a different spline type, e.g. linear_spline&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>PowerPoint</title>
-      <link>http://localhost:1313/notes/powerpoint/</link>
+      <link>https://www.rossknapman.com/notes/powerpoint/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/powerpoint/</guid>
-      <description>Making Pictures Appear with Bullet Points In Animations, choose the animation as &amp;#34;Appear&amp;#34; and under &amp;#34;Effect Options&amp;#34;, choose &amp;#34;By Paragraph&amp;#34;. Then add the pictures, rearrange them as desired in the Animations pane so that each picture is under the respective bullet point, then change Start from &amp;#34;On Click&amp;#34; to &amp;#34;With Previous&amp;#34;.</description>
+      <guid>https://www.rossknapman.com/notes/powerpoint/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Making Pictures Appear with Bullet Points&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;In Animations, choose the animation as &amp;#34;Appear&amp;#34; and under &amp;#34;Effect Options&amp;#34;, choose &amp;#34;By Paragraph&amp;#34;. Then add the pictures, rearrange them as desired in the Animations pane so that each picture is under the respective bullet point, then change Start from &amp;#34;On Click&amp;#34; to &amp;#34;With Previous&amp;#34;.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/notes/python/</link>
+      <link>https://www.rossknapman.com/notes/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/python/</guid>
-      <description>NumPy Problems Axis Size Not $2^N$ Problem: A thin film is represented by an array of vectors ‚a‘ with dimensions (2000 x 500 x 1), but it is not processed properly because it should really be (2048 x 512 x 1) (2^11 = 2048; 2^9 = 512). Solution: aNew = np.pad(a, [(24, 24), (6, 6)]) will surround the data with zeros to make it up to the correct shape</description>
+      <guid>https://www.rossknapman.com/notes/python/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;NumPy Problems&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-5&#34;&gt;&#xA;&lt;h5 id=&#34;headline-2&#34;&gt;&#xA;Axis Size Not $2^N$&#xA;&lt;/h5&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-5&#34;&gt;&#xA;&lt;p&gt;Problem: A thin film is represented by an array of vectors ‚a‘ with dimensions &lt;code&gt;(2000 x 500 x 1)&lt;/code&gt;, but it is not processed properly because it should really be &lt;code&gt;(2048 x 512 x 1) (2^11 = 2048; 2^9 = 512)&lt;/code&gt;.&#xA;Solution: &lt;code&gt;aNew = np.pad(a, [(24, 24), (6, 6)])&lt;/code&gt; will surround the data with zeros to make it up to the correct shape&lt;/p&gt;</description>
     </item>
     <item>
       <title>PyVista</title>
-      <link>http://localhost:1313/notes/pyvista/</link>
+      <link>https://www.rossknapman.com/notes/pyvista/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/pyvista/</guid>
-      <description>Jupyter Notebook on Remote Server Add pv.start_xvfb() below the imports. If there is simply a blank view, it could be an issue with VS Code/Codium&amp;#39;s settings. Set &amp;#34;remote.autoForwardPortsSource&amp;#34;: &amp;#34;process&amp;#34; in settings.json (see discussion https://github.com/pyvista/pyvista/issues/5296)</description>
+      <guid>https://www.rossknapman.com/notes/pyvista/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Jupyter Notebook on Remote Server&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Add &lt;code&gt;pv.start_xvfb()&lt;/code&gt; below the imports. If there is simply a blank view, it could be an issue with VS Code/Codium&amp;#39;s settings. Set &lt;code&gt;&amp;#34;remote.autoForwardPortsSource&amp;#34;: &amp;#34;process&amp;#34;&lt;/code&gt; in &lt;code&gt;settings.json&lt;/code&gt; (see discussion &lt;a href=&#34;https://github.com/pyvista/pyvista/issues/5296)&#34;&gt;https://github.com/pyvista/pyvista/issues/5296)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Research Data</title>
-      <link>http://localhost:1313/notes/researchdata/</link>
+      <link>https://www.rossknapman.com/notes/researchdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/researchdata/</guid>
-      <description>GitLab Repo on Zenodo See guide at https://open.win.ox.ac.uk/pages/open-science/community/Open-WIN-Community/docs/gitlab/repo-doi/&#xA;If this page is no longer available for some reason, the steps are:&#xA;In zenodo, log in or create an account. Go to “new upload” and add details about your material. Click the “reserve” button to get the doi which will be issued by zenodo. Copy this doi into your README for your project on GitLab, or other documentation. Include this in a section entitled “How to cite this material”.</description>
+      <guid>https://www.rossknapman.com/notes/researchdata/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;GitLab Repo on Zenodo&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;See guide at &lt;a href=&#34;https://open.win.ox.ac.uk/pages/open-science/community/Open-WIN-Community/docs/gitlab/repo-doi/&#34;&gt;https://open.win.ox.ac.uk/pages/open-science/community/Open-WIN-Community/docs/gitlab/repo-doi/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;If this page is no longer available for some reason, the steps are:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In zenodo, log in or create an account. Go to “new upload” and add details about your material. Click the “reserve” button to get the doi which will be issued by zenodo.&lt;/li&gt;&#xA;&lt;li&gt;Copy this doi into your README for your project on GitLab, or other documentation. Include this in a section entitled “How to cite this material”.&lt;/li&gt;&#xA;&lt;li&gt;Make a “release” of the repository. Add a note to mark this as the initial release.&lt;/li&gt;&#xA;&lt;li&gt;Download the repository from GitLab (download icon on the repository home page) as a .zip or other compressed file type.&lt;/li&gt;&#xA;&lt;li&gt;Upload the compressed file collection to zenodo.&lt;/li&gt;&#xA;&lt;li&gt;Finalise the zenodo entry with all contributors including their ORDIC IDs. Include a link to the GitLab repository.&lt;/li&gt;&#xA;&lt;li&gt;Set an embargo period for the material if it is not yet publicly available on GitLab.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Reveal.js</title>
-      <link>http://localhost:1313/notes/reveal.js/</link>
+      <link>https://www.rossknapman.com/notes/reveal.js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/reveal.js/</guid>
-      <description>R Markdown You can write presentations in R Markdown and export them to Reveal.js. Good tutorials for this are here and here, and the documentation with all options is here. To export the slides, you can run echo &amp;#34;require(rmarkdown); render(&amp;#39;FILENAME.md&amp;#39;, output_file=&amp;#39;index.html&amp;#39;)&amp;#34; | R --vanilla.&#xA;To have a double column layout, you can use a stylesheet like&#xA;.container{ display: flex; } .col{ flex: 1; } then, in the R Markdown file,</description>
+      <guid>https://www.rossknapman.com/notes/reveal.js/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;R Markdown&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;You can write presentations in R Markdown and export them to Reveal.js. Good tutorials for this are &lt;a href=&#34;https://garrettgman.github.io/rmarkdown/revealjs_presentation_format.html&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://www.jenniferbradham.org/post/reveal_js_markdown/&#34;&gt;here&lt;/a&gt;, and the documentation with all options is &lt;a href=&#34;https://www.rdocumentation.org/packages/rmarkdown/versions/0.1.2/topics/revealjs_presentation&#34;&gt;here&lt;/a&gt;. To export the slides, you can run &lt;code&gt;echo &amp;#34;require(rmarkdown); render(&amp;#39;FILENAME.md&amp;#39;, output_file=&amp;#39;index.html&amp;#39;)&amp;#34; | R --vanilla&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;To have a double column layout, you can use a stylesheet like&lt;/p&gt;&#xA;&lt;div class=&#34;src src-css&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;container&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;flex&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;col&lt;/span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;flex&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;then, in the R Markdown file,&lt;/p&gt;&#xA;&lt;div class=&#34;src src-markdown&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::: {.container}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:::: {.col}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Column 1 Content&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::::&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:::: {.col}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Column 2 Content&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::::&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:::&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;To get syntax highlighting, you need to specify the language, e.g.&#xA;```C&#xA;void greet() {&#xA;std::cout &amp;lt;&amp;lt; &amp;#34;Hello&amp;#34; &amp;lt;&amp;lt; std::endl;&#xA;}&#xA;```&lt;/p&gt;</description>
     </item>
     <item>
       <title>SageMath</title>
-      <link>http://localhost:1313/notes/sagemath/</link>
+      <link>https://www.rossknapman.com/notes/sagemath/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/sagemath/</guid>
-      <description> Defining Functions of Variables For example, we want to define some generic ɸ(t) without explicitly defining a functional form. Then, do phi = function(&amp;#39;phi&amp;#39;, latex_name=&amp;#39;\\varphi&amp;#39;, nargs=1)(t).&#xA;Setting the Matplotlib Axis of a Figure This is to allow granular control over the appearance of a plot.&#xA;fig, ax = plt.subplots() plot(x^2, (x,0,5)).matplotlib(sub=ax) </description>
+      <guid>https://www.rossknapman.com/notes/sagemath/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Defining Functions of Variables&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;For example, we want to define some generic ɸ(t) without explicitly defining a functional form. Then, do &lt;code&gt;phi = function(&amp;#39;phi&amp;#39;, latex_name=&amp;#39;\\varphi&amp;#39;, nargs=1)(t)&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-2&#34;&gt;&#xA;Setting the Matplotlib Axis of a Figure&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;This is to allow granular control over the appearance of a plot.&lt;/p&gt;&#xA;&lt;div class=&#34;src src-python&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fig, ax &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;subplots()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;plot(x&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, (x,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;))&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;matplotlib(sub&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ax)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Shell</title>
-      <link>http://localhost:1313/notes/shell/</link>
+      <link>https://www.rossknapman.com/notes/shell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/shell/</guid>
-      <description>ZSH is Being Slow Run&#xA;git config --add oh-my-zsh.hide-status 1 git config --add oh-my-zsh.hide-dirty 1 if [ ... == … ]; then Not Working with Posix Shell Need single =, and need variables e.g. $directory in quotes&#xA;I Only Want the Filename and Not the Entire Path If you only want, say video.mp4 rather than e.g. /home/myname/long/complicated/path/to/video.mp4, use the basename command.&#xA;Similarly, to remove the extension, use the parameter expansion ${filename%.</description>
+      <guid>https://www.rossknapman.com/notes/shell/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;ZSH is Being Slow&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Run&lt;/p&gt;&#xA;&lt;div class=&#34;src src-sh&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --add oh-my-zsh.hide-status &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --add oh-my-zsh.hide-dirty &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-2&#34;&gt;&#xA;&lt;code&gt;if [ ... == … ]; then&lt;/code&gt; Not Working with Posix Shell&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Need single &lt;code&gt;=&lt;/code&gt;, and need variables e.g. &lt;code&gt;$directory&lt;/code&gt; in quotes&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-3&#34;&gt;&#xA;I Only Want the Filename and Not the Entire Path&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;If you only want, say &lt;code&gt;video.mp4&lt;/code&gt; rather than e.g. &lt;code&gt;/home/myname/long/complicated/path/to/video.mp4&lt;/code&gt;, use the &lt;code&gt;basename&lt;/code&gt; command.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Similarly, to remove the extension, use the parameter expansion &lt;code&gt;${filename%.*}&lt;/code&gt; (note that the only dot in the file name can then only be the .extension).&lt;/p&gt;</description>
     </item>
     <item>
       <title>SOCKS Proxy for Accessing Papers from Uni Network</title>
-      <link>http://localhost:1313/notes/socksproxyforaccessingpapersfromuninetwork/</link>
+      <link>https://www.rossknapman.com/notes/socksproxyforaccessingpapersfromuninetwork/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/socksproxyforaccessingpapersfromuninetwork/</guid>
-      <description>This is an alternative to using a VPN, which is nice in that it only routes your traffic from a single browser window (and works if the university VPN is down, which happens sometimes). ssh -D 8080 ws2 Then open Firefox, go to Network Settings -&amp;gt; Manual proxy configuration, enter SOCKS Host 127.0.0.1, Port 8080 ws2 is what I have called twist-ws02 in my SSH config. I find that a better solution is to define an alias in .</description>
+      <guid>https://www.rossknapman.com/notes/socksproxyforaccessingpapersfromuninetwork/</guid>
+      <description>&lt;p&gt;&#xA;This is an alternative to using a VPN, which is nice in that it only routes your traffic from a single browser window (and works if the university VPN is down, which happens sometimes). &lt;code&gt;ssh -D 8080 ws2&lt;/code&gt; Then open Firefox, go to Network Settings -&amp;gt; Manual proxy configuration, enter SOCKS Host 127.0.0.1, Port 8080 &lt;code&gt;ws2&lt;/code&gt; is what I have called twist-ws02 in my SSH config. I find that a better solution is to define an alias in &lt;code&gt;.zshrc&lt;/code&gt; (or equivalent for whichever shell you use) like &lt;code&gt;alias jguprox=&amp;#39;ssh -D 8080 -fN ws2 &amp;amp;&amp;amp; /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \ --user-data-dir=&amp;#34;$HOME/proxy-profile&amp;#34; \ --proxy-server=&amp;#34;socks5://localhost:8080&amp;#34; &amp;amp;&amp;amp; pkill ssh&amp;#39;&lt;/code&gt; Then I can simply run &lt;code&gt;jguprox&lt;/code&gt; and it opens up a Chrome window.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vim</title>
-      <link>http://localhost:1313/notes/vim/</link>
+      <link>https://www.rossknapman.com/notes/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/vim/</guid>
-      <description>Find and Replace Search and replace globally: :%s/foo/bar/g&#xA;:s is the command to substitute, % means to apply within the current file, rather than just the current line, g means global, i.e. it replaces all instances, not just the first&#xA;To find and replace regex whilst keeping part of a pattern, e.g. if you want to replace #1 #2 #3 by #1 \, #2 \, #3 \n, then need to run</description>
+      <guid>https://www.rossknapman.com/notes/vim/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Find and Replace&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Search and replace globally: &lt;code&gt;:%s/foo/bar/g&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;code&gt;:s&lt;/code&gt; is the command to substitute, &lt;code&gt;%&lt;/code&gt; means to apply within the current file, rather than just the current line, &lt;code&gt;g&lt;/code&gt; means global, i.e. it replaces all instances, not just the first&lt;/p&gt;&#xA;&lt;p&gt;&#xA;To find and replace regex whilst keeping part of a pattern, e.g. if you want to replace #1 #2 #3 by #1 \, #2 \, #3 \n, then need to run&lt;/p&gt;</description>
     </item>
     <item>
       <title>VirtualBox</title>
-      <link>http://localhost:1313/notes/virtualbox/</link>
+      <link>https://www.rossknapman.com/notes/virtualbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/virtualbox/</guid>
-      <description>USB Not Mounting Install VirtualBox Extension Pack, and start VirtualBox using sudo virtualbox.</description>
+      <guid>https://www.rossknapman.com/notes/virtualbox/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;USB Not Mounting&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Install VirtualBox Extension Pack, and start VirtualBox using &lt;code&gt;sudo virtualbox&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Visual Studio Code</title>
-      <link>http://localhost:1313/notes/visualstudiocode/</link>
+      <link>https://www.rossknapman.com/notes/visualstudiocode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/visualstudiocode/</guid>
-      <description>Ctrl + W Not Working with Vim Mode In Keyboard Shortcuts, disable the Vim shortcut that corresponds to this.&#xA;Terminal Using Wrong Python Version For example, the default terminal program uses Anaconda, but the terminal in VS Code uses /usr/bin/python3. Add ``` &amp;#34;terminal.integrated.env.osx&amp;#34;: { &amp;#34;PATH&amp;#34;: &amp;#34;&amp;#34; } ``` to settings.json. See here.</description>
+      <guid>https://www.rossknapman.com/notes/visualstudiocode/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;&lt;code&gt;Ctrl + W&lt;/code&gt; Not Working with Vim Mode&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;In Keyboard Shortcuts, disable the Vim shortcut that corresponds to this.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-2&#34;&gt;&#xA;Terminal Using Wrong Python Version&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;For example, the default terminal program uses Anaconda, but the terminal in VS Code uses &lt;code&gt;/usr/bin/python3&lt;/code&gt;. Add&#xA;```&#xA;&amp;#34;terminal.integrated.env.osx&amp;#34;: {&#xA;        &amp;#34;PATH&amp;#34;: &amp;#34;&amp;#34;&#xA;    }&#xA;```&#xA;to &lt;code&gt;settings.json&lt;/code&gt;. See &lt;a href=&#34;https://stackoverflow.com/questions/54582361/vscode-terminal-shows-incorrect-python-version-and-path-launching-terminal-from&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Website</title>
-      <link>http://localhost:1313/notes/website/</link>
+      <link>https://www.rossknapman.com/notes/website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/website/</guid>
-      <description>Public Repo as Submodule For each submodule commit, the project updates its reference to the submodule to maintain its connection to the correct commit. Therefore, commit both the main project and the public repo, then run git push -u origin main --recurse-submodules=on-demand. See e.g. https://www.adamormsby.com/posts/000/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/&#xA;Jekyll Does Not Run on Big Sur A combination of these resources seemed to fix it:&#xA;https://ernestojeh.com/fix-jekyll-on-macos-big-sur slycke&amp;#39;s answer at https://github.com/jekyll/jekyll/issues/8576 (I suspect bundle add webrick may have been the reason it started working, as it allows you to use Ruby 3.</description>
+      <guid>https://www.rossknapman.com/notes/website/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Public Repo as Submodule&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;For each submodule commit, the project updates its reference to the submodule to maintain its connection to the correct commit. Therefore, commit both the main project and the public repo, then run &lt;code&gt;git push -u origin main --recurse-submodules=on-demand&lt;/code&gt;. See e.g. &lt;a href=&#34;https://www.adamormsby.com/posts/000/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/&#34;&gt;https://www.adamormsby.com/posts/000/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-2&#34;&gt;&#xA;Jekyll&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-5&#34;&gt;&#xA;&lt;h5 id=&#34;headline-3&#34;&gt;&#xA;Does Not Run on Big Sur&#xA;&lt;/h5&gt;&#xA;&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-5&#34;&gt;&#xA;&lt;p&gt;A combination of these resources seemed to fix it:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ernestojeh.com/fix-jekyll-on-macos-big-sur&#34;&gt;https://ernestojeh.com/fix-jekyll-on-macos-big-sur&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;slycke&amp;#39;s answer at &lt;a href=&#34;https://github.com/jekyll/jekyll/issues/8576&#34;&gt;https://github.com/jekyll/jekyll/issues/8576&lt;/a&gt; (I suspect &lt;code&gt;bundle add webrick&lt;/code&gt; may have been the reason it started working, as it allows you to use Ruby 3.0.0)&lt;/li&gt;&#xA;&lt;li&gt;Various resources that suggested using Xcode 11.5 instead of the latest version&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-5&#34;&gt;&#xA;&lt;h5 id=&#34;headline-4&#34;&gt;&#xA;Undefined symbols for architecture x86_64: &amp;#34;_BIO_f_zlib&amp;#34; when installing Ruby environment&#xA;&lt;/h5&gt;&#xA;&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-5&#34;&gt;&#xA;&lt;p&gt;Run &lt;code&gt;CC=/usr/bin/gcc rbenv install 3.0.0&lt;/code&gt; as Homebrew&amp;#39;s GCC version does not work with it (&lt;a href=&#34;https://github.com/rbenv/rbenv/issues/610#issuecomment-55773864)&#34;&gt;https://github.com/rbenv/rbenv/issues/610#issuecomment-55773864)&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zathura</title>
-      <link>http://localhost:1313/notes/zathura/</link>
+      <link>https://www.rossknapman.com/notes/zathura/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/zathura/</guid>
-      <description>Toggle Single/Double Page Press D.</description>
+      <guid>https://www.rossknapman.com/notes/zathura/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Toggle Single/Double Page&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;Press D.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

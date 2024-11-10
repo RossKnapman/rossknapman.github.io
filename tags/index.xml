@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ross Knapman</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://www.rossknapman.com/tags/</link>
     <description>Recent content in Tags on Ross Knapman</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 25 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.rossknapman.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Art</title>
-      <link>http://localhost:1313/tags/art/</link>
+      <link>https://www.rossknapman.com/tags/art/</link>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/art/</guid>
+      <guid>https://www.rossknapman.com/tags/art/</guid>
       <description></description>
     </item>
     <item>
       <title>Mathematics</title>
-      <link>http://localhost:1313/tags/mathematics/</link>
+      <link>https://www.rossknapman.com/tags/mathematics/</link>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mathematics/</guid>
+      <guid>https://www.rossknapman.com/tags/mathematics/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>https://www.rossknapman.com/tags/ai/</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>https://www.rossknapman.com/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Education</title>
-      <link>http://localhost:1313/tags/education/</link>
+      <link>https://www.rossknapman.com/tags/education/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/education/</guid>
+      <guid>https://www.rossknapman.com/tags/education/</guid>
       <description></description>
     </item>
     <item>
       <title>Life</title>
-      <link>http://localhost:1313/tags/life/</link>
+      <link>https://www.rossknapman.com/tags/life/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/life/</guid>
+      <guid>https://www.rossknapman.com/tags/life/</guid>
       <description></description>
     </item>
     <item>
       <title>Travel</title>
-      <link>http://localhost:1313/tags/travel/</link>
+      <link>https://www.rossknapman.com/tags/travel/</link>
       <pubDate>Sun, 04 Sep 2022 10:07:38 +0200</pubDate>
-      <guid>http://localhost:1313/tags/travel/</guid>
+      <guid>https://www.rossknapman.com/tags/travel/</guid>
       <description></description>
     </item>
     <item>
       <title>Photography</title>
-      <link>http://localhost:1313/tags/photography/</link>
+      <link>https://www.rossknapman.com/tags/photography/</link>
       <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/photography/</guid>
+      <guid>https://www.rossknapman.com/tags/photography/</guid>
       <description></description>
     </item>
     <item>
       <title>Latex</title>
-      <link>http://localhost:1313/tags/latex/</link>
+      <link>https://www.rossknapman.com/tags/latex/</link>
       <pubDate>Sun, 05 Dec 2021 16:49:56 +0100</pubDate>
-      <guid>http://localhost:1313/tags/latex/</guid>
+      <guid>https://www.rossknapman.com/tags/latex/</guid>
       <description></description>
     </item>
     <item>
       <title>Vim</title>
-      <link>http://localhost:1313/tags/vim/</link>
+      <link>https://www.rossknapman.com/tags/vim/</link>
       <pubDate>Sun, 05 Dec 2021 16:49:56 +0100</pubDate>
-      <guid>http://localhost:1313/tags/vim/</guid>
+      <guid>https://www.rossknapman.com/tags/vim/</guid>
       <description></description>
     </item>
     <item>
       <title>Zathura</title>
-      <link>http://localhost:1313/tags/zathura/</link>
+      <link>https://www.rossknapman.com/tags/zathura/</link>
       <pubDate>Sun, 05 Dec 2021 16:49:56 +0100</pubDate>
-      <guid>http://localhost:1313/tags/zathura/</guid>
+      <guid>https://www.rossknapman.com/tags/zathura/</guid>
       <description></description>
     </item>
   </channel>

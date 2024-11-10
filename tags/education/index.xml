@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Education on Ross Knapman</title>
-    <link>http://localhost:1313/tags/education/</link>
+    <link>https://www.rossknapman.com/tags/education/</link>
     <description>Recent content in Education on Ross Knapman</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.rossknapman.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I Got My PhD!</title>
-      <link>http://localhost:1313/posts/phdgraduation/</link>
+      <link>https://www.rossknapman.com/posts/phdgraduation/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/phdgraduation/</guid>
-      <description>After years of work, my PhD journal has finally come to an end! I defended my thesis &amp;ldquo;Creation and Manipulation of Topological Magnetic Textures in Chiral and Frustrated Magnets&amp;rdquo; at the Johannes Gutenberg-Universität Mainz on 14th May 2024, with the grade 1.0 (&amp;ldquo;very good&amp;rdquo;).&#xA;Read my thesis here.</description>
+      <guid>https://www.rossknapman.com/posts/phdgraduation/</guid>
+      <description>&lt;p&gt;After years of work, my PhD journal has finally come to an end! I defended my thesis &amp;ldquo;Creation and Manipulation of Topological Magnetic Textures in Chiral and Frustrated Magnets&amp;rdquo; at the Johannes Gutenberg-Universität Mainz on 14th May 2024, with the grade 1.0 (&amp;ldquo;very good&amp;rdquo;).&lt;/p&gt;&#xA;&lt;p&gt;Read my thesis &lt;a href=&#34;http://doi.org/10.25358/openscience-10397&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;../../posts/phdgraduation/defence.jpg&#34;&gt;&#xA;&lt;/figure&gt;</description>
     </item>
   </channel>
 </rss>
